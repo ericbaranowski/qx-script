@@ -2,6 +2,7 @@
 cron "0 7 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_checkin.js,script-update-interval=0
 cron "0 0 6-22/3 * * *" script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/weather.js
 cron "0 0 6-23/3 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/ncov.js
+
 #
 http-response ^https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/sololearn.js, requires-body=true, timeout=10, tag=sololearn.js
 
@@ -96,7 +97,7 @@ http-response ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ script-path=https
 http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/verify_receipt.js, requires-body=true, timeout=10, tag=verify_receipt.js
 
 #
-http-response ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/musixmatch.miao.js, requires-body=true, timeout=10, tag=musixmatch.miao.js
+http-response ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/musixmatch_miao.js, requires-body=true, timeout=10, tag=musixmatch.miao.js
 
 #
 http-response ^https:\/\/subs\.platforms\.team\/apple\/verifyTransaction$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/productive.js, requires-body=true, timeout=10, tag=productive.js
@@ -135,7 +136,7 @@ http-response ^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-
 http-response ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/elsa-response.js, requires-body=true, timeout=10, tag=elsa-response.js
 
 #
-http-response ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases) script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/syn.me.js, requires-body=true, timeout=10, tag=syn.me.js
+http-response ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases) script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/syn_me.js, requires-body=true, timeout=10, tag=syn.me.js
 
 #
 http-response ^https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/jibjab.js, requires-body=true, timeout=10, tag=jibjab.js
@@ -189,4 +190,4 @@ http-response https:\/\/www\.patreon\.com\/api\/oauth2\/v2\/identity? script-pat
 http-response ^http:\/\/spys\.me\/proxy\.txt$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/proxy.js, requires-body=true, timeout=10, tag=proxy.js
 
 #
-http-request ^https:\/\/shopee\.vn\/me\/setting script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_cookie.js, script-update-interval=0, tag=shopeecookie.js
+http-request ^https:\/\/shopee\.vn\/me\/setting script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/shopee_cookie.js, script-update-interval=0, tag=shopee_cookie.js
