@@ -189,4 +189,4 @@ http-response https:\/\/www\.patreon\.com\/api\/oauth2\/v2\/identity? script-pat
 http-response ^http:\/\/spys\.me\/proxy\.txt$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/proxy.js, requires-body=true, timeout=10, tag=proxy.js
 
 #
-http-request ^https:\/\/shopee\.vn\/me\/setting script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/shopee_cookie.js, timeout=10, tag=shopee_cookie.js
+http-request ^https:\/\/shopee\.vn\/me\/setting script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/shopeecookie.js, timeout=10, tag=shopeecookie.js
