@@ -1,4 +1,7 @@
 #
+cron "0 0 6-18/6 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/weather.js, tag=weather, enable=true
+
+#
 http-response ^https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$ script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/sololearn.js, requires-body=true, timeout=10, tag=sololearn.js
 
 #
