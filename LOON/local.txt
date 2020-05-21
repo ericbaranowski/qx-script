@@ -1,4 +1,4 @@
-
+cron "0 * * * *" script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/Appmonitor.js
 cron "0 7 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_checkin.js,script-update-interval=0
 cron "0 0 6-22/3 * * *" script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/weather.js
 cron "0 0 6-23/3 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/ncov.js
