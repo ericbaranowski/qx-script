@@ -14,7 +14,6 @@ http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* script-path=https:/
 
 http-response ^https:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/VideoStar.js, requires-body=true, timeout=10, tag=videostar.js
 
-#
 http-response ^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/monkey.js, requires-body=true, timeout=10, tag=monkey.js
 
 http-response ^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list script-path=https://raw.githubusercontent.com/phd051199/Local_LK/master/Scripts/nomo.js, requires-body=true, timeout=10, tag=nomo.js
