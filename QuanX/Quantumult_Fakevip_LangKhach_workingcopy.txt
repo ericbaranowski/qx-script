@@ -61,5 +61,6 @@ force_sni_domain_name = true
 [rewrite_local]
 
 [task_local]
-0 6-23/3 * * * langkhach/Ncov.js, enabled=true
-0 6-23/1 * * * langkhach/Appmonitor.js, enabled=true
+0 6 * * * https://raw.githubusercontent.com/langkhach270389/Scripting/master/Ncov.js, enabled=true
+0 6 * * * https://raw.githubusercontent.com/langkhach270389/Scripting/master/Appmonitor.js, enabled=true
+0 6 * * * https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_checkin.js, enabled=true
