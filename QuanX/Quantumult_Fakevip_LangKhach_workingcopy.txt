@@ -61,5 +61,3 @@ force_sni_domain_name = true
 [rewrite_local]
 
 [task_local]
-0 6-23/3 * * * langkhach/Ncov.js, tag=Ncov, enabled=true
-0 6-23/1 * * * langkhach/Appmonitor.js,tag=App update status enabled=true
