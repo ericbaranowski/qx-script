@@ -1,6 +1,12 @@
+cron "0 5 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Appmonitor.js
+cron "0 5 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_checkin.js,script-update-interval=0
+cron "0 5 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/weather.js
+cron "0 5 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/ncov.js, script-update-interval=600
+
 http-response ^https?:\/\/api\.tv\.zing\.vn\/.+/user script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/zingtvvipv1.js, requires-body=true, timeout=10, tag=zingtvvipv1.js
 http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/.+\/getUserInfo\?data= script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/zingmp3.js, requires-body=true, timeout=10, tag=zingmp3.js
 http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getDownloadSongInfo\?data script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/zingmp3.downloadsong.js, requires-body=true, timeout=10, tag=zingmp3.downloadsong.js
 http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getSongInfo\?data script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/zingmp3.getsong.js, requires-body=true, timeout=10, tag=zingmp3.getsong.js
 http-response ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/nhaccuatui.js, requires-body=true, timeout=10, tag=nhaccuatui.js
 http-response https:\/\/www\.patreon\.com\/api\/oauth2\/v2\/identity? script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/altstore.js, requires-body=true, timeout=10, tag=altstore.js
+http-request ^https:\/\/shopee\.vn\/me\/setting script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/shopee_cookie.js, script-update-interval=0, tag=shopee_cookie.js
