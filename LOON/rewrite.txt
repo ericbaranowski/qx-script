@@ -2,7 +2,7 @@
 
 ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ https://raw.githubusercontent.com/langkhach270389/Scripting/master/boom.vip.rsp 302
 
-(.video_id=\w{32})(.watermark=)(.*) $1 302
+;^(.video_id=\w{32})(.watermark=)(.*) $1 302
 # (?<=_region=)VN(?=&) JP 307
-(?<=&app_version=)16..(?=.?.?&) 1 307
-(?<=?version_code=)16..(?=.?.?&) 1 307
+;^(?<=&app_version=)16..(?=.?.?&) 1 307
+;^(?<=?version_code=)16..(?=.?.?&) 1 307
