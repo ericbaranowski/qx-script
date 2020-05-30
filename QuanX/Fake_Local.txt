@@ -193,5 +193,6 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body l
 
 #Textnow
 ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* url script-response-body langkhach/Textnow.js
+
 #Muscle Booster
 ^https:\/\/menscoach-api\.asqq\.io\/prod\/user$ url script-response-body langkhach/MuscleBooster.js
