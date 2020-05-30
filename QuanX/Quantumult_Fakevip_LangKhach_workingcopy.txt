@@ -60,6 +60,7 @@ hostname = api*.tiktokv.com,
 
 [rewrite_local]
 (.video_id=\w{32})(.watermark=)(.*) url 302 $1
+# (?<=_region=)VN(?=&) JP 307
 (?<=&app_version=)16..(?=.?.?&) url 307 1
 (?<=?version_code=)16..(?=.?.?&) url 307 1
 
