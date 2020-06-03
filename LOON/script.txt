@@ -1,4 +1,3 @@
-
 cron "0 0 6-23/1 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Appmonitor.js
 cron "0 5 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_checkin.js,script-update-interval=0
 cron "0 0 6-18/6 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/weather.js
