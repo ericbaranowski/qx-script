@@ -30,7 +30,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body l
 ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info* url script-response-body langkhach/nhaccuatui.js
 
 #quizlet
-^https:\/\/api\.quizlet\.com\/.*\/.* url script-response-body langkhach/quizlet.js
+^https:\/\/api\.quizlet\.com\/.*\/users\/.* url script-response-body langkhach/quizlet.js
 
 #Memrise
 ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) url script-response-body langkhach/memrise.vip.js
