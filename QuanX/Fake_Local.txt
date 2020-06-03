@@ -5,8 +5,6 @@ hostname = api.quizlet.com, api.textnow.me, testapps.videostarapp.com, avatar-nc
 (?<=&app_version=)16..(?=.?.?&) url 307 1
 (?<=\?version_code=)16..(?=.?.?&) url 307 1
 
-
-
 #altstore
 https:\/\/www\.patreon\.com\/api\/oauth2\/v2\/identity? url script-response-body langkhach/altstore.js
 
