@@ -1,6 +1,5 @@
 let obj= JSON.parse($response.body);
 
-//fake user vip
 delete obj.data.lastVipExpireTime;
 obj.data.vip= {
   "expireTime": 1892800999,
