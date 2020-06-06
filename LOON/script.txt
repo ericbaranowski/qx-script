@@ -42,8 +42,6 @@ http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile script-path=
 
 http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/draft.js, requires-body=true, timeout=10, tag=draft.js
 
-http-response ^https:\/\/education\.github\.com\/api\/user$ script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/workingcopy.js, requires-body=true, timeout=10, tag=workingcopy.js
-
 http-response ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$ script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/speak&translate.js, requires-body=true, timeout=10, tag=speak&translate.js
 
 http-response ^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/over.js, requires-body=true, timeout=10, tag=over.js
