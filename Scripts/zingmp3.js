@@ -7,7 +7,7 @@ obj.data.vip= {
   "startTime": 1572527803,
   "subscription": {
     "status": 0,
-    "expireTime": 926355600,
+    "expireTime": 1892800999,
     "platform": 2
   },
   "vipType": 1
