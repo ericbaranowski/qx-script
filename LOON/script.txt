@@ -1,6 +1,6 @@
 cron "0 0 6-23/1 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Appmonitor.js
 cron "0 5 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_checkin.js,script-update-interval=0
-//cron "0 6 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/ncov.js, script-update-interval=600, timeout=200
+cron "0 6 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/ncov.js, script-update-interval=600, timeout=200, enable=false
 
 http-response ^https:\/\/api\.quizlet\.com\/.*\/users\/.* script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/quizlet.js, requires-body=true, timeout=10, tag=quizlet.js
 
