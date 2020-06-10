@@ -1,0 +1,2 @@
+
+(?<=_region=)VN(?=&) url 307 JP
