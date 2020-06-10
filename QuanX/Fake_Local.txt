@@ -16,7 +16,8 @@ hostname = api.quizlet.com, api.textnow.me, testapps.videostarapp.com, avatar-nc
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/general\/search\/single\/ url script-response-body langkhach/douyin_qx.js
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/hot\/search\/video\/list\/ url script-response-body langkhach/douyin_qx.js
 
-#tiktok vn
+# TikTok
+(?<=(carrier|account|sys)_region=)VN url 307 CN
 (.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
 (?<=&app_version=)16..(?=.?.?&) url 307 1
 (?<=\?version_code=)16..(?=.?.?&) url 307 1
