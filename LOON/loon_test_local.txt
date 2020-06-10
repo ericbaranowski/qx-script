@@ -1,0 +1,30 @@
+[General]
+dns-server = system,
+ipv6 = false
+host = 127.0.0.1
+[Proxy]
+[Remote Proxy]
+[Proxy Group]
+OTA = select, DIRECT, REJECT
+ADS = select, REJECT, DIRECT
+REVOKE = select, REJECT, DIRECT
+[Remote Filter]
+[Rule]
+FINAL,DIRECT
+[Remote Rule]
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf,ADS
+https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/BlockOTA.list,OTA
+https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/Antirevoke.list,REVOKE
+[URL Rewrite]
+enable=true
+[Remote Rewrite]
+https://www.dropbox.com/s/b6saq7nrx97hxk8/rewrite.txt?dl=1, tag=rewrite.txt, enable=true
+[Script]
+enable=true
+[Remote Script]
+https://www.dropbox.com/s/a0pa8ijvmpv3t37/script.txt?dl=1, tag=script.txt, enable=true
+[MITM]
+enable = true
+skip-server-cert-verify = true
+ca-passphrase = 
+hostname = api.quizlet.com, api.textnow.me, *.videostarapp.com, avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.c*, api.meiease.c*, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com , api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com:0, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com, api.sololearn.com, receipts.cerebralgardens.com, api-kinemaster-assetstore.*, api.pushover.net, api-cs.intsig.net, api.overhq.com, api.appsyscode.com, api.freeletics.com, api.shred.app, receipt-validator.herewetest.com, api.deezer.com, iap.aps-sdk.com, backend.getdrafts.com, ssl-api.itranslateapp.com, sk.ulysses.app, dayone.me, license.enpass.io, mp.bybutter.com, *.grammarly.com, splice.oracle.*.com, api.keepkeep.com, planner5d.com, secure.istreamer.com, www.api.monkeyuni.net, account.wps.com, menscoach-api.asqq.io, www.patreon.com, shopee.vn,
