@@ -1,8 +1,5 @@
 hostname = api.quizlet.com, api.textnow.me, testapps.videostarapp.com, avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, oa.zalo.me, vsco.co, api.gyrosco.pe, origin-prod-phoenix.jibjab.com, api.termius.com, api.picsart.c*, api.meiease.c*, api.unfold.app, viva-asia1.vvbrd.com, graph.nhaccuatui.com, api.memrise.com, api.sync.me, pool.elsanow.io, lambda.us-east-1.amazonaws.com, api.mondlylanguages.com, api.busuu.com, owa.videoshowiosglobalserver.com:0, accounts.elevateapp.net, purchases.ws.pho.to, api-intl.mr.meitu.com, bmall.camera360.com, api.tv.zing.vn, api.calm.com, www.calm.com, api.global.mp3.zing.vn, apimboom2.globaldelight.net, photos.adobe.io, license.pdfexpert.com, subs.platforms.team, apic.musixmatch.com, api.getmimo.com, api.revenuecat.com, pixmagicapp.com, engbright.com, api.lingokids.com, www.peacefulsoundsapp.com, duolingo-leaderboards-prod.duolingo.com, commerce-i18n-api.faceu.mobi, mobi, mobile-api.adguard.com, api.blinkist.com, api.sololearn.com, receipts.cerebralgardens.com, api-kinemaster-assetstore.*, api.pushover.net, api-cs.intsig.net, api.overhq.com, api.appsyscode.com, api.freeletics.com, api.shred.app, receipt-validator.herewetest.com, api.deezer.com, iap.aps-sdk.com, backend.getdrafts.com, ssl-api.itranslateapp.com, sk.ulysses.app, dayone.me, license.enpass.io, mp.bybutter.com, *.grammarly.com, splice.oracle.*.com, api.keepkeep.com, planner5d.com, secure.istreamer.com, www.api.monkeyuni.net, account.wps.com, menscoach-api.asqq.io, www.patreon.com, api*.tiktokv.com, api*.amemv.com, sapi.m.zing.vn,
 
-#labankey
-https://sapi.m.zing.vn.+lbk.+themes.+ios.+get-detail-theme url script-response-body langkhach/labankey.js
-
 #Douyin (By Choler)
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/feed\/ url request-header ^GET \/aweme\/v\d\/feed\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/feed/$1$2Host: aweme.snssdk.com
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/aweme\/post\/ url request-header ^GET \/aweme\/v\d\/aweme\/post\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/aweme/post/$1$2Host: aweme.snssdk.com
@@ -11,7 +8,6 @@ https://sapi.m.zing.vn.+lbk.+themes.+ios.+get-detail-theme url script-response-b
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/search\/item\/ url request-header ^GET \/aweme\/v\d\/search\/item\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/search/item/$1$2Host: aweme.snssdk.com
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/general\/search\/single\/ url request-header ^GET \/aweme\/v\d\/general\/search\/single\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/general/search/single/$1$2Host: aweme.snssdk.com
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/hot\/search\/video\/list\/ url request-header ^GET \/aweme\/v\d\/hot\/search\/video\/list\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/hot/search/video/list/$1$2Host: aweme.snssdk.com
-
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/aweme\/post\/ url script-response-body langkhach/douyin_qx.js
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/feed\/ url script-response-body langkhach/douyin_qx.js
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/follow\/feed\/ url script-response-body langkhach/douyin_qx.js
@@ -25,17 +21,17 @@ https://sapi.m.zing.vn.+lbk.+themes.+ios.+get-detail-theme url script-response-b
 (?<=&app_version=)16..(?=.?.?&) url 307 1
 (?<=\?version_code=)16..(?=.?.?&) url 307 1
 
-#altstore
+#altstore patreon
 https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body langkhach/altstore.js
 
-#vsco
+#vsco x
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body langkhach/vsco.js
 
 #gyroscope
 ^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body langkhach/Gyroscope.vip.js
 
 #Termius 
-^https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body langkhach/Terminus.js
+;^https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body langkhach/Terminus.js
 
 #PicsArt
 ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body langkhach/picsArt.vip.js
@@ -60,6 +56,9 @@ https://api.quizlet.com/.+/users/.+ url script-response-body langkhach/quizlet.j
 
 #buyhack
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body langkhach/verify_receipt.js
+
+#labankey
+;https://sapi.m.zing.vn/lbk/themes/ios/get-detail-theme url script-response-body langkhach/labankey.js
 
 #sync
 ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases)  url script-response-body langkhach/syn.me.js
@@ -159,7 +158,6 @@ https://api.quizlet.com/.+/users/.+ url script-response-body langkhach/quizlet.j
 
 #over
 ^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) url script-response-body langkhach/over.vip.js
-
 
 #speak&translate
 ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$ url script-response-body langkhach/speak&translate.js
