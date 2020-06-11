@@ -1,0 +1,6 @@
+HOST-SUFFIX,appldnld.apple.com,REJECT
+HOST-SUFFIX,appldnld.apple.com.akadns.net,REJECT
+HOST-SUFFIX,appldnld.g.aaplimg.com,REJECT
+HOST-SUFFIX,gdmf.apple.com,REJECT
+HOST-SUFFIX,gdmf.apple.com.akadns.net,REJECT
+HOST-SUFFIX,ocsp.apple.com,REJECT
