@@ -1,2 +1,0 @@
-#region tiktok
-(?<=_region=)VN(?=&) url 307 JP
