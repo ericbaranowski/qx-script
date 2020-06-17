@@ -1,6 +1,0 @@
-
-USER-AGENT,com.google.ios.youtube*,VPS-1
-USER-AGENT,YouTube*,VPS-1
-HOST-SUFFIX,googlevideo.com,VPS-1
-HOST-SUFFIX,youtube.com,VPS-1
-HOST,youtubei.googleapis.com,VPS-1
