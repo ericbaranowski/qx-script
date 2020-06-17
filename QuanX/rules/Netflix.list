@@ -1,7 +1,9 @@
 # Netflix
-//请注意，导入此规则将自动创建名为[Netflix]的策略组
 USER-AGENT,Argo*,Netflix
 DOMAIN-KEYWORD,nflx,Netflix
+DOMAIN-SUFFIX,phimmoi.com,Netflix
+DOMAIN-SUFFIX,imdb.com,Netflix
+DOMAIN-SUFFIX,amazon.com,Netflix
 DOMAIN-SUFFIX,netflix.com,Netflix
 DOMAIN-SUFFIX,netflix.net,Netflix
 DOMAIN-SUFFIX,nflxext.com,Netflix
@@ -18,4 +20,4 @@ IP-CIDR,108.175.32.0/20,Netflix
 IP-CIDR,192.173.64.0/18,Netflix
 IP-CIDR,198.38.96.0/19,Netflix
 IP-CIDR,198.45.48.0/20,Netflix
-DOMAIN-KEYWORD,phimmoi,Netflix
+
