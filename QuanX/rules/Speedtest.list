@@ -6,7 +6,7 @@ USER-AGENT,SpeedTest*,VPS-1
 HOST-KEYWORD,speedtest,VPS-1
 HOST-SUFFIX,speedtest.net,VPS-1
 HOST-SUFFIX,ooklaserver.net,VPS-1
-URL-REGEX,speedtest\d.macau.ctm.net:8080,VPS-1
+URL-REGEX,speedtest\d.macau.ctm.net:8080
 HOST-SUFFIX,88-f.net,VPS-1
 HOST,st.pautina-telecom.ru,VPS-1
 HOST-SUFFIX,goodnet.su,VPS-1

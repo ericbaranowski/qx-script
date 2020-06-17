@@ -1,7 +1,7 @@
 # YouTube部分
 //请注意，导入此规则将自动创建名为[YouTube]的策略组
-USER-AGENT,com.google.ios.youtube*,YouTube,VPS-1
-USER-AGENT,YouTube*,YouTube,VPS-1
-HOST-SUFFIX,googlevideo.com,YouTube,VPS-1
-HOST-SUFFIX,youtube.com,YouTube,VPS-1
-HOST,youtubei.googleapis.com,YouTube,VPS-1
+USER-AGENT,com.google.ios.youtube*,VPS-1
+USER-AGENT,YouTube*,VPS-1
+HOST-SUFFIX,googlevideo.com,VPS-1
+HOST-SUFFIX,youtube.com,VPS-1
+HOST,youtubei.googleapis.com,VPS-1
