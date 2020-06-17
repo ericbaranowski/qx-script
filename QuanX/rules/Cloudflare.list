@@ -1,5 +1,5 @@
 # > Cloudflare
-DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflare.com,Cloudflare
 IP-CIDR,173.245.48.0/20,Cloudflare
 IP-CIDR,103.21.244.0/22,Cloudflare
 IP-CIDR,103.22.200.0/22,Cloudflare
