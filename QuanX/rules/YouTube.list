@@ -1,0 +1,7 @@
+USER-AGENT,*youtube*,VPS-1
+USER-AGENT,YouTube*,VPS-1
+HOST-KEYWORD,youtube,VPS-1
+HOST-SUFFIX,googlevideo.com,VPS-1
+HOST-SUFFIX,gvt2.com,VPS-1
+HOST-SUFFIX,youtu.be,VPS-1
+HOST,youtubei.googleapis.com,VPS-1
