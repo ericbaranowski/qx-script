@@ -1,9 +1,6 @@
 # Netflix
 USER-AGENT,Argo*,Netflix
 DOMAIN-KEYWORD,nflx,Netflix
-DOMAIN-SUFFIX,phimmoi.com,Netflix
-DOMAIN-SUFFIX,imdb.com,Netflix
-DOMAIN-SUFFIX,amazon.com,Netflix
 DOMAIN-SUFFIX,netflix.com,Netflix
 DOMAIN-SUFFIX,netflix.net,Netflix
 DOMAIN-SUFFIX,nflxext.com,Netflix
