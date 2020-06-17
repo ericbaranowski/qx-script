@@ -1,11 +1,11 @@
 # > Fast
-HOST-SUFFIX,fast.com,VPS-1
+HOST-SUFFIX,fast.com
 
 # > Speedtest
-USER-AGENT,SpeedTest*,VPS-1
-HOST-KEYWORD,speedtest,VPS-1
-HOST-SUFFIX,speedtest.net,VPS-1
-HOST-SUFFIX,ooklaserver.net,VPS-1
-HOST-SUFFIX,88-f.net,VPS-1
-HOST,st.pautina-telecom.ru,VPS-1
-HOST-SUFFIX,goodnet.su,VPS-1
+USER-AGENT,SpeedTest*
+HOST-KEYWORD,speedtest
+HOST-SUFFIX,speedtest.net
+HOST-SUFFIX,ooklaserver.net
+HOST-SUFFIX,88-f.net
+HOST,st.pautina-telecom.ru
+HOST-SUFFIX,goodnet.su

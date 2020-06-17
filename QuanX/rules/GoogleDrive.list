@@ -1,4 +1,4 @@
-USER-AGENT,Google.Drive*,VPS-1
-USER-AGENT,com.google.Drive*,VPS-1
-USER-AGENT, %E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*,VPS-1
-HOST-SUFFIX,docs.google.com,VPS-1
+USER-AGENT,Google.Drive*
+USER-AGENT,com.google.Drive*
+USER-AGENT, %E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
+HOST-SUFFIX,docs.google.com
