@@ -1,0 +1,9 @@
+hostname = %APPEND% duckduckgo.com
+
+^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ url 302 https://github.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
+^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ url 302 https://pornhub.com/video/search?search=$1
+^https:\/\/duckduckgo.com\/\?q=so\+([^&]+).+ url 302 https://stackoverflow.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=se\+([^&]+).+ url 302 https://stackexchange.com/search?q=$1
+^https:\/\/duckduckgo.com\/\?q=wa\+([^&]+).+  url 302 https://www.wolframalpha.com/input/?i=$1
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
