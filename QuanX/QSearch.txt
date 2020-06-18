@@ -1,4 +1,4 @@
-hostname = %APPEND% duckduckgo.com
+hostname = duckduckgo.com
 
 ^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ url 302 https://github.com/search?q=$1
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
