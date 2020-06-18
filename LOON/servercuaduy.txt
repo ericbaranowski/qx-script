@@ -1,0 +1,1 @@
+duy's VPS-1 = Shadowsocks,54.255.173.25,10084,aes-256-cfb,"pg1amtDUY@@"
