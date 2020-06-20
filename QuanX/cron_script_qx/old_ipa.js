@@ -10,7 +10,7 @@ const buy= "buyProduct";
 if(url.indexOf(api) != -1){
 var appidget = url.match(/\d{6,}$/);
 console.log("🟢\n appid: " + appidget);
-nobyda.write(appidget.toString(),"appid");
+$nobyda.write(appidget.toString(),"appid");
 $nobyda.notify('Old_iPA_Dowloader', 'iTunes PC search app and click Get', 'By @Lãng Khách');
 $nobyda.end({body});
 }
