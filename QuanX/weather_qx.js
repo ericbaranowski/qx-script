@@ -1,15 +1,15 @@
 const lang = "vi"
-var hcm = "10.7457999,106.6855690"
+var HoChiMinh = "10.7457999,106.6855690"
 var longan = "10.6466139,106.3019494"
-var api = "d61d56e7025c803083cb4e4d4513d1a3"
+var LongAn = "d61d56e7025c803083cb4e4d4513d1a3"
 
-weather(hcm);
-weather(longan);
+weather(HoChiMinh);
+weather(LongAn);
 
-function weather(locat)
+function weather(location)
 {
     var wurl = {
-        url: "https://api.darksky.net/forecast/" + api + "/" + locat + "?lang=" + lang + "&units=si&exclude=currently,minutely",
+        url: "https://api.darksky.net/forecast/" + api + "/" + location + "?lang=" + lang + "&units=si&exclude=currently,minutely",
     };
 
     $task.fetch(wurl).then(response => {
