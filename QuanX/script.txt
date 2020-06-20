@@ -20,7 +20,7 @@ hostname = mesu.apple.com, api.quizlet.com, api.textnow.me, testapps.videostarap
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/hot\/search\/video\/list\/ url script-response-body douyin_qx.js
 
 #old_ipa Test
-https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct request-header $1 https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?= url script-response-body old_ipa.js
+https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct url request-header $1 https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?= url script-response-body old_ipa.js
 
 #altstore patreon
 https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body altstore.js
@@ -113,7 +113,7 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get url script-response-body musixmatch.miao.js
 
 #boom
-^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/boom.vip.rsp
+^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url 302 boom.vip.rsp
 
 #mimo
 ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body mimo.vip.js
@@ -122,7 +122,7 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) url script-response-body revenuecat.js
 
 #Bright
-^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Bright.rsp
+^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ url 302 Bright.rsp
 
 #lingokids
 ^https:\/\/api\.lingokids\.com\/v1\/renovate_session$ url script-response-body lingokids.vip.js
@@ -137,7 +137,7 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/commerce-i18n-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info$ url script-response-body ulike.js
 
 #adguardpremium
-^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Adguard.rsp
+^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$ url 302 Adguard.rsp
 
 #zingmp3
 ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo\?data=* url script-response-body zingmp3.js
