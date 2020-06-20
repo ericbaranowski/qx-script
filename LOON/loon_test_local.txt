@@ -4,15 +4,9 @@ ipv6 = false
 host = 127.0.0.1
 [Proxy]
 [Remote Proxy]
-VPS-1 = https://www.dropbox.com/s/me98u3mp5661zil/servercuaduy.txt?dl=1
 [Proxy Group]
 Apple Update = select, reject, direct
 Advertising = select, reject, direct
-Speedtest = select, direct, duy's VPS-1
-GoogleDrive = select, direct, duy's VPS-1
-PornHub = select, direct, duy's VPS-1
-Cloudflare = select, direct, duy's VPS-1
-Netflix = select, direct, duy's VPS-1
 
 [Remote Filter]
 [Rule]
@@ -20,11 +14,6 @@ FINAL,DIRECT
 [Remote Rule]
 https://www.dropbox.com/s/hodjetnnx9wlxrv/hostsVN-rules.txt?dl=1, policy = Advertising, enabled=true
 https://www.dropbox.com/s/1wpb7w7omehh0j0/BlockOTA.txt?dl=1, policy = Apple Update, enabled=true
-https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/Speedtest.list, policy = Speedtest, enabled=true
-https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/GoogleDrive.list, policy = GoogleDrive, enabled=true
-https://raw.githubusercontent.com/maicoo-l/Surge/master/rules/media/Pornhub.list, policy = Pornhub, enabled=true
-https://raw.githubusercontent.com/maicoo-l/Surge/master/rules/Cloudflare.list, policy = Cloudflare, enabled=true
-https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/Netflix.list, policy = Netflix, enabled=true
 
 [URL Rewrite]
 enable = true
