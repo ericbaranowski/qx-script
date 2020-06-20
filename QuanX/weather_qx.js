@@ -1,12 +1,13 @@
 const lang = "en"
 var lat_lon = "10.7457999,106.6855690"
 var api = "d61d56e7025c803083cb4e4d4513d1a3"
-const $nobyda = nobyda();
 
-if ($nobyda.isRequest) {
-    weather()
-  $nobyda.end()
+const $nobyda = nobyda();
+async function launch() {
+    weather();
+    $nobyda.end();
 }
+launch()
 
 function weather() {
     let info = {
