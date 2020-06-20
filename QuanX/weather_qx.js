@@ -1,15 +1,14 @@
-const lang = "en"
+const lang = "vi"
 var lat_lon = "10.7457999,106.6855690"
 var api = "d61d56e7025c803083cb4e4d4513d1a3"
 
 var wurl = {
-    //url: "https://free-api.heweather.net/s6/weather/now?&location=" + coordinate + "&key=" + key,
     url: "https://api.darksky.net/forecast/" + api + "/" + lat_lon + "?lang=" + lang + "&units=si&exclude=currently,minutely",
 };
 
 $task.fetch(wurl).then(response => {
     var obj = JSON.parse(response.body);
-    //console.log(obj);
+    var location= obj.timezone;
     var hour_summary = obj.hourly.summary;
     var icon_text = obj.hourly.icon;
     var icon = "❓"
@@ -26,9 +25,7 @@ $task.fetch(wurl).then(response => {
     var daily_prec_chance = obj.daily.data[0].precipProbability;
     var daily_maxtemp = obj.daily.data[0].temperatureMax;
     var daily_mintemp = obj.daily.data[0].temperatureMin;
-    //$notification.post("Dark Sky", icon + " " + Math.round(daily_mintemp) + " - " + Math.round(daily_maxtemp) + "  ☔️% " + Math.round(Number(daily_prec_chance) * 100), hour_summary);
-    $notify("Dark Sky", icon + " " + Math.round(daily_mintemp) + " - " + Math.round(daily_maxtemp) + "  ☔️ " + (Number(daily_prec_chance) * 100).toFixed(1) + "%", hour_summary);
-
+    $notify(location, icon + " " + Math.round(daily_mintemp) + "°C" + " - " + Math.round(daily_maxtemp) + "°C" + "  ☔️ " + (Number(daily_prec_chance) * 100).toFixed(1) + "%", hour_summary);
 
 }, reason => {
 $notify("Dark Sky", lat_lon + 'bad connection', reason.error);
