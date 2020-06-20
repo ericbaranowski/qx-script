@@ -1,10 +1,6 @@
-
 # block ota
 (assets)\/(iOS.+DeveloperSeed)\/(com_apple_MobileAsset_SoftwareUpdate.+) url 302 $1\/tvOS13DeveloperSeed\/$3
 (assets)\/(com_apple_MobileAsset_SoftwareUpdate.+) url 302 $1\/tvOS13DeveloperSeed\/$2
-
-#github master branch
-^https://github.com/(Dreamacro|yichengchen|lhie1|ConnersHua|SukkaW)/(clash|clashX|Rules|Profiles|Koolshare-Clash)$ url 302 https://github.com/$1/$2/tree/master
 
 # TikTok nowatermark
 (.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
