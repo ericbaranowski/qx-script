@@ -271,9 +271,7 @@ function findFile(name, tree_url, paths, current_pos) {
 }
 function formatTime(timestamp) {
   const date = new Date(timestamp);
-  return `${date.getFullYear()}year${
-    date.getMonth() + 1
-  }month${date.getDate()}day${date.getHours()}Time`;
+  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}`;
 }
 
 Promise.all(
