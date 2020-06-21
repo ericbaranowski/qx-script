@@ -145,10 +145,10 @@ async function checkUpdate(item) {
             if (needUpdate(url, published_at)) {
               $.notify(
                 `🎉🎉🎉 [${name}] New version released`,
-                `📦 version: ${release_name}`,
-                `⏰ posted on: ${formatTime(
-                  published_at
-                )}\n👨🏻‍💻 announcer: ${author}\n📌 Release Notes: \n${body}`,
+                `📦 Version: ${release_name}`,
+                `⏰ Posted on: ${formatTime(
+                  published_at)}
+                  \n👨🏻‍💻 Announcer: ${author}\n📌 Release Notes: \n${body}`,
                 notificationURL
               );
               $.write(published_at, hash(url));
@@ -187,7 +187,7 @@ async function checkUpdate(item) {
             "",
             `⏰ Submitted on: ${formatTime(
               published_at
-            )}\n👨🏻‍💻 announcer: ${author}\n📌 Release Notes: \n${body}`,
+            )}\n👨🏻‍💻 Announcer: ${author}\n📌 Release Notes: \n${body}`,
             notificationURL
           );
           // update stored timestamp
@@ -271,7 +271,7 @@ function findFile(name, tree_url, paths, current_pos) {
 }
 function formatTime(timestamp) {
   const date = new Date(timestamp);
-  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}`;
+  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
 }
 
 Promise.all(
