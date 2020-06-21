@@ -11,10 +11,10 @@ const $nobyda = nobyda();
 
 if ($nobyda.isRequest) {
   GetCookie()
-  $nobyda.end()
+  $nobyda.done()
 } else {
   checkin()
-  $nobyda.end()
+  $nobyda.done()
 }
 
 function checkin() {
@@ -24,6 +24,7 @@ function checkin() {
       Cookie: $nobyda.read("CookieSP"),
     }
   }
+
 $nobyda.post(shopeeUrl, function(error, response, data){
   if (error) {
     $nobyda.notify("Shopee checkin", "", "Lỗi kết nối‼️")
@@ -59,40 +60,78 @@ if ($request.headers['Cookie']) {
     }
   } else {
     $nobyda.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại")
-  }
+    }
   $nobyda.done();
 }
+
 
 function nobyda() {
   const isRequest = typeof $request != "undefined"
   const isSurge = typeof $httpClient != "undefined"
   const isQuanX = typeof $task != "undefined"
   const notify = (title, subtitle, message) => {
-      if (isQuanX) $notify(title, subtitle, message)
-      if (isSurge) $notification.post(title, subtitle, message)
+    if (isQuanX) $notify(title, subtitle, message)
+    if (isSurge) $notification.post(title, subtitle, message)
   }
   const write = (value, key) => {
-      if (isQuanX) return $prefs.setValueForKey(value, key)
-      if (isSurge) return $persistentStore.write(value, key)
+    if (isQuanX) return $prefs.setValueForKey(value, key)
+    if (isSurge) return $persistentStore.write(value, key)
   }
   const read = (key) => {
-      if (isQuanX) return $prefs.valueForKey(key)
-      if (isSurge) return $persistentStore.read(key)
+    if (isQuanX) return $prefs.valueForKey(key)
+    if (isSurge) return $persistentStore.read(key)
+  }
+  const adapterStatus = (response) => {
+    if (response) {
+      if (response.status) {
+        response["statusCode"] = response.status
+      } else if (response.statusCode) {
+        response["status"] = response.statusCode
+      }
+    }
+    return response
+  }
+  const get = (options, callback) => {
+    if (isQuanX) {
+      if (typeof options == "string") options = {
+        url: options
+      }
+      options["method"] = "GET"
+      $task.fetch(options).then(response => {
+        callback(null, adapterStatus(response), response.body)
+      }, reason => callback(reason.error, null, null))
+    }
+    if (isSurge) $httpClient.get(options, (error, response, body) => {
+      callback(error, adapterStatus(response), body)
+    })
   }
   const post = (options, callback) => {
-      if (isQuanX) {
-          if (typeof options == "string") options = { url: options }
-          options["method"] = "POST"
-          $task.fetch(options).then(response => {
-              response["status"] = response.statusCode
-              callback(null, response, response.body)
-          }, reason => callback(reason.error, null, null))
+    if (isQuanX) {
+      if (typeof options == "string") options = {
+        url: options
       }
-      if (isSurge) $httpClient.post(options, callback)
+      options["method"] = "POST"
+      $task.fetch(options).then(response => {
+        callback(null, adapterStatus(response), response.body)
+      }, reason => callback(reason.error, null, null))
+    }
+    if (isSurge) {
+      $httpClient.post(options, (error, response, body) => {
+        callback(error, adapterStatus(response), body)
+      })
+    }
   }
-  const end = () => {
-      if (isQuanX) isRequest ? $done({}) : ""
-      if (isSurge) isRequest ? $done({}) : $done()
+  const done = (value = {}) => {
+    if (isQuanX) isRequest ? $done(value) : null
+    if (isSurge) isRequest ? $done(value) : $done()
   }
-  return { isRequest, isQuanX, isSurge, notify, write, read, post, end }
+  return {
+    isRequest,
+    notify,
+    write,
+    read,
+    get,
+    post,
+    done
+  }
 };
