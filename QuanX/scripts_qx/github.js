@@ -1,22 +1,3 @@
-/**
- * June 17, 2020
- * 1. Monitor the commits and release of github warehouse.
- * 2. Monitor whether specific files or directories are updated.
- * 3. New: Can monitor a file in a multi-layer directory
- * @author: Peng-YM, toulanboy
- * Update address: https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js
- * Configuration method:
- * 1. Fill in the github token and generate a new token in github> settings> developer settings> personal access token.
- * The default TOKEN is my own, please do not request too frequently, just once or twice a day. For example: cron "0 9 * * *"* 2. Configure the warehouse address in the following format:
- * {
- * name: "",//Fill in the warehouse name, can be customized
- * file_names: [], // optional parameters. If you need to monitor specific files or directories, please fill in the path (see the example below for details).
- * url: "" //The url of the warehouse
- *}
- * 📌 If you want to monitor the Commit of a certain branch, please switch to that branch and directly copy the URL to fill in;
- * 📌 If you want to monitor the Release, please switch to the Release interface, directly copy the URL and fill in;
- **/
-
 const token = "784a03feb07989d3339dfa41c7eb41777436cbfa";
 
 const repositories = [
