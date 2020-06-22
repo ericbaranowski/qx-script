@@ -1,4 +1,3 @@
-// Whether to open the output
 const verbose = true;
 const url = $request.url;
 let body = $response.body;
