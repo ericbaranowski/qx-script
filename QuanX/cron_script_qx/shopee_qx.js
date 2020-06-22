@@ -56,7 +56,7 @@ if ($request.headers['Cookie']) {
     if (!cookie){
       $nobyda.notify("Shopee Cookie lỗi‼️", "", "Đăng nhập lại")
     } else {
-      $nobyda.notify("Shopee  Cookie done 🎉", "", "")
+      $nobyda.notify("Shopee Cookie done 🎉", "", "")
     }
   } else {
     $nobyda.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại")
