@@ -192,7 +192,7 @@ async function checkUpdate(item) {
             "",
             `⏰ Submitted on: ${formatTime(
               published_at
-            )}\n👨🏻‍💻 Publisher: ${author}\n📌 Release Notes: \n${body}`,
+            )}\n👨🏻‍💻 Publisher: ${author}\n📌 Release Notes: \n\t${body}`,
             notificationURL
           );
           // update stored timestamp
