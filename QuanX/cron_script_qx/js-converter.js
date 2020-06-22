@@ -16,4 +16,5 @@ if (body.indexOf('$httpClient') !== -1 && body.indexOf('$task') !== -1){
       if (verbose) {
           console.log("Conversion succeeded!");
       }
+      $notify("Conversion succeeded!", "", "")
 }
