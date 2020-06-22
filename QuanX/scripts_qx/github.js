@@ -188,7 +188,7 @@ async function checkUpdate(item) {
       if (!item.hasOwnProperty("file_names")) {
         if (needUpdate(url, published_at)) {
           $.notify(
-            `🎈🎈🎈 [${name}] New submission`,
+            `🟢 [${name}] New submission`,
             "",
             `⏰ Submitted on: ${formatTime(
               published_at
