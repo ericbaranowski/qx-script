@@ -33,19 +33,19 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body alt
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body vsco.js
 
 #gyroscope
-^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body Gyroscope.vip.js
+^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body Gyroscope.js
 
 #Termius 
 ;^https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body Terminus.js
 
 #PicsArt
-^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body picsArt.vip.js
+^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body picsArt.js
 
 #Vivavideo
-^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* url script-response-body vivavideo.vip.js
+^https:\/\/viva-asia1\.vvbrd\.com\/api\/rest\/u\/vip* url script-response-body vivavideo.js
 
 #Undfold
-^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ url script-response-body Unfold.vip.js
+^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ url script-response-body Unfold.js
 
 #Nhaccuatui
 https://graph.nhaccuatui.com.+users.+info url script-response-body nhaccuatui.js
@@ -54,10 +54,10 @@ https://graph.nhaccuatui.com.+users.+info url script-response-body nhaccuatui.js
 https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 
 #Memrise
-^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) url script-response-body memrise.vip.js
+^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) url script-response-body memrise.js
 
 # Jibjab
-^https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user$ url script-response-body jibjab.vip.js
+^https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user$ url script-response-body jibjab.js
 
 #buyhack
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body verify_receipt.js
@@ -78,28 +78,28 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$ url script-response-body drops.js
 
 #mondly
-^https:\/\/api\.mondlylanguages\.com\/v1\/ios\/user\/sync$ url script-response-body mondly.vip.js
+^https:\/\/api\.mondlylanguages\.com\/v1\/ios\/user\/sync$ url script-response-body mondly.js
 
 #busuu
-^https:\/\/api\.busuu\.com\/users\/me* url script-response-body busuu.vip.js
+^https:\/\/api\.busuu\.com\/users\/me* url script-response-body busuu.js
 
 #Videoshow
-^https:\/\/owa\.videoshowiosglobalserver\.com\/.*\/iosPayClient url script-response-body videoshow.vip.js
+^https:\/\/owa\.videoshowiosglobalserver\.com\/.*\/iosPayClient url script-response-body videoshow.js
 
 #elevate
-^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token* url script-response-body elevate.vip.js
+^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token* url script-response-body elevate.js
 
 #beautyplus
 ^https:\/\/api-intl\.mr\.meitu\.com/.*/subs_offer_elg$ url script-response-body beautyplusvip.js
 
 #camera360
-^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) url script-response-body camera360.vip.js
+^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) url script-response-body camera360.js
 
 #zingtv
 ^https?:\/\/api\.tv\.zing\.vn\/.*/user* url script-response-body zingtvvipv1.js
 
 #calm
-^https:\/\/api\.calm\.com\/me$ url script-response-body calm.vip.js
+^https:\/\/api\.calm\.com\/me$ url script-response-body calm.js
 
 #remove_manage
 ^https:\/\/www\.calm\.com\/mobile\/manage-subscription\?token=*  url reject-img
@@ -108,7 +108,7 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body Lightroom.js
 
 #Pdfexpert
-^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body Pdfexpert.vip.js
+^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body Pdfexpert.js
 
 #productive
 ^https:\/\/subs\.platforms\.team\/.+\/apple\/verify$ url script-response-body productive.js
@@ -117,10 +117,10 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get url script-response-body musixmatch.miao.js
 
 #boom
-^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url 302 boom.vip.rsp
+^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url 302 boom.rsp
 
 #mimo
-^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body mimo.vip.js
+^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body mimo.js
 
 #mojo&noto
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) url script-response-body revenuecat.js
@@ -129,7 +129,7 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ url 302 Bright.rsp
 
 #lingokids
-^https:\/\/api\.lingokids\.com\/v1\/renovate_session$ url script-response-body lingokids.vip.js
+^https:\/\/api\.lingokids\.com\/v1\/renovate_session$ url script-response-body lingokids.js
 
 #musicalm
 ^https:\/\/www\.peacefulsoundsapp\.com\/api\/v1\/init$ url script-response-body musicalm.js
@@ -162,7 +162,7 @@ https://api.quizlet.com/.+/users/.+ url script-response-body quizlet.js
 ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body CamScaner.js
 
 #over
-^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) url script-response-body over.vip.js
+^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) url script-response-body over.js
 
 #speak&translate
 ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$ url script-response-body speak&translate.js
