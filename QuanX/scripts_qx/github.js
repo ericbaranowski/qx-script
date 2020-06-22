@@ -274,9 +274,17 @@ function findFile(name, tree_url, paths, current_pos) {
       console.log(error)
     })
 }
+
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
 function formatTime(timestamp) {
   const date = new Date(timestamp);
-  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
+  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${addZero(date.getHours())}:${addZero(date.getMinutes())}`;
 }
 
 Promise.all(
