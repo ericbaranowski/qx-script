@@ -2,25 +2,9 @@ const token = "784a03feb07989d3339dfa41c7eb41777436cbfa";
 
 const repositories = [
   {
-    name: "NZW9314 Script",
+    name: "nzw9314",
     url: "https://github.com/nzw9314/QuantumultX/tree/master",
   },
-  /*{
-    name: "ClashX",
-    url: "https://github.com/yichengchen/clashX/releases",
-  },
-  {
-    name: "Chavy Script",
-    url: "https://github.com/chavyleung/scripts",
-  },
-  {
-    name: "Qure Icon",
-    url: "https://github.com/Koolson/Qure",
-  },
-  {
-    name: "Orz-mini Icon",
-    url: "https://github.com/Orz-3/mini",
-  },*/
   {
     name: "langkhach270389 Script",
     /*file_names: ["wb_ad.js", "wb_launch.js"],*/
@@ -35,7 +19,6 @@ const repositories = [
     name: "phd051199",
     url: "https://github.com/phd051199/Scripts_LK",
   },
-
 ];
 
 const $ = API("github", false);
