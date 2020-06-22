@@ -1,5 +1,3 @@
-
-
 //Smart Qx&Surge 
 let isQuantumultX = $task !== undefined;
 let isSurge = $httpClient !== undefined;
@@ -16,7 +14,7 @@ if (isQuantumultX) {
     $httpClient = {
         get: (url, cb) => {
             var urlObj;
-            if (typeof (url) == 'string') {
+            if (typeof(url) == 'string') {
                 urlObj = {
                     url: url
                 }
@@ -32,7 +30,7 @@ if (isQuantumultX) {
         },
         post: (url, cb) => {
             var urlObj;
-            if (typeof (url) == 'string') {
+            if (typeof(url) == 'string') {
                 urlObj = {
                     url: url
                 }
@@ -101,7 +99,7 @@ if (isQuantumultX) {
     }
 }
 if (isSurge) {
-    $notify = function (title, subTitle, detail) {
+    $notify = function(title, subTitle, detail) {
         $notification.post(title, subTitle, detail);
     }
 }
@@ -117,27 +115,23 @@ cron "0 0 6-23/3 * * *" script-path=ncov.js
 
 MITM = code.junookyo.xyz
 */
-  var ncovUrl = {
+var ncovUrl = {
     url: 'https://code.junookyo.xyz/api/ncov-moh/data.json',
-  }
-$httpClient.get(ncovUrl, function(error, response, data){
-  if (error) {
-$notification.post("NCOV", "", "Bad connection")
-    $done(); 
-  } 
- else{
- if(response.statusCode == 200)
-{
-let obj= JSON.parse(data);
-if(obj["success"])
-{
-obj= obj["data"];
-$notification.post("Covid-19 ","","🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] +", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] +"\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] +", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
-    $done();
 }
-}
-else{
-$notification.post("NCOV", "", "API ERROR");
-}
-}
+$httpClient.get(ncovUrl, function(error, response, data) {
+    if (error) {
+        $notification.post("NCOV", "", "Bad connection")
+        $done();
+    } else {
+        if (response.statusCode == 200) {
+            let obj = JSON.parse(data);
+            if (obj["success"]) {
+                obj = obj["data"];
+                $notification.post("Covid-19 ", "", "🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] + ", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] + "\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] + ", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
+                $done();
+            }
+        } else {
+            $notification.post("NCOV", "", "API ERROR");
+        }
+    }
 });
