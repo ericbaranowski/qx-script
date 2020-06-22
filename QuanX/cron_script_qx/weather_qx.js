@@ -35,7 +35,7 @@ function weather(location)
         }
         else if (location==LongAn)
         {
-            $notify("Thủ Thừa - Long An" , icon + " " + Math.round(daily_mintemp) + "°C" + " - " + Math.round(daily_maxtemp) + "°C" + "  ☔️ " + (Number(daily_prec_chance) * 100).toFixed(1) + "%", hour_summary);
+            $notify("H.Thủ Thừa - T.Long An" , icon + " " + Math.round(daily_mintemp) + "°C" + " - " + Math.round(daily_maxtemp) + "°C" + "  ☔️ " + (Number(daily_prec_chance) * 100).toFixed(1) + "%", hour_summary);
         }
     }, reason => {
     $notify("Dark Sky", lat_lon + 'bad connection', reason.error);

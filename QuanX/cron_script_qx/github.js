@@ -43,11 +43,11 @@ const repositories = [
   {
     name: "langkhach270389 Script",
     /*file_names: ["wb_ad.js", "wb_launch.js"],*/
-    url: "https://github.com/langkhach270389/Scripting/tree/master",//Path template🌟
+    url: "https://github.com/langkhach270389/Scripting/tree/master",
   },
   {
     name: "Peng-YM Script",
-    /*file_names: ["JD-DailyBonus/JD_DailyBonus.js", "52pojie-DailyBonus"],//Path template🌟*/
+    //file_names: ["JD-DailyBonus/JD_DailyBonus.js", "52pojie-DailyBonus"],
     url: "https://github.com/Peng-YM/QuanX",
   },
   {
