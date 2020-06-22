@@ -16,5 +16,5 @@ if (body.indexOf('$httpClient') !== -1 && body.indexOf('$task') !== -1){
       if (verbose) {
           console.log("Conversion succeeded!");
       }
-      $notify("Conversion succeeded! 🎉", "🎈🎈🎈Conversion completed:", "Surge4 Script -> QuantumultX Script")
+      $notify("Conversion succeeded! 🎉", "", "Surge4 Script -> QuantumultX Script")
 }
