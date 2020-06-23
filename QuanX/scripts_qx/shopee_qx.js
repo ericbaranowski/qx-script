@@ -55,7 +55,7 @@ function GetCookie() {
             $nobyda.done();
         } else {
             $nobyda.notify("Shopee Cookie done 🎉", "", "");
-            $nobyda.done();
+            break;
         }
     } else {
         $nobyda.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại");
