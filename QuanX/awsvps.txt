@@ -1,0 +1,1 @@
+shadowsocks=54.255.173.25:10084, method=aes-256-cfb, password=notsahre, fast-open=false, udp-relay=false, tag=VPS-1
