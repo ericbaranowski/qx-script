@@ -28,9 +28,10 @@ function weather(location) {
         var daily_prec_chance = obj.daily.data[0].precipProbability;
         var daily_maxtemp = obj.daily.data[0].temperatureMax;
         var daily_mintemp = obj.daily.data[0].temperatureMin;
+        var today = new Date();
         if (location == HoChiMinh) {
             $notify("Quận 8 - Hồ Chí Minh", icon + " " + Math.round(daily_mintemp) + "°C" + " - " + Math.round(daily_maxtemp) + "°C" + "  ☔️ " + (Number(daily_prec_chance) * 100).toFixed(1) + "%", hour_summary);
-        } else if (location == LongAn) {
+        } else if ((today.getDay() == 6 || today.getDay() == 0) && location == LongAn) {
             $notify("H.Thủ Thừa - T.Long An", icon + " " + Math.round(daily_mintemp) + "°C" + " - " + Math.round(daily_maxtemp) + "°C" + "  ☔️ " + (Number(daily_prec_chance) * 100).toFixed(1) + "%", hour_summary);
         }
     }, reason => {
