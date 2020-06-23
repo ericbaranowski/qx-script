@@ -40,6 +40,7 @@ function checkin() {
                 }
             } else {
                 $nobyda.notify("Shopee Cookie đã hết hạn‼️", "", "Hãy đăng nhập lại 🔓");
+                $nobyda.done();
             }
         }
     });
@@ -50,12 +51,15 @@ function GetCookie() {
         var headerSP = $request.headers['Cookie'];
         var cookie = $nobyda.write(headerSP, "CookieSP");
         if (!cookie) {
-            $nobyda.notify("Shopee Cookie lỗi‼️", "", "Đăng nhập lại")
+            $nobyda.notify("Shopee Cookie lỗi‼️", "", "Đăng nhập lại");
+            $nobyda.done();
         } else {
-            $nobyda.notify("Shopee Cookie done 🎉", "", "")
+            $nobyda.notify("Shopee Cookie done 🎉", "", "");
+            $nobyda.done();
         }
     } else {
-        $nobyda.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại")
+        $nobyda.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại");
+        $nobyda.done();
     }
     $nobyda.done();
 }
