@@ -4,7 +4,7 @@ hostname = mesu.apple.com, api.quizlet.com, api.textnow.me, testapps.videostarap
 ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body js-converter.js
 
 #shopee cookies
-^https:\/\/shopee\.vn\/me\/setting url script-request-header shopee_qx.js
+https://shopee.vn.+me.+setting.+classic url script-request-header shopee_qx.js
 
 #Douyin nowatermark (By Choler)
 ^https?+:\/\/[\w-]++\.amemv\.com\/aweme\/v\d\/feed\/ url request-header ^GET \/aweme\/v\d\/feed\/(.+)(\r\n)Host:.+ request-header GET /aweme/v1/feed/$1$2Host: aweme.snssdk.com
