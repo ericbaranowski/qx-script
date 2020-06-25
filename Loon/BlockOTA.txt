@@ -1,0 +1,5 @@
+DOMAIN,gdmf.apple.com
+DOMAIN,gdmf.apple.com.akadns.net
+DOMAIN,appldnld.apple.com
+DOMAIN,appldnld.apple.com.akadns.net
+DOMAIN,ocsp.apple.com
