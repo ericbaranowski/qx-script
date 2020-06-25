@@ -6,10 +6,10 @@ host = 127.0.0.1
 [Proxy]
 
 [Remote Proxy]
-VPS-1 = https://www.dropbox.com/s/me98u3mp5661zil/servercuaduy.txt?dl=1
+VPS = https://www.dropbox.com/s/me98u3mp5661zil/servercuaduy.txt?dl=1
 
 [Proxy Group]
-🔰 PROXY = select, 🔴 TẮT, VPS-1
+🔰 PROXY = select, 🔴 TẮT, VPS
 🍎 Block OTA = select, 🟢 BẬT, 🔴 TẮT
 🚫 Block Ads = select, 🟢 BẬT, 🔴 TẮT
 Speedtest = select, 🔴 TẮT, 🔰 PROXY
