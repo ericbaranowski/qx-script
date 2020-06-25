@@ -9,14 +9,16 @@ host = 127.0.0.1
 VPS = https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Loon/myvps.txt
 
 [Proxy Group]
-PROXY = select, 🔴 TẮT, VPS
+Proxy = select, 🔴 TẮT, Auto, Manual
+Auto = url-test, VPS, url=http://www.google.com/generate_204, interval=600
+Manual = select, VPS
 Block OTA = select, 🟢 BẬT, 🔴 TẮT
 Block Ads = select, 🟢 BẬT, 🔴 TẮT
-Speedtest = select, 🔴 TẮT, PROXY
-GoogleDrive = select, 🔴 TẮT, PROXY
-PornHub = select, 🔴 TẮT, PROXY
-Facebook = select, 🔴 TẮT, PROXY
-Youtube = select, 🔴 TẮT, PROXY
+Speedtest = select, 🔴 TẮT, Proxy
+Google Drive = select, 🔴 TẮT, Proxy
+Pornhub = select, 🔴 TẮT, Proxy
+Facebook = select, 🔴 TẮT, Proxy
+Youtube = select, 🔴 TẮT, Proxy
 
 🔴 TẮT = select, DIRECT
 🟢 BẬT = select, REJECT
@@ -30,7 +32,7 @@ FINAL, DIRECT
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf, policy = Block Ads, enabled=true
 https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Loon/BlockOTA.txt, policy = Block OTA, enabled=true
 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/Speedtest.list, policy = Speedtest, enabled=true
-https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/GoogleDrive.list, policy = GoogleDrive, enabled=true
+https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/GoogleDrive.list, policy = Google Drive, enabled=true
 https://raw.githubusercontent.com/maicoo-l/Surge/master/rules/media/Pornhub.list, policy = Pornhub, enabled=true
 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/Youtube.list, policy = Youtube, enabled=true
 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/rules/Facebook.list, policy = Facebook, enabled=true
