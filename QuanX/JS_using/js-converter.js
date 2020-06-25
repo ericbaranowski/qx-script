@@ -14,6 +14,6 @@ if (body.indexOf('$httpClient') !== -1 && body.indexOf('$task') !== -1) {
     const converted = body.replace(pattern, header);
 
     $done({ body: converted });
-    $notify("Conversion succeeded! 🎉", "Auto : Surge/Loon to Quantumult X", url)
+    $notify("Script conversion successful! 🎉", "♻ Auto mode : Surge/Loon to Quantumult X", url)
 
 }
