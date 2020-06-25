@@ -1,9 +1,9 @@
 const token = "784a03feb07989d3339dfa41c7eb41777436cbfa";
 
 const repositories = [{
-        name: "nzw9314",
-        url: "https://github.com/nzw9314/QuantumultX/tree/master",
-    },
+    name: "nzw9314",
+    url: "https://github.com/nzw9314/QuantumultX/tree/master",
+},
     {
         name: "langkhach270389 Script",
         /*file_names: ["wb_ad.js", "wb_launch.js"],*/
@@ -51,7 +51,7 @@ function parserPath(path) {
     if (path.match(/\//) == undefined) {
         result = []
         result.push(path)
-            // console.log(result)
+        // console.log(result)
         return result
     }
     return path.split('/')
@@ -99,9 +99,9 @@ async function checkUpdate(item) {
         const repository = parseURL(url);
         if (repository.type === "releases") {
             await $.get({
-                    url: `${baseURL}/repos/${repository.owner}/${repository.repo}/releases`,
-                    headers,
-                })
+                url: `${baseURL}/repos/${repository.owner}/${repository.repo}/releases`,
+                headers,
+            })
                 .then((response) => {
                     const releases = JSON.parse(response.body);
                     if (releases.length > 0) {
@@ -131,8 +131,8 @@ async function checkUpdate(item) {
                 });
         } else {
             const { author, body, published_at, file_url } = await $.get({
-                    url: `${baseURL}/repos/${repository.owner}/${repository.repo}/commits/${repository.branch}`,
-                    headers,
+                url: `${baseURL}/repos/${repository.owner}/${repository.repo}/commits/${repository.branch}`,
+                headers,
                 })
                 .then((response) => {
                     const { commit } = JSON.parse(response.body);
@@ -141,16 +141,16 @@ async function checkUpdate(item) {
                     const published_at = commit.committer.date;
                     const file_url = commit.tree.url;
                     return { author, body, published_at, file_url };
-                })
+                    })
                 .catch((e) => {
                     $.error(e);
                 });
             $.log({ author, body, published_at, file_url });
             const notificationURL = {
-                    "open-url": `https://github.com/${repository.owner}/${repository.repo}/commits/${repository.branch}`,
-                    "media-url": `https://raw.githubusercontent.com/Orz-3/task/master/github.png`
-                }
-                //Monitor the warehouse for updates
+                "open-url": `https://github.com/${repository.owner}/${repository.repo}/commits/${repository.branch}`,
+                "media-url": `https://raw.githubusercontent.com/Orz-3/task/master/github.png`
+            }
+            //Monitor the warehouse for updates
             if (!item.hasOwnProperty("file_names")) {
                 if (needUpdate(url, published_at)) {
                     $.notify(
@@ -165,7 +165,7 @@ async function checkUpdate(item) {
                     $.write(published_at, hash(url));
                 }
             }
-            //Find out if specific files are updated
+                //Find out if specific files are updated
             else {
                 const file_names = item.file_names;
                 for (let i in file_names) {
@@ -191,7 +191,7 @@ function findFile(name, tree_url, paths, current_pos) {
     $.get({
         url: tree_url,
         headers
-    }).then((response) => {
+        }).then((response) => {
             const file_detail = JSON.parse(response.body);
             // console.log(file_detail)
             const file_list = file_detail.tree;
@@ -284,4 +284,4 @@ function API(t = "untitled", s = !1) {
         done(t = {}) { this.isQX || this.isLoon || this.isSurge ? $done(t) : this.isNode && !this.isJSBox && "undefined" != typeof $context && ($context.headers = t.headers, $context.statusCode = t.statusCode, $context.body = t.body) }
     }(t, s)
 }
-/*****************************************************************************/
+    /*****************************************************************************/

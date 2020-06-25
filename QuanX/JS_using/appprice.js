@@ -14,7 +14,7 @@ if (isQuantumultX) {
     $httpClient = {
         get: (url, cb) => {
             var urlObj;
-            if (typeof(url) == 'string') {
+            if (typeof (url) == 'string') {
                 urlObj = {
                     url: url
                 }
@@ -30,7 +30,7 @@ if (isQuantumultX) {
         },
         post: (url, cb) => {
             var urlObj;
-            if (typeof(url) == 'string') {
+            if (typeof (url) == 'string') {
                 urlObj = {
                     url: url
                 }
@@ -99,7 +99,7 @@ if (isQuantumultX) {
     }
 }
 if (isSurge) {
-    $notify = function(title, subTitle, detail) {
+    $notify = function (title, subTitle, detail) {
         $notification.post(title, subTitle, detail);
     }
 }
@@ -117,7 +117,7 @@ if (!cacheData) {
     cacheData = JSON.parse(cacheData)
 }
 
-$httpClient.post('https://itunes.apple.com/lookup?id=' + appIds + "&country=" + region, function(error, response, data) {
+$httpClient.post('https://itunes.apple.com/lookup?id=' + appIds + "&country=" + region, function (error, response, data) {
     if (error) {
         console.log(error);
         $notification.post("App Pricer", "bad connection")

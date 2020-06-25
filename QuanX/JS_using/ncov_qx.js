@@ -14,7 +14,7 @@ if (isQuantumultX) {
     $httpClient = {
         get: (url, cb) => {
             var urlObj;
-            if (typeof(url) == 'string') {
+            if (typeof (url) == 'string') {
                 urlObj = {
                     url: url
                 }
@@ -30,7 +30,7 @@ if (isQuantumultX) {
         },
         post: (url, cb) => {
             var urlObj;
-            if (typeof(url) == 'string') {
+            if (typeof (url) == 'string') {
                 urlObj = {
                     url: url
                 }
@@ -99,7 +99,7 @@ if (isQuantumultX) {
     }
 }
 if (isSurge) {
-    $notify = function(title, subTitle, detail) {
+    $notify = function (title, subTitle, detail) {
         $notification.post(title, subTitle, detail);
     }
 }
@@ -118,7 +118,7 @@ MITM = code.junookyo.xyz
 var ncovUrl = {
     url: 'https://code.junookyo.xyz/api/ncov-moh/data.json',
 }
-$httpClient.get(ncovUrl, function(error, response, data) {
+$httpClient.get(ncovUrl, function (error, response, data) {
     if (error) {
         $notification.post("NCOV", "", "Bad connection")
         $done();

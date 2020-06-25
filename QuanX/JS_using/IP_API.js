@@ -15,7 +15,7 @@ function City_ValidCheck(para) {
         return para
     } else {
         return city0
-            //emojis[getRandomInt(emojis.length)]
+        //emojis[getRandomInt(emojis.length)]
     }
 }
 
@@ -24,7 +24,7 @@ function ISP_ValidCheck(para) {
         return para
     } else {
         return isp0
-            //emojis[getRandomInt(emojis.length)]
+        //emojis[getRandomInt(emojis.length)]
     }
 }
 
