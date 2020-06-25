@@ -3,7 +3,7 @@ cron "0 5 * * *" script-path=https://raw.githubusercontent.com/langkhach270389/S
 cron "0 0 6-23/5 * * *" script-path= https://github.com/langkhach270389/Scripting/raw/master/Surge/ncov.js
 cron "0 0 6-23/1 * * *" script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/QuanX/JS_using/github.js
 
-http-response ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/QuanX/JS_using/js-converter.js, script-update-interval=0, tag=override.js
+http-response ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ script-path=https://raw.githubusercontent.com/Peng-YM/ScriptConverter/master/js-converter.js, requires-body = true, tag=githuboverride.js
 
 http-response ^https:\/\/api\.quizlet\.com\/.*\/users\/.* script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/quizlet.js, requires-body=true, timeout=10, tag=quizlet.js
 
