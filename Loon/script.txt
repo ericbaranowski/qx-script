@@ -93,7 +93,7 @@ http-response ^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-
 
 http-response ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/elsa-response.js, requires-body=true, timeout=10, tag=elsa-response.js
 
-http-response ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases) script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/syn_me.js, requires-body=true, timeout=10, tag=syn.me.js
+http-response ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases) script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/syn.me.js, requires-body=true, timeout=10, tag=syn.me.js
 
 http-response ^https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user$ script-path=https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Scripts/jibjab.js, requires-body=true, timeout=10, tag=jibjab.js
 
