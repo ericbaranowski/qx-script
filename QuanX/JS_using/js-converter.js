@@ -14,6 +14,6 @@ if (body.indexOf('$httpClient') !== -1 && body.indexOf('$task') !== -1) {
     const converted = body.replace(pattern, header);
 
     $done({ body: converted });
-    $notify("Conversion succeeded! 🎉", "🟢 Auto: Surge 4 <~> Quantumult X", url)
-
+    $notify("Conversion succeeded! 🎉", "🟢 Auto: Surge 4 <~> Quantumult X", url);
+$notification.post("Conversion succeeded! 🎉", "🟢 Auto: Surge 4 <~> Quantumult X", url)
 }
