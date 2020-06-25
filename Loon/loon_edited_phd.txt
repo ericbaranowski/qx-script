@@ -9,19 +9,19 @@ host = 127.0.0.1
 VPS = https://raw.githubusercontent.com/phd051199/Scripts_LK/master/Loon/myvps.txt
 
 [Proxy Group]
-Proxy = select, 🔴 TẮT, Auto, Manual
+Proxy = select, 🔴 OFF, Auto, Manual
 Auto = url-test, VPS, url=http://www.google.com/generate_204, interval=600
 Manual = select, VPS
-Block OTA = select, 🟢 BẬT, 🔴 TẮT
-Block Ads = select, 🟢 BẬT, 🔴 TẮT
-Speedtest = select, 🔴 TẮT, Proxy
-Google Drive = select, 🔴 TẮT, Proxy
-Pornhub = select, 🔴 TẮT, Proxy
-Facebook = select, 🔴 TẮT, Proxy
-Youtube = select, 🔴 TẮT, Proxy
+Block OTA = select, 🟢 ON, 🔴 OFF
+Block Ads = select, 🟢 ON, 🔴 OFF
+Speedtest = select, 🔴 OFF, Proxy
+Google Drive = select, 🔴 OFF, Proxy
+Pornhub = select, 🔴 OFF, Proxy
+Facebook = select, 🔴 OFF, Proxy
+Youtube = select, 🔴 OFF, Proxy
 
-🔴 TẮT = select, DIRECT
-🟢 BẬT = select, REJECT
+🔴 OFF = select, DIRECT
+🟢 ON = select, REJECT
 
 [Remote Filter]
 
