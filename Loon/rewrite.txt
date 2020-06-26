@@ -2,10 +2,10 @@
 
 ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ https://raw.githubusercontent.com/langkhach270389/Scripting/master/boom.vip.rsp 302
 
-^(.video_id=\w{32})(.watermark=)(.*) $1 302
-# (?<=_region=)VN(?=&) JP 307
-^(?<=&app_version=)16..(?=.?.?&) $1 307
-^(?<=?version_code=)16..(?=.?.?&) $1 307
+#(?<=_region=)CN(?=&) JP 307
+(?<=&app_version=)16..(?=.?.?&) 1 307
+(?<=\?version_code=)16..(?=.?.?&) 1 307
+
 
 (assets)\/(iOS.+DeveloperSeed)\/(com_apple_MobileAsset_SoftwareUpdate.+) $1\/tvOS13DeveloperSeed\/$3 302
 (assets)\/(com_apple_MobileAsset_SoftwareUpdate.+) $1\/tvOS13DeveloperSeed\/$2 302
