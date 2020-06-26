@@ -14,9 +14,9 @@ https://graph.nhaccuatui.com.+users.+info url script-response-body nhaccuatui.js
 # > Lightroom
 ;^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body Lightroom.js
 # > Zingmp3
-^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo\?data=* url script-response-body zingmp3.js
-^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getDownloadSongInfo\?data url script-response-body zingmp3.downloadsong.js
-^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getSongInfo\?data url script-response-body zingmp3.getsong.js
+;^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo\?data=* url script-response-body zingmp3.js
+;^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getDownloadSongInfo\?data url script-response-body zingmp3.downloadsong.js
+;^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getSongInfo\?data url script-response-body zingmp3.getsong.js
 # > Documents
 ;^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body documents.js
 # > Photoshop & PSexpress
