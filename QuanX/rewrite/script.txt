@@ -18,6 +18,6 @@ https://graph.nhaccuatui.com.+users.+info url script-response-body nhaccuatui.js
 ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getDownloadSongInfo\?data url script-response-body zingmp3.downloadsong.js
 ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getSongInfo\?data url script-response-body zingmp3.getsong.js
 # > Documents
-^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body documents.js
+;^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body documents.js
 # > Photoshop & PSexpress
 ;^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile url script-response-body photoshop.js
