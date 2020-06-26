@@ -4,8 +4,8 @@
 
 ^(.video_id=\w{32})(.watermark=)(.*) $1 302
 # (?<=_region=)VN(?=&) JP 307
-^(?<=&app_version=)16..(?=.?.?&) 1 307
-^(?<=?version_code=)16..(?=.?.?&) 1 307
+^(?<=&app_version=)16..(?=.?.?&) $1 307
+^(?<=?version_code=)16..(?=.?.?&) $1 307
 
 (assets)\/(iOS.+DeveloperSeed)\/(com_apple_MobileAsset_SoftwareUpdate.+) $1\/tvOS13DeveloperSeed\/$3 302
 (assets)\/(com_apple_MobileAsset_SoftwareUpdate.+) $1\/tvOS13DeveloperSeed\/$2 302
