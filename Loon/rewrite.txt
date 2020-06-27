@@ -17,54 +17,54 @@
 (assets)\/(iOS.+DeveloperSeed)\/(com_apple_MobileAsset_SoftwareUpdate.+) $1\/tvOS13DeveloperSeed\/$3 302
 (assets)\/(com_apple_MobileAsset_SoftwareUpdate.+) $1\/tvOS13DeveloperSeed\/$2 302
 
-^https?:\/\/(\w+\.)?(adclick|ads([0-9]+)?|adserver|adformat|analysis|banners?|click|counter|log|log-?\w+?|pagead|stat|stats|statis|trace|track|tracking|uniad)\.\w+\.(com|cn|org|info|io|net|vn|com.vn) reject-img
+^https?:\/\/(\w+\.)?(adclick|ads([0-9]+)?|adserver|adformat|analysis|banners?|click|counter|log|log-?\w+?|pagead|stat|stats|statis|trace|track|tracking|uniad)\.\w+\.(com|cn|org|info|io|net|vn|com.vn) _ reject-img
 
-^https?://graph.facebook.com/.+activities reject-img
-^https?://graph.facebook.com/.+advertiser_id=* reject-img
-^https?://graph.facebook.com/.+events reject-img
-^https?://graph.facebook.com/network_ads_common/* reject-img
-^https?://www.facebook.com/adnw_logging/* reject-img
-^https?://www.facebook.com/adnw_sync/* reject-img
-^https?://www.facebook.com/tr reject-img
-^https?://graph.nhaccuatui.com/.+advs reject-img
-^https?://graph.nhaccuatui.com/.+logs reject-img
-^https?://graph.nhaccuatui.com/.+deviceinfo reject-img
-^https?://spclient.wg.spotify.com/ad-logic/* reject-img
-^https?://spclient.wg.spotify.com/ads/* reject-img
-^https?://spclient.wg.spotify.com/.+ad_slot reject-img
-^https?://spclient.wg.spotify.com/.+banners reject-img
-^https?://spclient.wg.spotify.com/.+canvases reject-img
-^https?://spclient.wg.spotify.com/.+cards reject-img
-^https?://spclient.wg.spotify.com/.+crashlytics reject-img
-^https?://spclient.wg.spotify.com/.+doubleclick reject-img
-^https?://spclient.wg.spotify.com/.+enabled-tracks reject-img
-^https?://spclient.wg.spotify.com/.+event reject-img
-^https?://spclient.wg.spotify.com/.+promoted_offer reject-img
-^https?://spclient.wg.spotify.com/.+sponsored reject-img
-^https?:\/\/.+\.googlevideo\.com\/.+ctier reject-img
-^https?:\/\/.+\.googlevideo\.com\/.+oad= reject-img
-^https?:\/\/.+\.googlevideo\.com\/ptracking reject-img
-^https?:\/\/.+\.googlevideo\.com\/videogoodput reject-img
-^https?:\/\/.+\.youtube\.com\/.+adformat reject-img
-^https?:\/\/.+\.youtube\.com\/.+get_ads reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/ads reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/qoe reject-img
-^https?:\/\/.+\.youtube\.com\/csi_204 reject-img
-^https?:\/\/.+\.youtube\.com\/error_204 reject-img
-^https?:\/\/.+\.youtube\.com\/get_midroll reject-img
-^https?:\/\/.+\.youtube\.com\/pagead reject-img
-^https?:\/\/.+\.youtube\.com\/ptracking reject-img
-^https?:\/\/.+\.googleapis.com/.+ad_break reject-img
-^https?:\/\/.+\.googleapis.com/adsmeasurement reject-img
-^https?:\/\/.+\.tiktokv\.com\/api\/ad\/ reject-img
-^https?:\/\/.+\.tiktokv\.com\/.+stats\/ reject-img
-^https?:\/\/.+\.musical\.ly\/api\/ad\/ reject-img
-^https?:\/\/.+\.musical\.ly\/.+stats\/ reject-img
-^https?:\/\/.+\.snssdk\.com\/api\/ad\/ reject-img
-^https?:\/\/.+\.snssdk\.com\/monitor\/ reject-img
-^https?:\/\/.+\.snssdk\.com\/.+app_log\/ reject-img
-^https?:\/\/.+\.snssdk\.com\/.+promotion\/ reject-img
-^https?:\/\/.+\.snssdk\.com\/.+stats\/ reject-img
-^https?://qos-zdn.zaloapp.com/.+trackqos reject-img
-^https?://centralized.zaloapp.com/.+tracking reject-img
-^https?://oa.zalo.me/.+campaign=zalo reject-img
+^https?://graph.facebook.com/.+activities _ reject-img
+^https?://graph.facebook.com/.+advertiser_id=* _ reject-img
+^https?://graph.facebook.com/.+events _ reject-img
+^https?://graph.facebook.com/network_ads_common/* _ reject-img
+^https?://www.facebook.com/adnw_logging/* _ reject-img
+^https?://www.facebook.com/adnw_sync/* _ reject-img
+^https?://www.facebook.com/tr _ reject-img
+^https?://graph.nhaccuatui.com/.+advs _ reject-img
+^https?://graph.nhaccuatui.com/.+logs _ reject-img
+^https?://graph.nhaccuatui.com/.+deviceinfo _ reject-img
+^https?://spclient.wg.spotify.com/ad-logic/* _ reject-img
+^https?://spclient.wg.spotify.com/ads/* _ reject-img
+^https?://spclient.wg.spotify.com/.+ad_slot _ reject-img
+^https?://spclient.wg.spotify.com/.+banners _ reject-img
+^https?://spclient.wg.spotify.com/.+canvases _ reject-img
+^https?://spclient.wg.spotify.com/.+cards _ reject-img
+^https?://spclient.wg.spotify.com/.+crashlytics _ reject-img
+^https?://spclient.wg.spotify.com/.+doubleclick _ reject-img
+^https?://spclient.wg.spotify.com/.+enabled-tracks _ reject-img
+^https?://spclient.wg.spotify.com/.+event _ reject-img
+^https?://spclient.wg.spotify.com/.+promoted_offer _ reject-img
+^https?://spclient.wg.spotify.com/.+sponsored _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+ctier _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+oad= _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/ptracking _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/videogoodput _ reject-img
+^https?:\/\/.+\.youtube\.com\/.+adformat _ reject-img
+^https?:\/\/.+\.youtube\.com\/.+get_ads _ reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads _ reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/qoe _ reject-img
+^https?:\/\/.+\.youtube\.com\/csi_204 _ reject-img
+^https?:\/\/.+\.youtube\.com\/error_204 _ reject-img
+^https?:\/\/.+\.youtube\.com\/get_midroll _ reject-img
+^https?:\/\/.+\.youtube\.com\/pagead _ reject-img
+^https?:\/\/.+\.youtube\.com\/ptracking _ reject-img
+^https?:\/\/.+\.googleapis.com/.+ad_break _ reject-img
+^https?:\/\/.+\.googleapis.com/adsmeasurement _ reject-img
+^https?:\/\/.+\.tiktokv\.com\/api\/ad\/ _ reject-img
+^https?:\/\/.+\.tiktokv\.com\/.+stats\/ _ reject-img
+^https?:\/\/.+\.musical\.ly\/api\/ad\/ _ reject-img
+^https?:\/\/.+\.musical\.ly\/.+stats\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/api\/ad\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/monitor\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/.+app_log\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/.+promotion\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/.+stats\/ _ reject-img
+^https?://qos-zdn.zaloapp.com/.+trackqos _ reject-img
+^https?://centralized.zaloapp.com/.+tracking _ reject-img
+^https?://oa.zalo.me/.+campaign=zalo _ reject-img
