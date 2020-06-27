@@ -20,7 +20,6 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     // response.statusCode, response.headers, response.body
     console.log(response.body);
-    $notify("Filter VIP", "", response.body); // Success!
 }, reason => {
     // reason.error
     $notify("Title", "Subtitle", reason.error); // Error!
