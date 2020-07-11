@@ -18,7 +18,8 @@ var obj = $request.body;
 
 const api= "unlimapps";
 const buy= "buyProduct";
-
+$notification.post('Old_iPA_Dowloader', 'iTunes PC search app and click Get', 'By @Lãng Khách');
+/*
 if(url.indexOf(api) != -1){
 var appidget = url.match(/\d{6,}$/);
 console.log("🟢\n appid: " + appidget);
