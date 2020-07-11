@@ -3,7 +3,7 @@ Old_iPA_Downloader by LangKhach
 */
 
 var url = $request.url;
-var obj = $request.body;
+var obj = $response.body;
 
 const api= "unlimapps";
 const buy= "buyProduct";
