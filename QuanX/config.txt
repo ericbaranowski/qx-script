@@ -70,12 +70,6 @@ final,direct
 [rewrite_local]
 
 [task_local]
-0 * * * * https://www.dropbox.com/s/gcs3jnigsp55jz2/filtervip.js?dl=1,tag=filtervip.js,enabled=false
-
-0 * * * * https://www.dropbox.com/s/qhsw41enxib7jjr/servervip.js?dl=1,tag=serverVip.js,enabled=false
-
-0 * * * * https://www.dropbox.com/s/lrgt35qqdrujwp0/serverfree.js?dl=1,tag=serverFree.js,enabled=false
-
 0 * * * * https://www.dropbox.com/s/ag0ycqjfufeo72r/tygia.js?dl=1,tag=tygia.js,enabled=false
 
 0 6 * * * https://www.dropbox.com/s/82w0cefq3hsgg9f/giaxang.js?dl=1,tag=giaxang.js,enabled=true
