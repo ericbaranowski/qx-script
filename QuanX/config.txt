@@ -34,9 +34,9 @@ static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubuserco
 static=Proxy server,TẮT,Amazon Web Services,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_remote]
-https://www.dropbox.com/s/xvl0i0fhw07mol1/aws.txt?dl=1,tag=Amazon Web Services,enabled=true
+https://www.dropbox.com/s/24f5kpemegceb9h/notshare.txt?dl=1,tag=Amazon Web Services,enabled=true
 
-https://www.dropbox.com/s/feypzwferqklw11/iap-server.txt?dl=1,tag=Fake iAP Server,enabled=true
+https://www.dropbox.com/s/24f5kpemegceb9h/notshare.txt?dl=1,tag=Fake iAP Server,enabled=true
 
 [filter_remote]
 https://www.dropbox.com/s/asom1fd8hf7gx54/iap-filter.txt?dl=1,tag=Fake iAP Filter,enabled=true
