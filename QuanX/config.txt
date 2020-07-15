@@ -70,7 +70,7 @@ final,direct
 [rewrite_local]
 
 [task_local]
-0 * * * * https://www.dropbox.com/s/ag0ycqjfufeo72r/tygia.js?dl=1,tag=tygia.js,enabled=false
+0 * * * * https://www.dropbox.com/s/ag0ycqjfufeo72r/tygia.js?dl=1,tag=tygia.js,enabled=true
 
 0 6 * * * https://www.dropbox.com/s/82w0cefq3hsgg9f/giaxang.js?dl=1,tag=giaxang.js,enabled=true
 
