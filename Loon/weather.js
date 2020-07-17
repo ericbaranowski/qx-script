@@ -2,13 +2,10 @@ const lang = "en"
 var HoChiMinh = "10.7457999,106.6855690"
 var LongAn = "10.6466139,106.3019494"
 var api = "d61d56e7025c803083cb4e4d4513d1a3"
-async function launch() {
-    await weather(HoChiMinh);
-    await weather(LongAn);
-    $done();
-}
 
-launch()
+weather(HoChiMinh);
+weather(LongAn);
+
 
 function weather(location) {
     let info = {
