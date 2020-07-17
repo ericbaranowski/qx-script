@@ -19,7 +19,7 @@ function weather() {
             $notification.post("Dark Sky", lat_lon + 'bad connection', error);
         } else {
             var obj = JSON.parse(data);
-            console.log(obj);
+           // console.log(obj);
             var hour_summary = obj.hourly.summary;
             var icon_text = obj.hourly.icon;
             var icon = "❓"
