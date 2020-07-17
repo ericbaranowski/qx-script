@@ -1,14 +1,18 @@
-const lang = "vi"
+const lang = "en"
 var HoChiMinh = "10.7457999,106.6855690"
 var LongAn = "10.6466139,106.3019494"
 var api = "d61d56e7025c803083cb4e4d4513d1a3"
+async function launch() {
+    await weather(HoChiMinh);
+    await weather(LongAn);
+    $done();
+}
 
-weather(HoChiMinh);
-weather(LongAn);
+launch()
 
 function weather(location) {
     let info = {
-        url: "https://api.darksky.net/forecast/" + api + "/" + lat_lon + "?lang=" + lang + "&units=si&exclude=currently,minutely",
+        url: "https://api.darksky.net/forecast/" + api + "/" + lat_lon + "?lang=" + lang + "&units=si&exclude=currently,minutely",  //?lang=en&units=si
         headers: {},
     }
     $httpClient.get(info, async function (error, response, data) {
