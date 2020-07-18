@@ -1,3 +1,0 @@
-VPS-1 = Shadowsocks,49.213.16.121,8386,aes-256-cfb,"tcpvpnSG@$#%"
-VPS-2 = Shadowsocks,103.11.67.138,8385,aes-256-cfb,"tcpvpnUSA$$#@"
-VPS-3 = Shadowsocks,103.126.136.35,8383,aes-256-cfb,"tcpvpnJP&%#$"
