@@ -281,29 +281,29 @@ function dailyForcast() {}
 
 function mapAlertCode(code) {
   const names = {
-    "01": "🌪 台风",
-    "02": "⛈ 暴雨",
-    "03": "❄️ 暴雪",
-    "04": "❄ 寒潮",
-    "05": "💨 大风",
-    "06": "💨 沙尘暴",
-    "07": "☄️ 高温",
-    "08": "☄️ 干旱",
-    "09": "⚡️ 雷电",
+    "01": "🌪 Bão nhiệt đới",
+    "02": "⛈ Mưa bão",
+    "03": "❄️ Bão tuyết",
+    "04": "❄ Sóng lạnh",
+    "05": "💨 Có lốc",
+    "06": "💨 Bão cát",
+    "07": "☄️ Nhiệt độ cao",
+    "08": "☄️ Hạn hán",
+    "09": "⚡️ Sấm sét",
     "10": "💥 冰雹",
-    "11": "❄️ 霜冻",
-    "12": "💨 大雾",
-    "13": "💨 霾",
-    "14": "❄️ 道路结冰",
-    "15": "🔥 森林火灾",
-    "16": "⛈ 雷雨大风",
+    "11": "❄️ Sương giá",
+    "12": "💨 Sương mù dày đặc",
+    "13": "💨 Sương mù",
+    "14": "❄️ Đường băng giá",
+    "15": "🔥 Cháy rừng",
+    "16": "⛈ Sấm sét và gió bão",
   };
 
   const intensity = {
-    "01": "蓝色",
-    "02": "黄色",
-    "03": "橙色",
-    "04": "红色",
+    "01": "màu xanh da trời",
+    "02": "màu xanh da trời",
+    "03": "màu xanh da trời",
+    "04": "màu xanh da trời",
   };
 
   const res = code.match(/(\d{2})(\d{2})/);
@@ -313,27 +313,27 @@ function mapAlertCode(code) {
 function mapWind(speed, direction) {
   let description = "";
   if (speed < 1) {
-    description = "无风";
+    description = "Không có gió";
   } else if (speed <= 5) {
-    description = "1级 清风徐徐";
+    description = "Cấp 1 gió nhẹ";
   } else if (speed <= 11) {
-    description = "2级 清风";
+    description = "Gió cấp 2";
   } else if (speed <= 19) {
-    description = "3级 树叶摇摆";
+    description = "Gió cấp 3";
   } else if (speed <= 28) {
-    description = "4级 树枝摇动";
+    description = "Cấp 4 rung lắc";
   } else if (speed <= 38) {
-    description = "5级 风力强劲";
+    description = "Cấp 5 gió giật mạnh";
   } else if (speed <= 49) {
-    description = "6级 风力强劲";
+    description = "Cấp 6 gió giật mạnh";
   } else if (speed <= 61) {
-    description = "7级 风力超强";
+    description = "Cấp 7 gió rất mạnh";
   } else if (speed <= 74) {
-    description = "8级 狂风大作";
+    description = "Cấp 8 gió rất mạnh";
   } else if (speed <= 88) {
-    description = "9级 狂风呼啸";
+    description = "Cấp 9 gió rất mạnh";
   } else {
-    description = ">9级 超级强风";
+    description = "> Gió cấp 9 siêu mạnh";
   }
   return description;
 }
@@ -343,7 +343,7 @@ function mapWind(speed, direction) {
 function mapSkycon(skycon) {
   const map = {
     CLEAR_DAY: [
-      "☀️ 日间晴朗",
+      "☀️ Ngày nắng",
       "https://github.com/Peng-YM/QuanX/blob/master/assets/caiyun/CLEAR_DAY.mp4?raw=true",
     ],
     CLEAR_NIGHT: ["✨ 夜间晴朗"],
