@@ -28,8 +28,11 @@ static=Fake Cydia Tweak,TẮT,Fake iAP Policy,img-url=https://github.com/Koolson
 static=Youtube,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
 static=Speedtest,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 
+available=China,server-tag-regex=香港,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/China.png
+available=Japan,server-tag-regex=日本,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Japan.png
+
 static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
-static=iKuuu v2ray,resource-tag-regex=iKuuu,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
+static=iKuuu v2ray,China,Japan,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
 
 static=Proxy server,TẮT,Amazon Web Services,iKuuu v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
