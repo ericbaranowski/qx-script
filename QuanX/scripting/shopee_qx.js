@@ -40,9 +40,9 @@ function checkin() {
                 }
             } else {
                 $nobyda.notify(
-                  "Shopee Cookie đã hết hạn‼️",
-                  "",
-                  "Hãy đăng nhập lại 🔓"
+                    "Shopee Cookie đã hết hạn‼️",
+                    "",
+                    "Hãy đăng nhập lại 🔓"
                 );
             }
         }
@@ -98,10 +98,10 @@ function nobyda() {
                 };
             options["method"] = "GET";
             $task.fetch(options).then(
-              (response) => {
-                  callback(null, adapterStatus(response), response.body);
-              },
-              (reason) => callback(reason.error, null, null)
+                (response) => {
+                    callback(null, adapterStatus(response), response.body);
+                },
+                (reason) => callback(reason.error, null, null)
             );
         }
         if (isSurge)
@@ -117,10 +117,10 @@ function nobyda() {
                 };
             options["method"] = "POST";
             $task.fetch(options).then(
-              (response) => {
-                  callback(null, adapterStatus(response), response.body);
-              },
-              (reason) => callback(reason.error, null, null)
+                (response) => {
+                    callback(null, adapterStatus(response), response.body);
+                },
+                (reason) => callback(reason.error, null, null)
             );
         }
         if (isSurge) {
@@ -141,5 +141,5 @@ function nobyda() {
         get,
         post,
         done,
-        };
-        }
+    };
+}
