@@ -63,6 +63,8 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt,tag=S
 
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt,tag=Rewrite
 
+https://raw.githubusercontent.com/chavyleung/scripts/master/QuantumultX.box.remote.conf,tag=BoxJS
+
 [server_local]
 
 [filter_local]
