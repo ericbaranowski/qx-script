@@ -21,7 +21,7 @@ static=Fake PXX Policy,TẮT,Fake iAP Policy,img-url=https://raw.githubuserconte
 static=Facebook,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
 static=Fake Cydia Tweak,TẮT,Fake iAP Policy,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
 static=Youtube,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
-static=Tindal,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/TINDAL.png
+static=Tidal,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/TIDAL.png
 static=Speedtest,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
 static=iKuuu v2ray,resource-tag-regex=iK,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
