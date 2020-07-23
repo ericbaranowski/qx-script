@@ -1,6 +1,6 @@
 const account = {
   user: "0354353735",
-  pass: "1234qwer",
+  pass: "fcsd",
 };
 
 //apiloginmobile
@@ -13,7 +13,7 @@ var apiloginmobile = {
 };
 
 async function launch() {
-  await loginmobile();
+  loginmobile();
 }
 
 launch()
