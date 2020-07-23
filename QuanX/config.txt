@@ -1,4 +1,5 @@
 ﻿[general]
+server_check_url=http://bing.com/
 udp_whitelist=53,1024-65535
 geo_location_checker = http://ip-api.com/json/?,https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/IP_API.js
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
