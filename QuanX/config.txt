@@ -12,79 +12,52 @@ server=1.0.0.1
 [policy]
 static=BẬT,reject,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Direct.png
 static=TẮT,direct,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Reject.png
-
 available=Tự Động,resource-tag-regex=Fake iAP Server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
 static=Tuỳ Chọn,resource-tag-regex=Fake iAP Server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
-
 static=Chặn OTA,TẮT,BẬT,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
 static=Chặn Ads,TẮT,BẬT,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
-
 static=Fake iAP Policy,TẮT,Tự Động,Tuỳ Chọn,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
 static=Fake PXX Policy,TẮT,Fake iAP Policy,img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-samples/apple.PNG
-
 static=Facebook,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
 static=Fake Cydia Tweak,TẮT,Fake iAP Policy,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
-
 static=Youtube,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
 static=Speedtest,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
-
 available=China,server-tag-regex=香港,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CN.png
 available=Japan,server-tag-regex=日本,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/JP.png
-
 static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
 static=iKuuu v2ray,China,Japan,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
-
 static=Proxy server,TẮT,Amazon Web Services,iKuuu v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
+[server_local]
 [server_remote]
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, update-interval=86400, opt-parser=true,tag=iKuuu v2ray
 
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
-
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
-
-[filter_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt,tag=Fake iAP Filter,force-policy=Fake iAP Policy,enabled=true
-
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf,tag=hostsVN,force-policy=direct,enabled=true
-
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf,tag=hostsVN,force-policy=Chặn Ads,enabled=true
-
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf,tag=hostsVN-OTA,force-policy=Chặn OTA,enabled=true
-
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list,tag=Facebook,force-policy=Facebook,enabled=true
-
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list,tag=Speedtest,force-policy= Speedtest,enabled=true
-
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list,tag=Youtube,force-policy=Youtube,enabled=true
-
+[rewrite_local]
 [rewrite_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt,tag=Scripts
-
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt,tag=Rewrite
-
 https://raw.githubusercontent.com/chavyleung/scripts/master/QuantumultX.box.remote.conf,tag=BoxJS
-
-[server_local]
 
 [filter_local]
 final,direct
-
-[rewrite_local]
+[filter_remote]
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt,tag=Fake iAP Filter,force-policy=Fake iAP Policy,enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf,tag=hostsVN,force-policy=direct,enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf,tag=hostsVN,force-policy=Chặn Ads,enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf,tag=hostsVN-OTA,force-policy=Chặn OTA,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list,tag=Facebook,force-policy=Facebook,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list,tag=Speedtest,force-policy= Speedtest,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list,tag=Youtube,force-policy=Youtube,enabled=true
 
 [task_local]
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=nCov.js
-
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js,tag=Giaxang.js
-
 0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js,tag=Weather.js
-
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js,tag=Github.js
-
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js,tag=Appmonitor.js
-
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js,tag=Shopee.js
-
 0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js,tag=Rain.js
 
 [mitm]
