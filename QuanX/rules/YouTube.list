@@ -1,0 +1,7 @@
+USER-AGENT,*youtube*,Youtube
+USER-AGENT,YouTube*,Youtube
+HOST-KEYWORD,youtube,Youtube
+HOST-SUFFIX,googlevideo.com,Youtube
+HOST-SUFFIX,gvt2.com,Youtube
+HOST-SUFFIX,youtu.be,Youtube
+HOST,youtubei.googleapis.com,Youtube

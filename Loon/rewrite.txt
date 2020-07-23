@@ -1,0 +1,56 @@
+# > [Tiktok remove watermark]
+(.*video_id=\w{32})(.*watermark=)(.*) $1 302
+(?<=version_code=)\d{1,}.\d{1}\.\d{1} 16.0.0 307
+# > > Region change < <
+#(?<=(carrier|account|sys)_region=)VN url 307 JP
+
+# > [Ads Blocking]
+^https?://graph.facebook.com/.+activities _ reject-img
+^https?://graph.facebook.com/.+advertiser_id=* _ reject-img
+^https?://graph.facebook.com/.+events _ reject-img
+^https?://graph.facebook.com/network_ads_common/* _ reject-img
+^https?://www.facebook.com/adnw_logging/* _ reject-img
+^https?://www.facebook.com/adnw_sync/* _ reject-img
+^https?://www.facebook.com/tr _ reject-img
+^https?://graph.nhaccuatui.com/.+advs _ reject-img
+^https?://graph.nhaccuatui.com/.+logs _ reject-img
+^https?://graph.nhaccuatui.com/.+deviceinfo _ reject-img
+^https?://spclient.wg.spotify.com/ad-logic/* _ reject-img
+^https?://spclient.wg.spotify.com/ads/* _ reject-img
+^https?://spclient.wg.spotify.com/.+ad_slot _ reject-img
+^https?://spclient.wg.spotify.com/.+banners _ reject-img
+^https?://spclient.wg.spotify.com/.+canvases _ reject-img
+^https?://spclient.wg.spotify.com/.+cards _ reject-img
+^https?://spclient.wg.spotify.com/.+crashlytics _ reject-img
+^https?://spclient.wg.spotify.com/.+doubleclick _ reject-img
+^https?://spclient.wg.spotify.com/.+enabled-tracks _ reject-img
+^https?://spclient.wg.spotify.com/.+event _ reject-img
+^https?://spclient.wg.spotify.com/.+promoted_offer _ reject-img
+^https?://spclient.wg.spotify.com/.+sponsored _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+ctier _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+oad= _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/ptracking _ reject-img
+^https?:\/\/.+\.googlevideo\.com\/videogoodput _ reject-img
+^https?:\/\/.+\.youtube\.com\/.+adformat _ reject-img
+^https?:\/\/.+\.youtube\.com\/.+get_ads _ reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads _ reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/qoe _ reject-img
+^https?:\/\/.+\.youtube\.com\/csi_204 _ reject-img
+^https?:\/\/.+\.youtube\.com\/error_204 _ reject-img
+^https?:\/\/.+\.youtube\.com\/get_midroll _ reject-img
+^https?:\/\/.+\.youtube\.com\/pagead _ reject-img
+^https?:\/\/.+\.youtube\.com\/ptracking _ reject-img
+^https?:\/\/.+\.googleapis.com/.+ad_break _ reject-img
+^https?:\/\/.+\.googleapis.com/adsmeasurement _ reject-img
+^https?:\/\/.+\.tiktokv\.com\/api\/ad\/ _ reject-img
+^https?:\/\/.+\.tiktokv\.com\/.+stats\/ _ reject-img
+^https?:\/\/.+\.musical\.ly\/api\/ad\/ _ reject-img
+^https?:\/\/.+\.musical\.ly\/.+stats\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/api\/ad\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/monitor\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/.+app_log\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/.+promotion\/ _ reject-img
+^https?:\/\/.+\.snssdk\.com\/.+stats\/ _ reject-img
+^https?://qos-zdn.zaloapp.com/.+trackqos _ reject-img
+^https?://centralized.zaloapp.com/.+tracking _ reject-img
+^https?://oa.zalo.me/.+campaign=zalo _ reject-img

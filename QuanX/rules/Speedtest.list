@@ -1,0 +1,11 @@
+# > Fast
+HOST-SUFFIX,fast.com,Speedtest
+
+# > Speedtest
+USER-AGENT,SpeedTest*,Speedtest
+HOST-KEYWORD,speedtest,Speedtest
+HOST-SUFFIX,speedtest.net,Speedtest
+HOST-SUFFIX,ooklaserver.net,Speedtest
+HOST-SUFFIX,88-f.net,Speedtest
+HOST,st.pautina-telecom.ru,Speedtest
+HOST-SUFFIX,goodnet.su,Speedtest

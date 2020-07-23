@@ -1,0 +1,29 @@
+hostname=8.8.8.8,weather-data.apple.com,api.weather.com,*-buy.itunes.apple.com,api.unlimapps.com,www.patreon.com,raw.githubusercontent.com,gist.githubusercontent.com,shopee.vn,testapps.videostarapp.com,www.google.*,encrypted.google.*,
+
+# > Script converter
+^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/Peng-YM/ScriptConverter/master/js-converter.js
+
+# > Shopee cookies
+https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/shopee_qx.js
+
+# > Altstore patreon
+https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/altstore.js
+
+# > Videostar
+^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/VideoStar.js
+
+# > Endless google
+https:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/Endless_Google.user.js
+https:\/\/encrypted\.google\..* url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/Endless_Google.user.js
+
+# > Old IPA
+;(https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) url script-request-header https://github.com/phd9911/Scripts/raw/master/QuanX/JS_using/old_ipa.js
+
+# > Caiyun
+;https:\/\/((weather-data\.apple)|(api.weather))\.com url script-request-header https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
+
+# > Boxjs
+;^https://8.8.8.8/api url script-request-body https://www.dropbox.com/s/ftegf32ednaqhl6/chavy.js?dl=1
+;^https://8.8.8.8/(home|sub|my|app|log)($|\/) url script-response-body https://www.dropbox.com/s/ftegf32ednaqhl6/chavy.js?dl=1
+^https://8.8.8.8/api url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js
+^https://8.8.8.8/(home|sub|my|app|log)($|\/) url script-response-body https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js

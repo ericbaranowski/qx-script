@@ -1,0 +1,2 @@
+#Cercube
+DOMAIN,api.cercube.com
