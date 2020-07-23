@@ -30,7 +30,6 @@ ssid=SSID Setting,Proxy server,direct,HANH CHINH:Proxy server,Trung Thuan:Proxy 
 static=Proxy server,TẮT,Amazon Web Services,AutoSSR,v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_local]
-shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=[UPDATE 24/7/20]
 shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=AUTO GET PROXY EVERY HOUR
 shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=UPDATE JS SCRIPT
 
