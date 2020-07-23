@@ -33,9 +33,8 @@ static=Proxy server,TẮT,Amazon Web Services,iKuuu v2ray,img-url=https://github
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1,update-interval=86400, opt-parser=true,tag=iKuuu v2ray
-https://raw.githubusercontent.com/voken100g/AutoSSR/master/online,update-interval=86400,opt-parser=true,tag=AutoSSR Online
 https://raw.githubusercontent.com/voken100g/AutoSSR/master/stable,update-interval=86400,opt-parser=true,tag=AutoSSR Stable
-https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent,update-interval=86400,opt-parser=true,tag=AutoSSR Recent
+https://raw.githubusercontent.com/voken100g/AutoSSR/master/online,update-interval=86400,opt-parser=true,tag=AutoSSR Online
 
 [rewrite_local]
 [rewrite_remote]
