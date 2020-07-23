@@ -30,10 +30,15 @@ ssid=SSID Setting,Proxy server,Proxy server,img-url=https://raw.githubuserconten
 static=Proxy server,TẮT,Amazon Web Services,Auto SSR,iKuuu v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_local]
+shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=[UPDATE 24/7/20]
+shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=+ AUTO GET PROXY EVERY HOUR
+shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=+ UPDATE JS SCRIPT
+
 [server_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
-https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent,update-interval=3600,opt-parser=true,tag=AutoSSR
+https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent,update-interval=3600,opt-parser=true,tag=voken100g/AutoSSR
+https://raw.githubusercontent.com/freefq/free/master/README.md,update-interval=3600,opt-parser=true,tag=freefq/free
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1,update-interval=3600,opt-parser=true,tag=iK v2ray
 
 [rewrite_local]
