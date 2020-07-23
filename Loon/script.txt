@@ -1,4 +1,4 @@
- hostname =  www.patreon.com, shopee.vn, raw.githubusercontent.com, gist.githubusercontent.com, *-buy.itunes.apple.com, api.unlimapps.com, www.google.*, encrypted.google.*
+ hostname =  www.patreon.com, shopee.vn, *-buy.itunes.apple.com, api.unlimapps.com, www.google.*, encrypted.google.*
 
 # > [Cron task]
 cron "0 0 6-23/1 * * *" script-path = https://raw.githubusercontent.com/langkhach270389/Scripting/master/Appmonitor.js
