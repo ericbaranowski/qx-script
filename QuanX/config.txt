@@ -36,7 +36,7 @@ shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=fal
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
 https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent,update-interval=3600,opt-parser=true,tag=[1] AutoSSR
-https://raw.githubusercontent.com/freefq/free/master/README.md,update-interval=3600,opt-parser=true,tag=[2] AutoSSR
+https://raw.githubusercontent.com/freefq/free/master/README.md,update-interval=86400,opt-parser=true,tag=[2] AutoSSR
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1,update-interval=3600,opt-parser=true,tag=IK v2ray
 
 [rewrite_local]
