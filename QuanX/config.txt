@@ -71,6 +71,8 @@ final,direct
 [rewrite_local]
 
 [task_local]
+0 12 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow.js,enable=true
+
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=ncov.js,enabled=true
 
 0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js,tag=weather.js,enabled=true
@@ -81,7 +83,7 @@ final,direct
 
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js,tag=shopee.js,enabled=true
 
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js, tag=Rain
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js,tag=Rain
 
 [mitm]
 skip_validating_cert=true
