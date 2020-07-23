@@ -1,2 +1,0 @@
-shadowsocks=13.228.168.219:443, method=aes-256-cfb, password=notshare, fast-open=false, udp-relay=false, tag=VPS-1 SG
-shadowsocks=103.126.136.35:8383, method=aes-256-cfb, password=tcpvpnJP&%#$, fast-open=false, udp-relay=false, tag=VPS-2 JP
