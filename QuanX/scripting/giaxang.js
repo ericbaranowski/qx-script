@@ -31,7 +31,7 @@ function Giaxang() {
       );
     },
     (reason) => {
-      $notify("Timeout!", "", reason.error);
+      $notify("False!", "", reason.error);
     }
   );
 }
