@@ -25,7 +25,7 @@ static=Speedtest,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/
 static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
 static=iKuuu v2ray,resource-tag-regex=iK,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
 static=Auto SSR,resource-tag-regex=AutoSSR,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png
-ssid=wifi,proxy,proxy,Trung Thuan:direct,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+ssid=SSID Setting,proxy,proxy,Trung Thuan:direct,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static=Proxy server,TẮT,Amazon Web Services,Auto SSR,iKuuu v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_local]
