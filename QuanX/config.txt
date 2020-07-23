@@ -1,6 +1,6 @@
 ﻿[general]
 udp_whitelist=53,1024-65535
-geo_location_checker = http://ip-api.com/json/?,https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/IP_API.js
+geo_location_checker = http://ip-api.com/json/?,https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/IP_API.js
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 
 [dns]
@@ -35,12 +35,12 @@ static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubuserco
 static=Proxy server,TẮT,Amazon Web Services,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_remote]
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/aws.txt,tag=Amazon Web Services,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services,enabled=true
 
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/iap-server.txt,tag=Fake iAP Server,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server,enabled=true
 
 [filter_remote]
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/iap-filter.txt,tag=Fake iAP Filter,force-policy=Fake iAP Policy,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt,tag=Fake iAP Filter,force-policy=Fake iAP Policy,enabled=true
 
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf,tag=hostsVN,force-policy=direct,enabled=true
 
@@ -48,20 +48,20 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf,tag=hostsVN-OTA,force-policy=Chặn OTA,enabled=true
 
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/rules/Facebook.list,tag=Facebook,force-policy=Facebook,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list,tag=Facebook,force-policy=Facebook,enabled=true
 
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/rules/Speedtest.list,tag=Speedtest,force-policy= Speedtest,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list,tag=Speedtest,force-policy= Speedtest,enabled=true
 
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/rules/PornHub.list,tag=Pornhub,force-policy=Pornhub,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/PornHub.list,tag=Pornhub,force-policy=Pornhub,enabled=true
 
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/rules/YouTube.list,tag=Youtube,force-policy=Youtube,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list,tag=Youtube,force-policy=Youtube,enabled=true
 
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/rules/Tiktok.list,tag=Tiktok,force-policy=Tiktok,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Tiktok.list,tag=Tiktok,force-policy=Tiktok,enabled=true
 
 [rewrite_remote]
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/script.txt,tag=script,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt,tag=script,enabled=true
 
-https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/rewrite.txt,tag=rewrite,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt,tag=rewrite,enabled=true
 
 [server_local]
 
@@ -71,17 +71,17 @@ final,direct
 [rewrite_local]
 
 [task_local]
-0 6 * * * https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/ncov_qx.js,tag=ncov.js,enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=ncov.js,enabled=true
 
-0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/weather_qx.js,tag=weather.js,enabled=true
+0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js,tag=weather.js,enabled=true
 
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/github.js,tag=github.js,enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js,tag=github.js,enabled=true
 
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/appmonitor_qx.js,tag=appmonitor.js,enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js,tag=appmonitor.js,enabled=true
 
-0 6 * * * https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/shopee_qx.js,tag=shopee.js,enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js,tag=shopee.js,enabled=true
 
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/weather.js, tag=Rain
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js, tag=Rain
 
 [mitm]
 skip_validating_cert=true

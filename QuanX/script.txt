@@ -4,17 +4,17 @@ hostname=8.8.8.8,weather-data.apple.com,api.weather.com,*-buy.itunes.apple.com,a
 ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/Peng-YM/ScriptConverter/master/js-converter.js
 
 # > Shopee cookies
-https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/shopee_qx.js
+https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js
 
 # > Altstore patreon
-https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/altstore.js
+https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/altstore.js
 
 # > Videostar
-^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/VideoStar.js
+^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/VideoStar.js
 
 # > Endless google
-https:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/Endless_Google.user.js
-https:\/\/encrypted\.google\..* url script-response-body https://raw.githubusercontent.com/phd91105/Config-JS/master/QuanX/scripting/Endless_Google.user.js
+https:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js
+https:\/\/encrypted\.google\..* url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js
 
 # > Old IPA
 ;(https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) url script-request-header https://github.com/phd9911/Scripts/raw/master/QuanX/JS_using/old_ipa.js
