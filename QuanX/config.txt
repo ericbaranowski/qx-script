@@ -35,9 +35,9 @@ static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubuserco
 static=Proxy server,TẮT,Amazon Web Services,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
 
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
 
 [filter_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt,tag=Fake iAP Filter,force-policy=Fake iAP Policy,enabled=true
@@ -59,9 +59,9 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.li
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Tiktok.list,tag=Tiktok,force-policy=Tiktok,enabled=true
 
 [rewrite_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt,tag=script,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt,tag=Scripts
 
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt,tag=rewrite,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt,tag=Rewrite
 
 [server_local]
 
@@ -71,19 +71,19 @@ final,direct
 [rewrite_local]
 
 [task_local]
-0 12 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow.js,enabled=true
+0 12 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow.js
 
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=ncov.js,enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=nCov.js
 
-0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js,tag=weather.js,enabled=true
+0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js,tag=Weather.js
 
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js,tag=github.js,enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js,tag=Github.js
 
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js,tag=appmonitor.js,enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js,tag=Appmonitor.js
 
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js,tag=shopee.js,enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js,tag=Shopee.js
 
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js,tag=Rain
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js,tag=Rain.js
 
 [mitm]
 skip_validating_cert=true
