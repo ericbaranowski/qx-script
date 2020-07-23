@@ -71,7 +71,7 @@ final,direct
 [rewrite_local]
 
 [task_local]
-0 12 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow.js,enable=true
+0 12 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow.js,enabled=true
 
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=ncov.js,enabled=true
 
