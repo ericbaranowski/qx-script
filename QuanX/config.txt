@@ -31,7 +31,6 @@ static=Proxy server,TẮT,Amazon Web Services,AutoSSR,v2ray,img-url=https://gith
 
 [server_local]
 shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=AUTO GET PROXY EVERY HOUR
-shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=UPDATE JS SCRIPT
 
 [server_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
