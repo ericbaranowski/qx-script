@@ -12,6 +12,8 @@ server=1.0.0.1
 [policy]
 static=BẬT,reject,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Direct.png
 static=TẮT,direct,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Reject.png
+available=China,server-tag-regex=香港,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CN.png
+available=Japan,server-tag-regex=日本,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/JP.png
 available=Tự Động,resource-tag-regex=Fake iAP Server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
 static=Tuỳ Chọn,resource-tag-regex=Fake iAP Server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
 static=Chặn OTA,TẮT,BẬT,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
@@ -22,8 +24,6 @@ static=Facebook,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/m
 static=Fake Cydia Tweak,TẮT,Fake iAP Policy,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
 static=Youtube,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
 static=Speedtest,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
-available=China,server-tag-regex=香港,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/CN.png
-available=Japan,server-tag-regex=日本,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/JP.png
 static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
 static=iKuuu v2ray,China,Japan,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
 static=Proxy server,TẮT,Amazon Web Services,iKuuu v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
