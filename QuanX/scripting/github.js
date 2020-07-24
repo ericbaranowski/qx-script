@@ -9,13 +9,6 @@ const repositories = [
     name: "Chavy",
     url: "https://github.com/chavyleung/scripts",
   },
-
-  {
-    name: "NobyDa",
-    //file_names: ["JD-DailyBonus/JD_DailyBonus.js", "52pojie-DailyBonus"],
-    url: "https://github.com/NobyDa/Script/tree/master",
-  },
-
   {
     name: "langkhach270389",
     url: "https://github.com/langkhach270389/Scripting/tree/master",
@@ -28,6 +21,11 @@ const repositories = [
     name: "Peng-YM",
     file_names: ["js-converter.js"],
     url: "https://github.com/Peng-YM/ScriptConverter/tree/master",
+  },
+  {
+    name: "KOP-XIAO",
+    file_names: ["resource-parser.js"],
+    url: "https://github.com/KOP-XIAO/QuantumultX/tree/master",
   },
   {
     name: "phd051199",

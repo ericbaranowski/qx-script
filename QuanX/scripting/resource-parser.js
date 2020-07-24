@@ -189,9 +189,10 @@ if (type0 == "Subs-B64Encode") {
     flag = 3;
     total = content0.split("\n");
     total = Rule_Handle(total, Pout0, Pin0);
-    if (Preg && total.length!=0) { // 正则筛选规则 filter
-    total = total.map(Regex).filter(Boolean) 
-    RegCheck(total, "分流引用", Preg)} 
+    if (Preg && total.length != 0) { // 正则筛选规则 filter
+        total = total.map(Regex).filter(Boolean)
+        RegCheck(total, "分流引用", Preg)
+    }
 } else if (content0.trim() == "") {
     $notify("‼️ Quote" + "⟦" + subtag + "⟧" + " The returned content is empty", "⁉️ Click the notification to jump to confirm whether the link is invalid", para.split("#")[0], nan_link);
     flag = 0;
@@ -212,8 +213,10 @@ if (flag == 3) { // rule 类型
         flowcheck(total)
     }
     if (Pin0 || Pout0) { total = Filter(total, Pin0, Pout0) }
-    if (Preg) { total = total.map(Regex).filter(Boolean) 
-    	RegCheck(total, "节点订阅", Preg)} 
+    if (Preg) {
+        total = total.map(Regex).filter(Boolean)
+        RegCheck(total, "节点订阅", Preg)
+    }
     if (Psfilter) { total = FilterScript(total, Psfilter) }
     if (Prrname) {
         var Prn = Prrname;
@@ -273,12 +276,12 @@ function shuffle(arr) {
 
 // regex 后的检查
 function RegCheck(total, typen, regpara) {
-	if(total.length == 0){ 
-		$notify("‼️ " + typen + "  ➟ " + "⟦" + subtag + "⟧", "⛔️ Screening regular: regex=" + regpara, "⚠️ After filtering, the remaining items are 0️⃣, please check the regular parameters and the original link", nan_link)
-	}else if((typen != "节点订阅" && Pntf0 !=0) || (typen == "节点订阅" && Pntf0 ==1)){
-		var nolist = total.length <= 10 ? emojino[total.length] : total.length
-		$notify("🤖 " + typen + "  ➟ " + "⟦" + subtag + "⟧", "⛔️ Screening regular: regex=" + regpara, "⚠️The following remaining after screening" + nolist + "Matches\\n ⨷ " + total.join("\n ⨷ "), sub_link)
-	}
+    if (total.length == 0) {
+        $notify("‼️ " + typen + "  ➟ " + "⟦" + subtag + "⟧", "⛔️ Screening regular: regex=" + regpara, "⚠️ After filtering, the remaining items are 0️⃣, please check the regular parameters and the original link", nan_link)
+    } else if ((typen != "节点订阅" && Pntf0 != 0) || (typen == "节点订阅" && Pntf0 == 1)) {
+        var nolist = total.length <= 10 ? emojino[total.length] : total.length
+        $notify("🤖 " + typen + "  ➟ " + "⟦" + subtag + "⟧", "⛔️ Screening regular: regex=" + regpara, "⚠️The following remaining after screening" + nolist + "Matches\\n ⨷ " + total.join("\n ⨷ "), sub_link)
+    }
 }
 //判断订阅类型
 function Type_Check(subs) {
@@ -435,8 +438,10 @@ function Rewrite_Filter(subs, Pin, Pout) {
         }
     }
     if (Nlist.length == 0) { $notify("🤖 " + "Rewrite Quote  ➟ " + "⟦" + subtag + "⟧", "⛔️ Filter parameters: " + pfi + pfo, "⚠️ After filtering, the remaining number of rewrite rules is 0️⃣, please check the parameters and the original link", nan_link) }
-    if(Preg){ Nlist = Nlist.map(Regex).filter(Boolean) // regex to filter rewrites
-    	RegCheck(Nlist, "重写引用", Preg) }
+    if (Preg) {
+        Nlist = Nlist.map(Regex).filter(Boolean) // regex to filter rewrites
+        RegCheck(Nlist, "重写引用", Preg)
+    }
     if (hostname != "") { Nlist.push(hostname) }
     return Nlist
 }
@@ -481,8 +486,10 @@ function HostNamecheck(content, parain, paraout) {
     if (nname.length == 0) {
         $notify("🤖 " + "Rewrite Quote  ➟ " + "⟦" + subtag + "⟧", "⛔️ Filter parameters: " + pfihn + pfohn, "⚠️ There are remaining 0️⃣ items in hostname, please check the parameters and original link", nan_link)
     }
-    if(Preg){ nname = nname.map(Regex).filter(Boolean) 
-    	RegCheck(nname, "主机名", Preg) }
+    if (Preg) {
+        nname = nname.map(Regex).filter(Boolean)
+        RegCheck(nname, "主机名", Preg)
+    }
     hname = "hostname=" + nname.join(", ");
     return hname
 }
