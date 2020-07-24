@@ -24,7 +24,7 @@ const repositories = [
   },
   {
     name: "KOP-XIAO",
-    file_names: ["resource-parser.js"],
+    file_names: ["Scripts/resource-parser.js"],
     url: "https://github.com/KOP-XIAO/QuantumultX",
   },
   {
