@@ -1,5 +1,4 @@
 ﻿[general]
-server_check_url=http://bing.com/
 udp_whitelist=53,1024-65535
 geo_location_checker = http://ip-api.com/json/?,https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/IP_API.js
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
@@ -25,21 +24,19 @@ static=Youtube,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/ma
 static=Tidal,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/TIDAL.png
 static=Speedtest,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
-static=v2ray,resource-tag-regex=v2ray,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
-static=SSR,resource-tag-regex=ShadowsocksR,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png
+available=v2ray,resource-tag-regex=V2Ray,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
+available=SSR,resource-tag-regex=ShadowsocksR,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png
 ssid=SSID Setting,Proxy server,direct,HANH CHINH:Proxy server,Trung Thuan:Proxy server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static=Proxy server,TẮT,Amazon Web Services,SSR,v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_local]
-shadowsocks=example.com:80,method=aes-128-gcm,password=pwd,obfs=ws,fast-open=false,udp-relay=false,tag=AUTO GET PROXY EVERY HOUR
-
 [server_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
 https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent,update-interval=3600,opt-parser=true,tag=[1] ShadowsocksR
 https://raw.githubusercontent.com/freefq/free/master/README.md,update-interval=86400,opt-parser=true,tag=[2] ShadowsocksR
 https://raw.githubusercontent.com/ruanfei/ShadowsocksRRShare/master/ssr/ssr.txt,update-interval=86400,opt-parser=true,tag=[3] ShadowsocksR
-https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1,update-interval=3600,opt-parser=true,tag=[1] v2ray
+https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1,update-interval=3600,opt-parser=true,tag=[1] V2Ray
 
 [rewrite_local]
 [rewrite_remote]
