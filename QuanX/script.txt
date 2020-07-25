@@ -1,4 +1,4 @@
-hostname=8.8.8.8,api.unlimapps.com,www.patreon.com,raw.githubusercontent.com,gist.githubusercontent.com,shopee.vn,testapps.videostarapp.com,www.google.*,encrypted.google.*,
+hostname=8.8.8.8,www.patreon.com,raw.githubusercontent.com,gist.githubusercontent.com,shopee.vn,www.google.*,encrypted.google.*,
 
 # > Script converter
 ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/js-converter.js
@@ -8,9 +8,6 @@ https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.gi
 
 # > Altstore patreon
 https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/altstore.js
-
-# > Videostar
-^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/VideoStar.js
 
 # > Endless google
 (https:\/\/www\.google\..*)|(https:\/\/encrypted\.google\..*) url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js
