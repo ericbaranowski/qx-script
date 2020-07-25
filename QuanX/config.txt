@@ -35,8 +35,8 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,t
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1,update-interval=3600,opt-parser=true,tag=[1] V2Ray
 https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent,update-interval=3600,opt-parser=true,tag=[1] ShadowsocksR
-https://raw.githubusercontent.com/freefq/free/master/README.md,update-interval=86400,opt-parser=true,tag=[2] ShadowsocksR
-https://raw.githubusercontent.com/ruanfei/ShadowsocksRRShare/master/ssr/ssr.txt,update-interval=86400,opt-parser=true,tag=[3] ShadowsocksR
+;https://raw.githubusercontent.com/freefq/free/master/README.md,update-interval=86400,opt-parser=true,tag=[2] ShadowsocksR
+;https://raw.githubusercontent.com/ruanfei/ShadowsocksRRShare/master/ssr/ssr.txt,update-interval=86400,opt-parser=true,tag=[3] ShadowsocksR
 
 [rewrite_local]
 [rewrite_remote]
