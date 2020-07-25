@@ -101,7 +101,7 @@ function addZero(i) {
 function formatTime(timestamp) {
     const date = new Date(timestamp);
     return `${date.getDate()}/${
-        date.getMonth() + 1
+        date.getMonth() + 2
         }/${date.getFullYear()} ${addZero(date.getHours())}:${addZero(
             date.getMinutes()
         )}`;
