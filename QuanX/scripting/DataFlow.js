@@ -1,4 +1,6 @@
 //Thông tin đăng nhập
+const $nobyda = nobyda();
+
 const account = {
   user: "0354353735",
   pass: "1234qwer",
