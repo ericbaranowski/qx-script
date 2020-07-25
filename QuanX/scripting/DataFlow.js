@@ -1,15 +1,3 @@
-/**** Start conversion script ****/
-let isQuantumultX=$task!=undefined;let isSurge=$httpClient!=undefined;let isLoon=isSurge&&typeof $loon!=undefined;var $task=isQuantumultX?$task:{};var $httpClient=isSurge?$httpClient:{};var $prefs=isQuantumultX?$prefs:{};var $persistentStore=isSurge?$persistentStore:{};var $notify=isQuantumultX?$notify:{};var $notification=isSurge?$notification:{};if(isQuantumultX){var errorInfo={error:"",};$httpClient={get:(url,cb)=>{var urlObj;if(typeof url=="string"){urlObj={url:url,}}else{urlObj=url}
-$task.fetch(urlObj).then((response)=>{cb(undefined,response,response.body)},(reason)=>{errorInfo.error=reason.error;cb(errorInfo,response,"")})},post:(url,cb)=>{var urlObj;if(typeof url=="string"){urlObj={url:url,}}else{urlObj=url}
-url.method="POST";$task.fetch(urlObj).then((response)=>{cb(undefined,response,response.body)},(reason)=>{errorInfo.error=reason.error;cb(errorInfo,response,"")})},}}
-if(isSurge){$task={fetch:(url)=>{return new Promise((resolve,reject)=>{if(url.method=="POST"){$httpClient.post(url,(error,response,data)=>{if(response){response.body=data;resolve(response,{error:error,})}else{resolve(null,{error:error,})}})}else{$httpClient.get(url,(error,response,data)=>{if(response){response.body=data;resolve(response,{error:error,})}else{resolve(null,{error:error,})}})}})},}}
-if(isQuantumultX){$persistentStore={read:(key)=>{return $prefs.valueForKey(key)},write:(val,key)=>{return $prefs.setValueForKey(val,key)},}}
-if(isSurge){$prefs={valueForKey:(key)=>{return $persistentStore.read(key)},setValueForKey:(val,key)=>{return $persistentStore.write(val,key)},}}
-if(isQuantumultX){$notify=((notify)=>{return function(title,subTitle,detail,url=undefined){detail=url===undefined?detail:`${detail}\nClick the link to jump: ${url}`;notify(title,subTitle,detail)}})($notify);$notification={post:(title,subTitle,detail,url=undefined)=>{detail=url===undefined?detail:`${detail}\nClick the link to jump: ${url}`;$notify(title,subTitle,detail)},}}
-if(isSurge&&!isLoon){$notification.post=((notify)=>{return function(title,subTitle,detail,url=undefined){detail=url===undefined?detail:`${detail}\nClick the link to jump: ${url}`;notify.call($notification,title,subTitle,detail)}})($notification.post);$notify=(title,subTitle,detail,url=undefined)=>{detail=url===undefined?detail:`${detail}\nClick the link to jump: ${url}`;$notification.post(title,subTitle,detail)}}
-if(isLoon){$notify=(title,subTitle,detail,url=undefined)=>{$notification.post(title,subTitle,detail,url)}}
-/**** Conversion succeeded ****/
-
 //Thông tin đăng nhập
 const account = {
   user: "0354353735",
@@ -28,12 +16,12 @@ var apiloginmobile = {
 // async function launch() {
 //   await loginmobile();
 // }
-
 //launch()
+
 loginmobile()
 
 function loginmobile() {
-  $httpClient.post(apiloginmobile, function (error, response, data) {
+  $nobyda.post(apiloginmobile, function (error, response, data) {
     if (error) {
       //console.log('error');
     } else {
@@ -45,12 +33,12 @@ function loginmobile() {
           getdataremain(token);
         }
         else {
-          $notification.post("Data Flow acount user/pass false‼️", "", "");
+          $nobyda.notify("Data Flow acount user/pass false‼️", "", "");
           //console.log(data);
         }
       }
     }
-    $done();
+    $nobyda.done();
   });
 }
 
@@ -61,7 +49,7 @@ function getdataremain(token) {
     headers: {},
     body: body,
   };
-  $httpClient.post(dataremain, function (error, response, data) {
+  $nobyda.post(dataremain, function (error, response, data) {
     if (error) {
       //console.log('error');
     } else {
@@ -70,13 +58,93 @@ function getdataremain(token) {
         let obj = JSON.parse(data);
         if (obj["errorCode"] === "0") {
           var data = obj["data"][0];
-          $notification.post("Data Flow: " + data["pack_name"], "", "Remain: " + data["remain"] + "( ~" + Math.round(data["remain_mb"] / 1024) + " GB)\nExpiredate: " + data["expireDate"]);
+          $nobyda.notify("Data Flow: " + data["pack_name"], "", "Remain: " + data["remain"] + "( ~" + Math.round(data["remain_mb"] / 1024) + " GB)\nExpiredate: " + data["expireDate"]);
         }
         else {
-          $notification.post("Data Flow token expired‼️", "", "Try to login again in app My Viettel");
+          $nobyda.notify("Data Flow token expired‼️", "", "Try to login again in app My Viettel");
         }
       }
     }
-    $done();
+    $nobyda.done();
   });
+}
+
+function nobyda() {
+  const isRequest = typeof $request != "undefined";
+  const isSurge = typeof $httpClient != "undefined";
+  const isQuanX = typeof $task != "undefined";
+  const notify = (title, subtitle, message) => {
+      if (isQuanX) $notify(title, subtitle, message);
+      if (isSurge) $notification.post(title, subtitle, message);
+  };
+  const write = (value, key) => {
+      if (isQuanX) return $prefs.setValueForKey(value, key);
+      if (isSurge) return $persistentStore.write(value, key);
+  };
+  const read = (key) => {
+      if (isQuanX) return $prefs.valueForKey(key);
+      if (isSurge) return $persistentStore.read(key);
+  };
+  const adapterStatus = (response) => {
+      if (response) {
+          if (response.status) {
+              response["statusCode"] = response.status;
+          } else if (response.statusCode) {
+              response["status"] = response.statusCode;
+          }
+      }
+      return response;
+  };
+  const get = (options, callback) => {
+      if (isQuanX) {
+          if (typeof options == "string")
+              options = {
+                  url: options,
+              };
+          options["method"] = "GET";
+          $task.fetch(options).then(
+              (response) => {
+                  callback(null, adapterStatus(response), response.body);
+              },
+              (reason) => callback(reason.error, null, null)
+          );
+      }
+      if (isSurge)
+          $httpClient.get(options, (error, response, body) => {
+              callback(error, adapterStatus(response), body);
+          });
+  };
+  const post = (options, callback) => {
+      if (isQuanX) {
+          if (typeof options == "string")
+              options = {
+                  url: options,
+              };
+          options["method"] = "POST";
+          $task.fetch(options).then(
+              (response) => {
+                  callback(null, adapterStatus(response), response.body);
+              },
+              (reason) => callback(reason.error, null, null)
+          );
+      }
+      if (isSurge) {
+          $httpClient.post(options, (error, response, body) => {
+              callback(error, adapterStatus(response), body);
+          });
+      }
+  };
+  const done = (value = {}) => {
+      if (isQuanX) isRequest ? $done(value) : null;
+      if (isSurge) isRequest ? $done(value) : $done();
+  };
+  return {
+      isRequest,
+      notify,
+      write,
+      read,
+      get,
+      post,
+      done,
+  };
 }
