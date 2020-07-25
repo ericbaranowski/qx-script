@@ -11,7 +11,7 @@ let subscriptions = [
     {
         link: "订阅地址1",
         name: "取个名字1",
-        icon: "https://raw.githubusercontent.com/Orz-3/mini/master/v2ray.png"
+        icon: "https://raw.githubusercontent.com/Orz-3/mini/master/pudding.png"
     },
     {
         link: "订阅地址2",
@@ -65,8 +65,7 @@ async function fetchInfo(sub) {
         const hutime = parseInt(utime / 3600000);
         const mutime = (utime / 60000) % 60;
         const subtitle = `Remaining: ${(residue_m / 1024).toFixed(2)} GB`;
-        const details = `
-📌 [Usage]
+        const details = `📌 [Usage]
 ${
             hutime == 0
                 ? "In the past " +
