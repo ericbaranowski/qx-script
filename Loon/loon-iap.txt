@@ -18,7 +18,7 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🍎 Chặn OTA = select,🟢,🔴
 🚫 Chặn Ads = select,🟢,🔴
 📲 Cydia Tweak = select,🔴,🔰 Fake iAP Policy
-🕹 Proxy = load-balance,🔴,Amazon VPS,Free,url = http://www.qualcomm.cn/generate_204,interval = 600,max-timeout = 3000,algorithm = pcc
+🕹 Proxy = load-balance,Amazon VPS,Free,url = http://www.qualcomm.cn/generate_204,interval = 600,max-timeout = 3000,algorithm = pcc
 🚀 Speedtest = select,🔴,🕹 Proxy
 🎬 Youtube = select,🔴,🕹 Proxy
 👍 Facebook = select,🔴,🕹 Proxy
