@@ -71,12 +71,12 @@ ${
                 ?
                 " Used in " + mutime.toFixed(1) + " minutes: " +
                 todayflow.toFixed(2) +
-                " MB traffic"
+                " MB"
                 :
                 " Used in " + hutime +
                 " hour " + mutime.toFixed(1) + " minutes: " +
                 todayflow.toFixed(2) +
-                " MB traffic"
+                " MB"
             }
 📝 [Stats]
 Total upload: ${(upload_k / 1073741824).toFixed(2)} GB
