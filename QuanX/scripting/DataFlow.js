@@ -25,11 +25,12 @@ var apiloginmobile = {
 };
 
 //
-function launch() {
-  await loginmobile();
-}
+// async function launch() {
+//   await loginmobile();
+// }
 
-launch()
+//launch()
+loginmobile()
 
 function loginmobile() {
   $httpClient.post(apiloginmobile, function (error, response, data) {
