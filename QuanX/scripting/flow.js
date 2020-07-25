@@ -68,16 +68,13 @@ async function fetchInfo(sub) {
         const details = `📌 [Usage]
 ${
             hutime == 0
-                ? "In the past " +
-                mutime.toFixed(1) +
-                " used in minutes: " +
+                ?
+                " Used in " + mutime.toFixed(1) + " minutes: " +
                 todayflow.toFixed(2) +
                 " MB traffic"
-                : "In the past " +
-                hutime +
-                " hour " +
-                mutime.toFixed(1) +
-                " used in minutes: " +
+                :
+                " Used in " + hutime +
+                " hour " + mutime.toFixed(1) + " minutes: " +
                 todayflow.toFixed(2) +
                 " MB traffic"
             }
