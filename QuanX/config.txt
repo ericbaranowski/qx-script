@@ -62,7 +62,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.li
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js,tag=Appmonitor.js
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js,tag=Shopee.js
 0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js,tag=Rain.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/flow.js,tag=ProxyFlow.js
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ProxyFlow.js,tag=ProxyFlow.js
 0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow.js
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=nCov.js
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js,tag=Giaxang.js
