@@ -23,7 +23,6 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🖲️Proxy = select,♻️Auto,💠Balance.Pcc,🌀Select
 💠Balance.Pcc = load-balance,AutoSSR,url = http://bing.com/,interval = 600,max-timeout = 3000,algorithm = random
 ♻️Auto = url-test, AutoSSR,url = http://bing.com/,interval = 600,max-timeout = 3000
-💠Balance.Pcc = load-balance,Auto SSR,url = http://bing.com/,interval = 600,max-timeout = 3000,algorithm = random
 🌀Select = select,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇺🇸US,🇸🇬SG
 📱Telegram = select,🖲️Proxy,🔴
 🎬YouTube = select,🖲️Proxy,🔴,🇭🇰HK,🇺🇸US
@@ -31,15 +30,6 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🔞PornHub = select,🖲️Proxy,🔴
 🚀SpeedTest = select,🖲️Proxy,🔴
 🍎Apple = select,🔴,🖲️Proxy
-🔰Fake iAP Policy = select,♻️ Tự Động,🌀 Tuỳ Chọn
-💰PXX Policy = select,🔴,🔰 Fake iAP Policy
-♻️Tự Động = fallback,Fake iAP Server,url = http://www.google.com/generate_204,interval = 600,max-timeout = 3000
-🌀Tuỳ Chọn = select,Fake iAP Server
-🍎Chặn OTA = select,🟢,🔴
-🚫Chặn Ads = select,🟢,🔴
-📲Cydia Tweak = select,🔴,🔰 Fake iAP Policy
-
-
 🔰Fake iAP Policy = select,♻️ Tự Động,🌀 Tuỳ Chọn
 💰PXX Policy = select,🔴,🔰 Fake iAP Policy
 ♻️Tự Động = fallback,Fake iAP Server,url = http://www.google.com/generate_204,interval = 600,max-timeout = 3000
@@ -71,10 +61,6 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/cydia-tweak.txt, 
 # > Block Ads
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf, policy=🚫Chặn Ads, enabled=true
 # > Block OTA
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/iap-rule.txt, policy=🔰Fake iAP Policy, enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/pxx-rule.txt, policy=💰PXX Policy, enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/cydia-tweak.txt, policy=📲Cydia Tweak, enabled=true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf, policy=🚫Chặn Ads, enabled=true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-OTA.conf, policy=🍎Chặn OTA, enabled=true
 # > TikTok
 https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/TikTok.list, policy=🎵𝐓𝐢𝐤𝐓𝐨𝐤, tag=𝐓𝐢𝐤𝐓𝐨𝐤, enabled=true
@@ -97,11 +83,6 @@ https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.li
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/GlobalMedia.list, policy=🖲️Proxy, tag=GlobalMedia, enabled=true
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Domestic.list, policy=DIRECT, tag=Domestic, enabled=true
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list, policy=🖲️Proxy, tag=Global, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list, policy=🍎Apple, tag=Apple_𝐂𝐃𝐍, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list, policy=🍎Apple, tag=Apple_𝐀𝐏𝐈, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/GlobalMedia.list, policy=🖲️Proxy, tag=𝐆𝐥𝐨𝐛𝐚𝐥𝐌𝐞𝐝𝐢𝐚, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Domestic.list, policy=🎯𝐃𝐢𝐫𝐞𝐜𝐭, tag=𝐃𝐨𝐦𝐞𝐬𝐭𝐢𝐜, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list, policy=🖲️Proxy, tag=𝐆𝐥𝐨𝐛𝐚𝐥, enabled=true
 
 [URL Rewrite]
 enable = true
