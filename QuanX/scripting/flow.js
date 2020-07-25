@@ -65,13 +65,12 @@ async function fetchInfo(sub) {
         const hutime = parseInt(utime / 3600000);
         const mutime = (utime / 60000) % 60;
         const subtitle = `Remaining: ${(residue_m / 1024).toFixed(2)} GB`;
-        const details = `
-📌 [Usage]
+        const details = `📌 [Usage]
 ${
             hutime == 0
-                ? "in the past" +
+                ? "In the past " +
                 mutime.toFixed(1) +
-                "Used in minutes: " +
+                " used in minutes: " +
                 todayflow.toFixed(2) +
                 " MB traffic"
                 : "in the past" +
