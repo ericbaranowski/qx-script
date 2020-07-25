@@ -64,7 +64,7 @@ async function fetchInfo(sub) {
         const title = `🚀[Proxy traffic] ${sub.name}`;
         const hutime = parseInt(utime / 3600000);
         const mutime = (utime / 60000) % 60;
-        const subtitle = `Remain: ${residue_m} MB (~${(residue_m / 1024).toFixed(2)} GB)`;
+        const subtitle = `Remain: ${residue_m.toFixed(2)} MB (~${(residue_m / 1024).toFixed(2)} GB)`;
         const details = `📌[Usage]
 ${
             hutime == 0
@@ -81,8 +81,7 @@ ${
 📝[Stats]
 Total upload: ${(upload_k / 1073741824).toFixed(2)} GB
 Total download: ${(download_k / 1073741824).toFixed(2)} GB
-🛎[Expire date]
-${expires}`;
+🛎[Expire date] ${expires}`;
 
         if (sub.icon) {
             $.notify(title, subtitle, details, { "media-url": sub.icon });
