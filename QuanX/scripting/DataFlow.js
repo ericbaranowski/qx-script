@@ -25,7 +25,7 @@ var apiloginmobile = {
 };
 
 //
-async function launch() {
+function launch() {
   await loginmobile();
 }
 
