@@ -19,66 +19,65 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🇸🇬 = NameRegex,Auto SSR, FilterKey = “🇸🇬”
 
 [Proxy Group]
-🕹𝐅𝐢𝐧𝐚𝐥 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
-🖲️𝐏𝐫𝐨𝐱𝐲 = select,♻️𝐀𝐮𝐭𝐨,💠𝐁𝐚𝐥𝐚𝐧𝐜𝐞.𝑷𝒄𝒄,🌀𝐒𝐞𝐥𝐞𝐜𝐭
-💠𝐁𝐚𝐥𝐚𝐧𝐜𝐞.𝑷𝒄𝒄 = load-balance,Auto SSR,url = http://bing.com/,interval = 600,max-timeout = 3000,algorithm = random
-🌀𝐒𝐞𝐥𝐞𝐜𝐭 = select,🇭🇰𝐇𝐊,🇨🇳𝐓𝐖,🇯🇵𝐉𝐏,🇰🇷𝐊𝐑,🇺🇸𝐔𝐒,🇸🇬𝐒𝐆
-📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 = select,🖲️𝐏𝐫𝐨𝐱𝐲,🔴
-🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞 = select,🖲️𝐏𝐫𝐨𝐱𝐲,🔴,🇭🇰𝐇𝐊,🇺🇸𝐔𝐒
-🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = select,🖲️𝐏𝐫𝐨𝐱𝐲,🔴,🇨🇳𝐓𝐖,🇺🇸𝐔𝐒,🇸🇬𝐒𝐆,🇭🇰𝐇𝐊
-🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select,🖲️𝐏𝐫𝐨𝐱𝐲,🔴
-🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select,🖲️𝐏𝐫𝐨𝐱𝐲,🔴
-🍎𝐀𝐩𝐩𝐥𝐞 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
+🕹Final = select,🔴,🖲️Proxy
+🖲️Proxy = select,♻️Auto,💠Balance.Pcc,🌀Select
+💠Balance.Pcc = load-balance,Auto SSR,url = http://bing.com/,interval = 600,max-timeout = 3000,algorithm = random
+🌀Select = select,🇭🇰HK,🇨🇳TW,🇯🇵JP,🇰🇷KR,🇺🇸US,🇸🇬SG
+📱Telegram = select,🖲️Proxy,🔴
+🎬YouTube = select,🖲️Proxy,🔴,🇭🇰HK,🇺🇸US
+🖥Netflix = select,🖲️Proxy,🔴,🇨🇳TW,🇺🇸US,🇸🇬SG,🇭🇰HK
+🔞PornHub = select,🖲️Proxy,🔴
+🚀SpeedTest = select,🖲️Proxy,🔴
+🍎Apple = select,🔴,🖲️Proxy
 
-🔰 Fake iAP Policy = select,♻️ Tự Động,🌀 Tuỳ Chọn
-💰 PXX Policy = select,🔴,🔰 Fake iAP Policy
-♻️ Tự Động = fallback,Fake iAP Server,url = http://www.google.com/generate_204,interval = 600,max-timeout = 3000
-🌀 Tuỳ Chọn = select,Fake iAP Server
-🍎 Chặn OTA = select,🟢,🔴
-🚫 Chặn Ads = select,🟢,🔴
-📲 Cydia Tweak = select,🔴,🔰 Fake iAP Policy
+🔰Fake iAP Policy = select,♻️ Tự Động,🌀 Tuỳ Chọn
+💰PXX Policy = select,🔴,🔰 Fake iAP Policy
+♻️Tự Động = fallback,Fake iAP Server,url = http://www.google.com/generate_204,interval = 600,max-timeout = 3000
+🌀Tuỳ Chọn = select,Fake iAP Server
+🍎Chặn OTA = select,🟢,🔴
+🚫Chặn Ads = select,🟢,🔴
+📲Cydia Tweak = select,🔴,🔰 Fake iAP Policy
 
-🇭🇰𝐇𝐊 = url-test,🇭🇰,url = http://bing.com/,interval = 600
-🇨🇳𝐓𝐖 = url-test,🇨🇳,url = http://bing.com/,interval = 600
-🇸🇬𝐒𝐆 = url-test,🇸🇬,url = http://bing.com/,interval = 600
-🇰🇷𝐊𝐑 = url-test,🇰🇷,url = http://bing.com/,interval = 600
-🇯🇵𝐉𝐏 = url-test,🇯🇵,url = http://bing.com/,interval = 600
-🇺🇸𝐔𝐒 = url-test,🇺🇸,url = http://bing.com/,interval = 600
+🇭🇰HK = url-test,🇭🇰,url = http://bing.com/,interval = 600
+🇨🇳TW = url-test,🇨🇳,url = http://bing.com/,interval = 600
+🇸🇬SG = url-test,🇸🇬,url = http://bing.com/,interval = 600
+🇰🇷KR = url-test,🇰🇷,url = http://bing.com/,interval = 600
+🇯🇵JP = url-test,🇯🇵,url = http://bing.com/,interval = 600
+🇺🇸US = url-test,🇺🇸,url = http://bing.com/,interval = 600
 
 🟢 = select,REJECT
 🔴 = select,DIRECT
 
 [Rule]
-FINAL,🕹𝐅𝐢𝐧𝐚𝐥
+FINAL,🕹Final
 
 [Remote Rule]
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/iap-rule.txt, policy=🔰 Fake iAP Policy, enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/pxx-rule.txt, policy=💰 PXX Policy, enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/cydia-tweak.txt, policy=📲 Cydia Tweak, enabled=true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf, policy=🚫 Chặn Ads, enabled=true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-OTA.conf, policy=🍎 Chặn OTA, enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/iap-rule.txt, policy=🔰Fake iAP Policy, enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/pxx-rule.txt, policy=💰PXX Policy, enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/cydia-tweak.txt, policy=📲Cydia Tweak, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf, policy=🚫Chặn Ads, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-OTA.conf, policy=🍎Chặn OTA, enabled=true
 # > TikTok
 https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/TikTok.list, policy=🎵𝐓𝐢𝐤𝐓𝐨𝐤, tag=𝐓𝐢𝐤𝐓𝐨𝐤, enabled=true
 # > Youtube
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.list, policy=🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞, tag=𝐘𝐨𝐮𝐓𝐮𝐛𝐞, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.list, policy=🎬YouTube, tag=YouTube, enabled=true
 # > Netflix
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.list, policy=🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱, tag=𝐍𝐞𝐭𝐟𝐥𝐢𝐱, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.list, policy=🖥Netflix, tag=Netflix, enabled=true
 # > PornHub
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list, policy=🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛, tag=𝐏𝐨𝐫𝐧𝐇𝐮𝐛, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list, policy=🔞PornHub, tag=PornHub, enabled=true
 # > Telegram
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Telegram.list, policy=📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦, tag=𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Telegram.list, policy=📱Telegram, tag=Telegram, enabled=true
 # > Outlook、Gmail
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Mail.list, policy=🖲️𝐏𝐫𝐨𝐱𝐲, tag=𝐌𝐚𝐢𝐥, enabled=true
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Mail.list, policy=🖲️Proxy, tag=𝐌𝐚𝐢𝐥, enabled=true
 # > GoogleDrive
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/GoogleDrive.list, policy=🖲️𝐏𝐫𝐨𝐱𝐲, tag=𝐆𝐨𝐨𝐠𝐥𝐞𝐃𝐫𝐢𝐯𝐞, enabled=true
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/GoogleDrive.list, policy=🖲️Proxy, tag=𝐆𝐨𝐨𝐠𝐥𝐞𝐃𝐫𝐢𝐯𝐞, enabled=true
 # > Speedtest
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list, policy=🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭, tag=𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list, policy=🍎𝐀𝐩𝐩𝐥𝐞, tag=𝐀𝐩𝐩𝐥𝐞_𝐂𝐃𝐍, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list, policy=🍎𝐀𝐩𝐩𝐥𝐞, tag=𝐀𝐩𝐩𝐥𝐞_𝐀𝐏𝐈, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/GlobalMedia.list, policy=🖲️𝐏𝐫𝐨𝐱𝐲, tag=𝐆𝐥𝐨𝐛𝐚𝐥𝐌𝐞𝐝𝐢𝐚, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list, policy=🚀SpeedTest, tag=SpeedTest, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list, policy=🍎Apple, tag=Apple_𝐂𝐃𝐍, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list, policy=🍎Apple, tag=Apple_𝐀𝐏𝐈, enabled=true
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/GlobalMedia.list, policy=🖲️Proxy, tag=𝐆𝐥𝐨𝐛𝐚𝐥𝐌𝐞𝐝𝐢𝐚, enabled=true
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Domestic.list, policy=🎯𝐃𝐢𝐫𝐞𝐜𝐭, tag=𝐃𝐨𝐦𝐞𝐬𝐭𝐢𝐜, enabled=true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list, policy=🖲️𝐏𝐫𝐨𝐱𝐲, tag=𝐆𝐥𝐨𝐛𝐚𝐥, enabled=true
-
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list, policy=🖲️Proxy, tag=𝐆𝐥𝐨𝐛𝐚𝐥, enabled=true
 
 [URL Rewrite]
 enable = true
