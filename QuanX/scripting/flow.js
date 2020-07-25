@@ -61,11 +61,11 @@ async function fetchInfo(sub) {
         const todayflow = $.read(KEY_today_flow) - residue;
         $.write(residue, KEY_today_flow);
         $.write(dnow, KEY_o_now);
-        const title = `🚀 [Proxy traffic] ${sub.name}`;
+        const title = `🚀[Proxy traffic] ${sub.name}`;
         const hutime = parseInt(utime / 3600000);
         const mutime = (utime / 60000) % 60;
-        const subtitle = `Remaining: ${(residue_m / 1024).toFixed(2)} GB`;
-        const details = `📌 [Usage]
+        const subtitle = `Remain: $residue_m MB (~${(residue_m / 1024).toFixed(2)} GB)`;
+        const details = `📌[Usage]
 ${
             hutime == 0
                 ?
@@ -78,7 +78,7 @@ ${
                 todayflow.toFixed(2) +
                 " MB"
             }
-📝 [Stats]
+📝[Stats]
 Total upload: ${(upload_k / 1073741824).toFixed(2)} GB
 Total download: ${(download_k / 1073741824).toFixed(2)} GB
 🛎 [Expire date]
