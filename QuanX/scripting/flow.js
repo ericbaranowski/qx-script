@@ -9,15 +9,15 @@
 
 let subscriptions = [
     {
-        link: "订阅地址1",
-        name: "取个名字1",
+        link: "https://api.ikuuu.science/link/N59y7O4ipFg2l26N?shadowrocket=1",
+        name: "iKuuu v2ray",
         icon: "https://raw.githubusercontent.com/Orz-3/mini/master/pudding.png"
     },
-    {
-        link: "订阅地址2",
-        name: "取个名字2",
-        icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Nexitally.png"
-    },
+    // {
+    //     link: "订阅地址2",
+    //     name: "取个名字2",
+    //     icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Nexitally.png"
+    // },
 ];
 
 const $ = API("flow");
