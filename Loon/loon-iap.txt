@@ -6,7 +6,7 @@ dns-server = system, 8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1
 #host = 192.168.1.127
 
 [Remote Proxy]
-AutoSSR = https://api.wzwweb.ml/sub?target=loon&url=https%3A%2F%2Fraw.githubusercontent.com%2Fvoken100g%2FAutoSSR%2Fmaster%2Frecent&insert=false
+AutoSSR = https://2ds5.cf/9blkaU
 Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/server.txt
 Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.txt
 
