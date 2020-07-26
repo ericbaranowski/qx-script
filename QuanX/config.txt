@@ -22,7 +22,7 @@ static = Facebook, TẮT, Proxy server, img-url = https://github.com/Koolson/Qur
 static = Fake Cydia Tweak, TẮT, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
 static = Youtube, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
 static = Pornhub, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Pornhub.png
-static = Appstore, TẮT, Proxy server, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/appstore.png
+static = AppStore, TẮT, Proxy server, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/appstore.png
 static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 static = Speedtest, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 static = Amazon Web Services, server-tag-regex = EC2, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
@@ -55,7 +55,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.l
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.list, tag = Pornhub, force-policy = Pornhub, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Appstore.list, tag = Appstore, force-policy = Appstore, enabled = true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/AppStore.list, tag = AppStore, force-policy = AppStore, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/TikTok.list, tag = TikTok, force-policy = TikTok, enabled = true
 
 [task_local]
