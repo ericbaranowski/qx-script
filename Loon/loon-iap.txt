@@ -11,12 +11,12 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.txt
 
 [Remote Filter]
-🇭🇰 = NameRegex, AutoSSR, FilterKey = “🇭🇰”
-🇨🇳 = NameRegex, AutoSSR, FilterKey = “🇨🇳”
-🇯🇵 = NameRegex, AutoSSR, FilterKey = “🇯🇵”
-🇰🇷 = NameRegex, AutoSSR, FilterKey = “🇰🇷”
-🇺🇸 = NameRegex, AutoSSR, FilterKey = “🇺🇸”
-🇸🇬 = NameRegex, AutoSSR, FilterKey = “🇸🇬”
+🇭🇰 = NameRegex, AutoSSR, FilterKey = 🇭🇰
+🇨🇳 = NameRegex, AutoSSR, FilterKey = 🇨🇳
+🇯🇵 = NameRegex, AutoSSR, FilterKey = 🇯🇵
+🇰🇷 = NameRegex, AutoSSR, FilterKey = 🇰🇷
+🇺🇸 = NameRegex, AutoSSR, FilterKey = 🇺🇸
+🇸🇬 = NameRegex, AutoSSR, FilterKey = 🇸🇬
 
 [Proxy Group]
 🕹Final = select, 🔴, 🖲️Proxy
