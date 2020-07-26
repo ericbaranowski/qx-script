@@ -1,74 +1,73 @@
 ﻿[general]
-udp_whitelist=53,1024-65535
-geo_location_checker=http://ip-api.com/json/?,https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
-resource_parser_url=https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/resource-parser.js
+udp_whitelist = 53, 1024-65535
+geo_location_checker = http://ip-api.com/json/?, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
+resource_parser_url = https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/resource-parser.js
 
 [dns]
-server=8.8.8.8
-server=8.8.4.4
-server=1.1.1.1
-server=1.0.0.1
+server = 8.8.8.8
+server = 8.8.4.4
+server = 1.1.1.1
+server = 1.0.0.1
 
 [policy]
-static=BẬT,reject,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Direct.png
-static=TẮT,direct,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Reject.png
-available=Tự Động,resource-tag-regex=Fake iAP Server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
-static=Tuỳ Chọn,resource-tag-regex=Fake iAP Server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
-static=Chặn OTA,TẮT,BẬT,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
-static=Chặn Ads,TẮT,BẬT,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
-static=Fake iAP Policy,TẮT,Tự Động,Tuỳ Chọn,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
-static=Fake PXX Policy,TẮT,Fake iAP Policy,img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-samples/apple.PNG
-static=Facebook,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
-static=Fake Cydia Tweak,TẮT,Fake iAP Policy,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
-static=Youtube,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
-static=Pornhub,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Pornhub.png
-static=Speedtest,TẮT,Proxy server,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
-static=Amazon Web Services,server-tag-regex=EC2,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
-static=v2ray,resource-tag-regex=V2Ray,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
-static=SSR,resource-tag-regex=ShadowsocksR,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png
-ssid=SSID Setting,Proxy server,direct,HANH CHINH:Proxy server,Trung Thuan:Proxy server,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
-static=Proxy server,TẮT,Amazon Web Services,SSR,v2ray,img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
+static = BẬT, reject, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Direct.png
+static = TẮT, direct, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Reject.png
+available = Tự Động, resource-tag-regex = Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+static = Tuỳ Chọn, resource-tag-regex = Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
+static = Chặn OTA, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
+static = Chặn Ads, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
+static = Fake iAP Policy, TẮT, Tự Động, Tuỳ Chọn, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
+static = Fake PXX Policy, TẮT, Fake iAP Policy, img-url = https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-samples/apple.PNG
+static = Facebook, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
+static = Fake Cydia Tweak, TẮT, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
+static = Youtube, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
+static = Pornhub, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Pornhub.png
+static = Speedtest, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
+static = Amazon Web Services, server-tag-regex = EC2, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
+static = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Azure.png
+static = SSR, resource-tag-regex = ShadowsocksR, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png
+ssid = SSID Setting, Proxy server, direct, HANH CHINH:Proxy server, Trung Thuan:Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+static = Proxy server, TẮT, Amazon Web Services, SSR, v2ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_local]
 [server_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt,tag=Fake iAP Server
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt,tag=Amazon Web Services
-https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1,update-interval=3600,opt-parser=true,tag=[1] V2Ray
-https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent,update-interval=3600,opt-parser=true,tag=[1] ShadowsocksR
-;https://raw.githubusercontent.com/freefq/free/master/README.md,update-interval=86400,opt-parser=true,tag=[2] ShadowsocksR
-;https://raw.githubusercontent.com/ruanfei/ShadowsocksRRShare/master/ssr/ssr.txt,update-interval=86400,opt-parser=true,tag=[3] ShadowsocksR
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt, tag = Amazon Web Services
+https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, update-interval = 3600, opt-parser = true, tag = [1] V2Ray
+https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent, update-interval = 3600, opt-parser = true, tag = [1] ShadowsocksR
+;https://raw.githubusercontent.com/freefq/free/master/README.md, update-interval = 86400, opt-parser = true, tag = [2] ShadowsocksR
+;https://raw.githubusercontent.com/ruanfei/ShadowsocksRRShare/master/ssr/ssr.txt, update-interval = 86400, opt-parser = true, tag = [3] ShadowsocksR
 
 [rewrite_local]
 [rewrite_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt,tag=Scripts
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt,tag=Rewrite
-https://raw.githubusercontent.com/chavyleung/scripts/master/QuantumultX.box.remote.conf,tag=BoxJS
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt, tag = Scripts
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt, tag = Rewrite
+https://raw.githubusercontent.com/chavyleung/scripts/master/QuantumultX.box.remote.conf, tag = BoxJS
 
 [filter_local]
-final,direct
+final, direct
 [filter_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt,tag=Fake iAP Filter,force-policy=Fake iAP Policy,enabled=true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf,tag=hostsVN,force-policy=direct,enabled=true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf,tag=hostsVN,force-policy=Chặn Ads,enabled=true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf,tag=hostsVN-OTA,force-policy=Chặn OTA,enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list,tag=Facebook,force-policy=Facebook,enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.list,tag=Pornhub,force-policy=Pornhub,enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list,tag=Speedtest,force-policy= Speedtest,enabled=true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list,tag=Youtube,force-policy=Youtube,enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt, tag = Fake iAP Filter, force-policy = Fake iAP Policy, enabled = true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf, tag = hostsVN, force-policy = direct, enabled = true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag = hostsVN, force-policy = Chặn Ads, enabled = true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf, tag = hostsVN-OTA, force-policy = Chặn OTA, enabled = true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list, tag = Facebook, force-policy = Facebook, enabled = true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.list, tag = Pornhub, force-policy = Pornhub, enabled = true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
 
 [task_local]
-0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js,tag=Weather.js
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js,tag=Github.js
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js,tag=Appmonitor.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js,tag=Shopee.js
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js,tag=Rain.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ProxyFlow.js,tag=ProxyFlow.js
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js,tag=nCov.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js,tag=Giaxang.js
-
+0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js, tag = Weather.js
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js, tag = Github.js
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js, tag = Appmonitor.js
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js, tag = Shopee.js
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js, tag = Rain.js
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ProxyFlow.js, tag = ProxyFlow.js
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js, tag = DataFlow.js
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js, tag = nCov.js
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js, tag = Giaxang.js
 
 [mitm]
-skip_validating_cert=true
-passphrase=TINYCARROTVN2020
-p12=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
+skip_validating_cert = true
+passphrase = TINYCARROTVN2020
+p12 = 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
