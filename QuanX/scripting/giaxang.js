@@ -25,9 +25,9 @@ function Giaxang() {
         ": " +
         obj.elements[1].subtitle +
         "\n" +
-        obj.elements[3].title +
+        obj.elements[2].title +
         ": " +
-        obj.elements[3].subtitle
+        obj.elements[2].subtitle
       );
     },
     (reason) => {
