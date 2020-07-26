@@ -1,4 +1,4 @@
-const $ = new Env('⏰ Nhắc mưa')
+const $ = new Env('⏰ Dự báo mưa')
 $.weather_url = ""  
 $.pre_hours = 24 
 $.timeout = 2000
@@ -36,7 +36,7 @@ if ($.getdata('tlb_rain_test') != undefined) {
 !(async () => {
     $.log('', `🔔 ${$.name}, Khởi đầu!`, '')
     if (!$.rain_test) {
-        $.msg($.name, "🚫Tạm dừng [Bấm lâu để xem hướng dẫn cụ thể] "," 😭 Thỉnh thoảng xảy ra sự cố hết thời gian yêu cầu. \ n🌧 Và điều này sẽ khiến quanx hoặc loon khởi động lại. Học sinh nên chuyển sang các kịch bản thời tiết khác. \ n🙁 Chúng tôi sẽ cố gắng tìm giao diện thời tiết ổn định trong tương lai. Nếu bạn cần, bạn có thể nhấp vào thông báo này để theo dõi github。", "https://github.com/toulanboy/scripts")
+        $.msg($.name, "🚫Tạm dừng [Bấm lâu để xem hướng dẫn cụ thể] "," 😭 Thỉnh thoảng xảy ra sự cố hết thời gian yêu cầu. \ n🌧 Và điều này sẽ khiến quanx hoặc loon khởi động lại. Bạn nên chuyển sang các script thời tiết khác. \ n🙁 Chúng tôi sẽ cố gắng tìm giao diện thời tiết ổn định trong tương lai. Nếu bạn cần, bạn có thể nhấp vào thông báo này để theo dõi github。", "https://github.com/toulanboy/scripts")
         return
     }
     if ($.weather_url == undefined || $.weather_url == "" || $.weather_url.match(/hourbyhour/) == undefined || $.weather_url.match(/^https:.*?/) == undefined) {
