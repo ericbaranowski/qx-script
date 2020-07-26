@@ -30,13 +30,13 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🔞PornHub = select, 🖲️Proxy, 🔴
 🚀SpeedTest = select, 🖲️Proxy, 🔴
 🍎Apple = select, 🔴, 🖲️Proxy
-🔰Fake iAP Policy = select, ♻️ Tự Động, 🌀 Tuỳ Chọn
-💰PXX Policy = select, 🔴, 🔰 Fake iAP Policy
+🔰Fake iAP Policy = select, ♻️Tự Động, 🌀Tuỳ Chọn
+💰PXX Policy = select, 🔴, 🔰Fake iAP Policy
 ♻️Tự Động = fallback, Fake iAP Server, url = http://www.google.com/generate_204, interval = 600, max-timeout = 3000
 🌀Tuỳ Chọn = select, Fake iAP Server
 🍎Chặn OTA = select, 🟢, 🔴
 🚫Chặn Ads = select, 🟢, 🔴
-📲Cydia Tweak = select, 🔴, 🔰 Fake iAP Policy
+📲Cydia Tweak = select, 🔴, 🔰Fake iAP Policy
 
 🇭🇰HK = url-test, 🇭🇰, url = http://bing.com/,interval = 600
 🇨🇳TW = url-test, 🇨🇳, url = http://bing.com/,interval = 600
