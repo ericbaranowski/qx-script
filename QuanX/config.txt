@@ -26,7 +26,7 @@ static = AppStore, TẮT, Proxy server, img-url = https://raw.githubusercontent.
 static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 static = Speedtest, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 static = Amazon Web Services, server-tag-regex = EC2, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
-static = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/v2raypro.png
+static = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/v2ray.png
 static = SSR, resource-tag-regex = ShadowsocksR, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png
 ssid = SSID Setting, Proxy server, direct, HANH CHINH:Proxy server, Trung Thuan:Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static = Proxy server, TẮT, Amazon Web Services, SSR, v2ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
