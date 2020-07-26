@@ -1,5 +1,5 @@
 ﻿var wurl = {
-  url: "https://collectionapi.herokuapp.com/api/giaxang.php",
+  url: "https://api-qtx.000webhostapp.com/giaxang.php",
 };
 var today = new Date();
 
@@ -13,7 +13,7 @@ function Giaxang() {
         "Giá xăng 🇻🇳 " +
         addZero(today.getDate()) +
         "/" +
-        addZero(today.getMonth()) +
+        addZero(today.getMonth() + 1) +
         "/" +
         today.getFullYear(),
         "",
