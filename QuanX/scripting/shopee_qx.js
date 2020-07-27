@@ -7,39 +7,39 @@ https://shopee.vn
 
 MITM = shopee.vn
 */
-const $env = env();
+const $ = env();
 
-if ($env.isRequest) {
+if ($.isRequest) {
     GetCookie();
-    $env.done();
+    $.done();
 } else {
     checkin();
-    $env.done();
+    $.done();
 }
 
 function checkin() {
     var shopeeUrl = {
         url: "https://shopee.vn/mkt/coins/api/v2/checkin",
         headers: {
-            Cookie: $env.read("CookieSP"),
+            Cookie: $.read("CookieSP"),
         },
     };
 
-    $env.post(shopeeUrl, function (error, response, data) {
+    $.post(shopeeUrl, function (error, response, data) {
         if (error) {
-            $env.notify("Shopee checkin", "", "Lỗi kết nối‼️");
-            $env.done();
+            $.notify("Shopee checkin", "", "Lỗi kết nối‼️");
+            $.done();
         } else {
             if (response.status == 200) {
                 let obj = JSON.parse(data);
                 if (obj["data"]["success"]) {
                     var user = obj["data"]["username"];
                     var coins = obj["data"]["increase_coins"];
-                    $env.notify("Shopee " + user, "", "Đã nhận được " + coins + "💰");
-                    $env.done();
+                    $.notify("Shopee " + user, "", "Đã nhận được " + coins + "💰");
+                    $.done();
                 }
             } else {
-                $env.notify(
+                $.notify(
                     "Shopee Cookie đã hết hạn‼️",
                     "",
                     "Hãy đăng nhập lại 🔓"
@@ -52,16 +52,16 @@ function checkin() {
 function GetCookie() {
     if ($request.headers["Cookie"]) {
         var headerSP = $request.headers["Cookie"];
-        var cookie = $env.write(headerSP, "CookieSP");
+        var cookie = $.write(headerSP, "CookieSP");
         if (!cookie) {
-            $env.notify("Shopee Cookie lỗi‼️", "", "Đăng nhập lại");
+            $.notify("Shopee Cookie lỗi‼️", "", "Đăng nhập lại");
         } else {
-            $env.notify("Shopee Cookie done 🎉", "", "");
+            $.notify("Shopee Cookie done 🎉", "", "");
         }
     } else {
-        $env.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại");
+        $.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại");
     }
-    $env.done();
+    $.done();
 }
 
 function env() {

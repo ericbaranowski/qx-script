@@ -1,4 +1,4 @@
-var $env=env();
+var $ = env();
 
 function env() {
     const isRequest = typeof $request != "undefined";
@@ -82,20 +82,20 @@ function env() {
 var ncovUrl = {
     url: 'https://code.junookyo.xyz/api/ncov-moh/data.json',
 }
-$env.get(ncovUrl, function (error, response, data) {
+$.get(ncovUrl, function (error, response, data) {
     if (error) {
-        $env.post("NCOV", "", "Bad connection")
-        $env.done();
+        $.post("NCOV", "", "Bad connection")
+        $.done();
     } else {
         if (response.statusCode == 200) {
             let obj = JSON.parse(data);
             if (obj["success"]) {
                 obj = obj["data"];
-                $env.notify("NCOV ", "", "🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] + ", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] + "\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] + ", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
-                $env.done();
+                $.notify("NCOV ", "", "🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] + ", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] + "\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] + ", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
+                $.done();
             }
         } else {
-            $env.notify("NCOV", "", "API ERROR");
+            $.notify("NCOV", "", "API ERROR");
         }
     }
 });
