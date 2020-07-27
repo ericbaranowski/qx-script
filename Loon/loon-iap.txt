@@ -23,12 +23,6 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 💠Available = load-balance, AutoSSR, url = http://bing.com/, interval = 600, max-timeout = 3000, algorithm = pcc
 ♻️Auto = url-test, AutoSSR, url = http://bing.com/, interval = 600, max-timeout = 3000
 🌀Select = select, 🇭🇰HK, 🇨🇳TW, 🇯🇵JP, 🇰🇷KR, 🇺🇸US, 🇸🇬SG
-📱Telegram = select, 🖲️Proxy, 🔴
-🎬YouTube = select, 🖲️Proxy, 🔴, 🇭🇰HK, 🇺🇸US
-🖥Netflix = select, 🖲️Proxy, 🔴, 🇨🇳TW, 🇺🇸US, 🇸🇬SG, 🇭🇰HK
-🔞PornHub = select, 🖲️Proxy, 🔴
-🚀SpeedTest = select, 🖲️Proxy, 🔴
-🍎Apple = select, 🔴, 🖲️Proxy
 🔰Fake iAP Policy = select, ♻️Tự Động, 🌀Tuỳ Chọn
 💰PXX Policy = select, 🔴, 🔰Fake iAP Policy
 ♻️Tự Động = fallback, Fake iAP Server, url = http://www.google.com/generate_204, interval = 600, max-timeout = 3000
@@ -36,6 +30,12 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🍎Chặn OTA = select, 🟢, 🔴
 🚫Chặn Ads = select, 🟢, 🔴
 📲Cydia Tweak = select, 🔴, 🔰Fake iAP Policy
+📱Telegram = select, 🖲️Proxy, 🔴
+🎬YouTube = select, 🖲️Proxy, 🔴, 🇭🇰HK, 🇺🇸US
+🖥Netflix = select, 🖲️Proxy, 🔴, 🇨🇳TW, 🇺🇸US, 🇸🇬SG, 🇭🇰HK
+🔞PornHub = select, 🖲️Proxy, 🔴
+🚀SpeedTest = select, 🖲️Proxy, 🔴
+🍎Apple = select, 🔴, 🖲️Proxy
 
 🇭🇰HK = url-test, 🇭🇰, url = http://bing.com/,interval = 600
 🇨🇳TW = url-test, 🇨🇳, url = http://bing.com/,interval = 600
