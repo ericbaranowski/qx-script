@@ -49,6 +49,7 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🔴 = select, DIRECT
 
 [Rule]
+IP-CIDR,8.8.8.8/32,🖲️Proxy
 FINAL, 🕹Final
 
 [Remote Rule]
@@ -78,11 +79,6 @@ https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Mail.list, policy
 https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/GoogleDrive.list, policy = 🖲️Proxy, tag = GoogleDrive, enabled = true
 # > Speedtest
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list, policy = 🚀SpeedTest, tag = SpeedTest, enabled = true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list, policy = 🍎Apple, tag = Apple_CDN, enabled = true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list, policy = 🍎Apple, tag = Apple_API, enabled = true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/GlobalMedia.list, policy = 🖲️Proxy, tag = GlobalMedia, enabled = true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Domestic.list, policy = DIRECT, tag = Domestic, enabled = true
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list, policy = 🖲️Proxy, tag = Global, enabled = true
 
 [URL Rewrite]
 enable = true
