@@ -32,7 +32,6 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🖥Netflix = select, 🔴, 🖲️Proxy
 🔞PornHub = select, 🔴, 🖲️Proxy, 🇭🇰HK, 🇯🇵JP
 🚀SpeedTest = select, 🔴, 🖲️Proxy
-🍎Apple = select, 🔴, 🖲️Proxy
 
 🇭🇰HK = url-test, 🇭🇰, url = http://bing.com/,interval = 600
 🇨🇳TW = url-test, 🇨🇳, url = http://bing.com/,interval = 600
