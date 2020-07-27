@@ -49,8 +49,8 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🔴 = select, DIRECT
 
 [Rule]
-IP-CIDR,8.8.8.8/32,🖲️Proxy
-FINAL, 🕹Final
+IP-CIDR, 8.8.8.8/32, 🖲️Proxy
+FINAL, DIRECT
 
 [Remote Rule]
 # > Fake iap
