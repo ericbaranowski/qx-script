@@ -27,11 +27,11 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🌀Tuỳ Chọn = select, Fake iAP Server
 🍎Chặn OTA = select, 🟢, 🔴
 🚫Chặn Ads = select, 🟢, 🔴
-📱Telegram = select, 🖲️Proxy, 🔴
-🎬YouTube = select, 🖲️Proxy, 🔴, 🇭🇰HK, 🇺🇸US
-🖥Netflix = select, 🖲️Proxy, 🔴, 🇨🇳TW, 🇺🇸US, 🇸🇬SG, 🇭🇰HK
-🔞PornHub = select, 🖲️Proxy, 🔴
-🚀SpeedTest = select, 🖲️Proxy, 🔴
+📱Telegram = select, 🔴, 🖲️Proxy
+🎬YouTube = select, 🔴, 🖲️Proxy, 🇭🇰HK, 🇺🇸US
+🖥Netflix = select, 🔴, 🖲️Proxy, 🇨🇳TW, 🇺🇸US, 🇸🇬SG, 🇭🇰HK
+🔞PornHub = select, 🔴, 🖲️Proxy
+🚀SpeedTest = select, 🔴, 🖲️Proxy
 🍎Apple = select, 🔴, 🖲️Proxy
 
 🇭🇰HK = url-test, 🇭🇰, url = http://bing.com/,interval = 600
