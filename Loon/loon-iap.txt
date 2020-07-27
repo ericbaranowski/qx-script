@@ -20,8 +20,8 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 
 [Proxy Group]
 🕹Final = select, 🔴, 🖲️Proxy
-🖲️Proxy = select, ♻️Auto, 🌀Select, 💠Balance.Pcc
-💠Balance.Pcc = load-balance, AutoSSR, url = http://bing.com/, interval = 600, max-timeout = 3000, algorithm = pcc
+🖲️Proxy = select, ♻️Auto, 🌀Select, 💠Available
+💠Available = load-balance, AutoSSR, url = http://bing.com/, interval = 600, max-timeout = 3000, algorithm = pcc
 ♻️Auto = url-test, AutoSSR, url = http://bing.com/, interval = 600, max-timeout = 3000
 🌀Select = select, 🇭🇰HK, 🇨🇳TW, 🇯🇵JP, 🇰🇷KR, 🇺🇸US, 🇸🇬SG
 📱Telegram = select, 🖲️Proxy, 🔴
