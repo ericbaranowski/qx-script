@@ -1,4 +1,4 @@
-var $nobyda=nobyda();
+var $env=env();
 
 function nobyda() {
     const isRequest = typeof $request != "undefined";
@@ -82,20 +82,20 @@ function nobyda() {
 var ncovUrl = {
     url: 'https://code.junookyo.xyz/api/ncov-moh/data.json',
 }
-$nobyda.get(ncovUrl, function (error, response, data) {
+$env.get(ncovUrl, function (error, response, data) {
     if (error) {
-        $nobyda.post("NCOV", "", "Bad connection")
-        $nobyda.done();
+        $env.post("NCOV", "", "Bad connection")
+        $env.done();
     } else {
         if (response.statusCode == 200) {
             let obj = JSON.parse(data);
             if (obj["success"]) {
                 obj = obj["data"];
-                $nobyda.notify("NCOV ", "", "🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] + ", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] + "\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] + ", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
-                $nobyda.done();
+                $env.notify("NCOV ", "", "🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] + ", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] + "\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] + ", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
+                $env.done();
             }
         } else {
-            $nobyda.notify("NCOV", "", "API ERROR");
+            $env.notify("NCOV", "", "API ERROR");
         }
     }
 });
