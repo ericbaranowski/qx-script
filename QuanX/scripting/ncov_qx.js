@@ -1,6 +1,6 @@
 var $env=env();
 
-function nobyda() {
+function env() {
     const isRequest = typeof $request != "undefined";
     const isSurge = typeof $httpClient != "undefined";
     const isQuanX = typeof $task != "undefined";
