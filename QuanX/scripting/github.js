@@ -29,7 +29,7 @@ const repositories = [
   },
   {
     name: "phd051199",
-    url: "https://github.com/phd051199/Scripts",
+    url: "https://github.com/phd91105/Scripts/tree/master",
   },
 ];
 
@@ -125,7 +125,7 @@ async function checkUpdate(item) {
             const { published_at, body } = releases[0];
             const notificationURL = {
               "open-url": `https://github.com/${repository.owner}/${repository.repo}/releases`,
-              "media-url": `https://raw.githubusercontent.com/Orz-3/task/master/github2.png`,
+              "media-url": `https://raw.githubusercontent.com/58xinian/icon/master/Github2.png`,
             };
             if (needUpdate(url, published_at)) {
               $.notify(
@@ -162,7 +162,7 @@ async function checkUpdate(item) {
       $.log({ author, body, published_at, file_url });
       const notificationURL = {
         "open-url": `https://github.com/${repository.owner}/${repository.repo}/commits/${repository.branch}`,
-        "media-url": `https://raw.githubusercontent.com/Orz-3/task/master/github2.png`,
+        "media-url": `https://raw.githubusercontent.com/58xinian/icon/master/Github2.png`,
       };
       //Monitor the warehouse for updates
       if (!item.hasOwnProperty("file_names")) {
