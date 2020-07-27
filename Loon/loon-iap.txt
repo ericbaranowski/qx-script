@@ -22,7 +22,7 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🖲️Proxy = select, 🔴, 🇭🇰HK, 🇨🇳TW, 🇯🇵JP, 🇰🇷KR, 🇺🇸US, 🇸🇬SG
 🔰Fake iAP Policy = select, ♻️Tự Động, 🌀Tuỳ Chọn
 💰PXX Policy = select, 🔴, 🔰Fake iAP Policy
-📲Cydia Tweak = select, 🔴, 🔰Fake iAP Policy
+📦Cydia Tweak = select, 🔴, 🔰Fake iAP Policy
 ♻️Tự Động = fallback, Fake iAP Server, url = http://www.google.com/generate_204, interval = 600, max-timeout = 3000
 🌀Tuỳ Chọn = select, Fake iAP Server
 🍎Chặn OTA = select, 🟢, 🔴
@@ -54,7 +54,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/iap-rule.txt, pol
 # > Fake Pxx
 https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/pxx-rule.txt, policy = 💰PXX Policy, tag = PXX Policy, enabled = true
 # > Fake Cydia tweak
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/cydia-tweak.txt, tag = Fake Cydia Tweak, policy = 📲Cydia Tweak, enabled = true
+https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/cydia-tweak.txt, tag = Fake Cydia Tweak, policy = 📦Cydia Tweak, enabled = true
 # > Block Ads
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf, tag = Block Ads, policy = 🚫Chặn Ads, enabled = true
 # > Block OTA
@@ -69,10 +69,6 @@ https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list, policy = 🔞PornHub, tag = PornHub, enabled = true
 # > Telegram
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Telegram.list, policy = 📱Telegram, tag = Telegram, enabled = true
-# > Outlook、Gmail
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Mail.list, policy = 🖲️Proxy, tag = Mail, enabled = true
-# > GoogleDrive
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/GoogleDrive.list, policy = 🖲️Proxy, tag = GoogleDrive, enabled = true
 # > Speedtest
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list, policy = 🚀SpeedTest, tag = SpeedTest, enabled = true
 
