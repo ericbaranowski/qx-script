@@ -7,39 +7,39 @@ https://shopee.vn
 
 MITM = shopee.vn
 */
-const $nobyda = nobyda();
+const $env = env();
 
-if ($nobyda.isRequest) {
+if ($env.isRequest) {
     GetCookie();
-    $nobyda.done();
+    $env.done();
 } else {
     checkin();
-    $nobyda.done();
+    $env.done();
 }
 
 function checkin() {
     var shopeeUrl = {
         url: "https://shopee.vn/mkt/coins/api/v2/checkin",
         headers: {
-            Cookie: $nobyda.read("CookieSP"),
+            Cookie: $env.read("CookieSP"),
         },
     };
 
-    $nobyda.post(shopeeUrl, function (error, response, data) {
+    $env.post(shopeeUrl, function (error, response, data) {
         if (error) {
-            $nobyda.notify("Shopee checkin", "", "Lỗi kết nối‼️");
-            $nobyda.done();
+            $env.notify("Shopee checkin", "", "Lỗi kết nối‼️");
+            $env.done();
         } else {
             if (response.status == 200) {
                 let obj = JSON.parse(data);
                 if (obj["data"]["success"]) {
                     var user = obj["data"]["username"];
                     var coins = obj["data"]["increase_coins"];
-                    $nobyda.notify("Shopee " + user, "", "Đã nhận được " + coins + "💰");
-                    $nobyda.done();
+                    $env.notify("Shopee " + user, "", "Đã nhận được " + coins + "💰");
+                    $env.done();
                 }
             } else {
-                $nobyda.notify(
+                $env.notify(
                     "Shopee Cookie đã hết hạn‼️",
                     "",
                     "Hãy đăng nhập lại 🔓"
@@ -52,19 +52,19 @@ function checkin() {
 function GetCookie() {
     if ($request.headers["Cookie"]) {
         var headerSP = $request.headers["Cookie"];
-        var cookie = $nobyda.write(headerSP, "CookieSP");
+        var cookie = $env.write(headerSP, "CookieSP");
         if (!cookie) {
-            $nobyda.notify("Shopee Cookie lỗi‼️", "", "Đăng nhập lại");
+            $env.notify("Shopee Cookie lỗi‼️", "", "Đăng nhập lại");
         } else {
-            $nobyda.notify("Shopee Cookie done 🎉", "", "");
+            $env.notify("Shopee Cookie done 🎉", "", "");
         }
     } else {
-        $nobyda.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại");
+        $env.notify("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại");
     }
-    $nobyda.done();
+    $env.done();
 }
 
-function nobyda() {
+function env() {
     const isRequest = typeof $request != "undefined";
     const isSurge = typeof $httpClient != "undefined";
     const isQuanX = typeof $task != "undefined";

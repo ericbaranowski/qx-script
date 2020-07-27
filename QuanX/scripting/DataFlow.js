@@ -1,4 +1,4 @@
-const $nobyda = nobyda();
+const $env = env();
 const account = {
   user: "0354353735",
   pass: "1234qwer",
@@ -18,7 +18,7 @@ async function launch() {
 launch()
 
 function loginmobile() {
-  $nobyda.post(apiloginmobile, function (error, response, data) {
+  $env.post(apiloginmobile, function (error, response, data) {
     if (error) {
       //console.log('error');
     } else {
@@ -30,12 +30,12 @@ function loginmobile() {
           getdataremain(token);
         }
         else {
-          $nobyda.notify("Data Flow acount user/pass false‼️", "", "");
+          $env.notify("Data Flow acount user/pass false‼️", "", "");
           //console.log(data);
         }
       }
     }
-    $nobyda.done();
+    $env.done();
   });
 }
 
@@ -46,7 +46,7 @@ function getdataremain(token) {
     headers: {},
     body: body,
   };
-  $nobyda.post(dataremain, function (error, response, data) {
+  $env.post(dataremain, function (error, response, data) {
     if (error) {
       //console.log('error');
     } else {
@@ -55,18 +55,18 @@ function getdataremain(token) {
         let obj = JSON.parse(data);
         if (obj["errorCode"] === "0") {
           var data = obj["data"][0];
-          $nobyda.notify("Data Flow: " + data["pack_name"], "", "Remain: " + data["remain"] + "( ~" + Math.round(data["remain_mb"] / 1024) + " GB)\nExpiredate: " + data["expireDate"]);
+          $env.notify("Data Flow: " + data["pack_name"], "", "Remain: " + data["remain"] + "( ~" + Math.round(data["remain_mb"] / 1024) + " GB)\nExpiredate: " + data["expireDate"]);
         }
         else {
-          $nobyda.notify("Data Flow token expired‼️", "", "Try to login again in app My Viettel");
+          $env.notify("Data Flow token expired‼️", "", "Try to login again in app My Viettel");
         }
       }
     }
-    $nobyda.done();
+    $env.done();
   });
 }
 
-function nobyda() {
+function env() {
   const isRequest = typeof $request != "undefined";
   const isSurge = typeof $httpClient != "undefined";
   const isQuanX = typeof $task != "undefined";
