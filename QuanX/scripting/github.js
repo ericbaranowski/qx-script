@@ -29,7 +29,7 @@ const repositories = [
   },
   {
     name: "phd051199",
-    url: "https://github.com/phd051199/Scripts_LK",
+    url: "https://github.com/phd051199/Scripts",
   },
 ];
 
