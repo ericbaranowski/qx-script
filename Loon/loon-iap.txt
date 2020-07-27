@@ -28,9 +28,9 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🍎Chặn OTA = select, 🟢, 🔴
 🚫Chặn Ads = select, 🟢, 🔴
 📱Telegram = select, 🔴, 🖲️Proxy
-🎬YouTube = select, 🔴, 🖲️Proxy, 🇭🇰HK, 🇺🇸US
-🖥Netflix = select, 🔴, 🖲️Proxy, 🇨🇳TW, 🇺🇸US, 🇸🇬SG, 🇭🇰HK
-🔞PornHub = select, 🔴, 🖲️Proxy
+🎬YouTube = select, 🔴, 🖲️Proxy
+🖥Netflix = select, 🔴, 🖲️Proxy
+🔞PornHub = select, 🔴, 🖲️Proxy, 🇭🇰HK, 🇯🇵JP
 🚀SpeedTest = select, 🔴, 🖲️Proxy
 🍎Apple = select, 🔴, 🖲️Proxy
 
