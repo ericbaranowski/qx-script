@@ -49,7 +49,7 @@ final, direct
 [filter_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt, tag = Fake iAP Filter, force-policy = Fake iAP Policy, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf, tag = hostsVN, force-policy = direct, enabled = true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag = hostsVN, force-policy = Chặn Ads, update-interval = 3600, enabled = true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag = hostsVN, force-policy = Chặn Ads, update-interval = 86400, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf, tag = hostsVN-OTA, force-policy = Chặn OTA, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list, tag = Facebook, force-policy = Facebook, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.list, tag = Pornhub, force-policy = Pornhub, enabled = true
