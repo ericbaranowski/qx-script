@@ -78,13 +78,13 @@ function env() {
     done,
   };
 }
+Giaxang();
 var wurl = {
   url: "https://api-qtx.000webhostapp.com/giaxang.php",
 };
 var today = new Date();
-Giaxang();
 function Giaxang() {
-  $task.fetch(wurl).then(
+  $.get(wurl).then(
     (response) => {
       var obj = JSON.parse(response.body);
       $.notify(

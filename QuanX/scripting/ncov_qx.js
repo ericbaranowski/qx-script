@@ -1,5 +1,4 @@
 var $ = env();
-
 function env() {
     const isRequest = typeof $request != "undefined";
     const isSurge = typeof $httpClient != "undefined";
