@@ -17,7 +17,6 @@ $task.fetch(wurl).then(
                 "open-url": url_news,
                 "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"]
             }
-            
             if (needUpdate(url_news, updatetime)) {
                 console.log(updatetime+"\n"+url_news);
                 $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
@@ -62,8 +61,8 @@ function hash(str) {
     return String(h);
 }
 function needUpdate(url, timestamp) {
-    const storedTimestamp = $.read(hash(url));
-    $.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
+    const storedTimestamp = $prefs.valueForKey(hash(url));
+    console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
     return storedTimestamp === undefined || storedTimestamp !== timestamp
         ? true
         : false;
