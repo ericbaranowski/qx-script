@@ -1,37 +1,35 @@
 //so luong tin
 var amount = 3;
 
-checkupdate();
-//main
-async function checkupdate() {
-    var wurl = {
-        url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + amount + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
-    };
-    $task.fetch(wurl).then(
-        (response) => {
-            var obj = JSON.parse(response.body);
-            for (i = 0; i < amount; i++) {
-                const updatetime = timeConverter(obj.data["1003834"][i].publish_time);
-                const title = obj.data["1003834"][i].title;
-                const videoid = obj.data["1003834"][i].check_object.video;
-                const data_lead = obj.data["1003834"][i].lead;
-                const url_news = obj.data["1003834"][i].share_url;
-                const notificationURL = {
-                    "open-url": url_news,
-                    "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"]
-                }
-                if (needUpdate(url_news, updatetime)) {
-                    $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
-                        "📌" + title, data_lead, notificationURL);
-                    $prefs.setValueForKey(updatetime, hash(url_news));
-                }
+var wurl = {
+    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + amount + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
+};
+$task.fetch(wurl).then(
+    (response) => {
+        var obj = JSON.parse(response.body);
+        for (i = 0; i < amount; i++) {
+            var updatetime = timeConverter(obj.data["1003834"][i].publish_time);
+            var title = obj.data["1003834"][i].title;
+            var videoid = obj.data["1003834"][i].check_object.video;
+            var data_lead = obj.data["1003834"][i].lead;
+            var url_news = obj.data["1003834"][i].share_url;
+            const notificationURL = {
+                "open-url": url_news,
+                "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"]
             }
-        },
-        (reason) => {
-            $notify("False!", "", reason.error);
+            console.log(updatetime, title, data_lead, url_news);
+            // if (needUpdate(url_news, updatetime)) {
+            //     $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
+            //         "📌" + title, data_lead, notificationURL);
+            //     $prefs.setValueForKey(updatetime, hash(url_news));
+            // }
         }
-    );
-}
+    },
+    (reason) => {
+        $notify("False!", "", reason.error);
+    }
+);
+
 
 //xu ly time
 function addZero(i) {
