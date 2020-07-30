@@ -12,12 +12,13 @@ $task.fetch(wurl).then(
             const videoid = obj.data["1003834"][i].check_object.video;
             const data_lead = obj.data["1003834"][i].lead;
             const url_news = obj.data["1003834"][i].share_url;
+            const vdurl = obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"];
             const notificationURL = {
                 "open-url": url_news,
-                "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"],
+                "media-url": vdurl,
             }
             if (needUpdate(url_news, updatetime)) {
-                console.log(updatetime+"\n"+url_news);
+                console.log(updatetime + "\n" + url_news);
                 $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
                     "📌" + titled, data_lead, notificationURL);
                 $prefs.setValueForKey(updatetime, hash(url_news));
@@ -29,25 +30,33 @@ $task.fetch(wurl).then(
     }
 );
 //xu ly time
-function addZero(i) {
-    if (i < 10) {
-        i = "0" + i;
-    }
-    return i;
-}
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp * 1000);
-    var months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+    var months = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var date = a.getDate();
     var hour = a.getHours();
     var min = a.getMinutes();
     var sec = a.getSeconds();
-    var time = date + '/' + month + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
+    var time = addZero(date) + '/' + addZero(month) + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
     return time;
 }
-// hash
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+//check new update
+function needUpdate(url, timestamp) {
+    const storedTimestamp = $prefs.valueForKey(hash(url));
+    console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
+    return storedTimestamp === undefined || storedTimestamp !== timestamp
+        ? true
+        : false;
+}
+//hash
 function hash(str) {
     let h = 0,
         i,
@@ -58,12 +67,4 @@ function hash(str) {
         h |= 0; // Convert to 32bit integer
     }
     return String(h);
-}
-//check new update
-function needUpdate(url, timestamp) {
-    const storedTimestamp = $prefs.valueForKey(hash(url));
-    console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
-    return storedTimestamp === undefined || storedTimestamp !== timestamp
-        ? true
-        : false;
 }
