@@ -8,7 +8,7 @@ $task.fetch(wurl).then(
         var obj = JSON.parse(response.body);
         for (i = 0; i < amount; i++) {
             var videoid = obj.data["1003834"][i].check_object.video;
-            $notify("VN[E]XPRESS.NET" + "📆" + timeConverter(obj.data["1003834"][i].publish_time), "📌 " + obj.data["1003834"][i].title, obj.data["1003834"][i].lead, { "open-url": obj.data["1003834"][i].share_url, "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"] });
+            $notify("VN[E]XPRESS.NET" + "📆" + timeConverter(obj.data["1003834"][i].publish_time), "📌" + obj.data["1003834"][i].title, obj.data["1003834"][i].lead, { "open-url": obj.data["1003834"][i].share_url, "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"] });
         }
     },
     (reason) => {
