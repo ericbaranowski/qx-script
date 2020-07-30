@@ -1,4 +1,4 @@
-//so luong tin
+//gioi han so luong tin
 var limit = 5;
 var wurl = {
     url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + limit + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
@@ -48,7 +48,7 @@ function addZero(i) {
     }
     return i;
 }
-//check new update
+//check update
 function needUpdate(url, timestamp) {
     const storedTimestamp = $prefs.valueForKey(hash(url));
     console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
