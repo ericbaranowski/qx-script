@@ -1,7 +1,7 @@
 //so luong tin
-var count = 5;
+var n = 5;
 var wurl = {
-    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + count + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
+    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + n + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
 };
 $task.fetch(wurl).then(
     (response) => {
@@ -28,12 +28,6 @@ $task.fetch(wurl).then(
     }
 );
 //xu ly time
-function addZero(i) {
-    if (i < 10) {
-        i = "0" + i;
-    }
-    return i;
-}
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp * 1000);
     var months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
@@ -46,6 +40,20 @@ function timeConverter(UNIX_timestamp) {
     var time = date + '/' + month + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
     return time;
 }
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+//check new update
+function needUpdate(url, timestamp) {
+    const storedTimestamp = $prefs.valueForKey(hash(url));
+    console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
+    return storedTimestamp === undefined || storedTimestamp !== timestamp
+        ? true
+        : false;
+}
 // hash
 function hash(str) {
     let h = 0,
@@ -57,12 +65,4 @@ function hash(str) {
         h |= 0; // Convert to 32bit integer
     }
     return String(h);
-}
-//check new update
-function needUpdate(url, timestamp) {
-    const storedTimestamp = $prefs.valueForKey(hash(url));
-    console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
-    return storedTimestamp === undefined || storedTimestamp !== timestamp
-        ? true
-        : false;
 }
