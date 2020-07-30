@@ -1,12 +1,12 @@
 //so luong tin
-var n = 5;
+var limit = 5;
 var wurl = {
-    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + n + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
+    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + limit + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
 };
 $task.fetch(wurl).then(
     (response) => {
         var obj = JSON.parse(response.body);
-        for (i = 0; i < amount; i++) {
+        for (i = 0; i < limit; i++) {
             const updatetime = timeConverter(obj.data["1003834"][i].publish_time);
             const titled = obj.data["1003834"][i].title;
             const videoid = obj.data["1003834"][i].check_object.video;
@@ -22,7 +22,7 @@ $task.fetch(wurl).then(
                     "📌" + titled, data_lead, notificationURL);
                 $prefs.setValueForKey(updatetime, hash(url_news));
             }
-            else{
+            else {
                 $notify("🤷‍♂️ Không có tin mới !");
             }
         }
