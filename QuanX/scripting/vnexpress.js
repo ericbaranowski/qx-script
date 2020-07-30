@@ -22,9 +22,6 @@ $task.fetch(wurl).then(
                     "📌" + titled, data_lead, notificationURL);
                 $prefs.setValueForKey(updatetime, hash(url_news));
             }
-            else {
-                $notify("🤷‍♂️ Không có tin mới !");
-            }
         }
     },
     (reason) => {
@@ -34,14 +31,12 @@ $task.fetch(wurl).then(
 //xu ly time
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp * 1000);
-    var months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
     var year = a.getFullYear();
-    var month = months[a.getMonth()];
+    var month = a.getMonth();
     var date = a.getDate();
     var hour = a.getHours();
     var min = a.getMinutes();
-    var sec = a.getSeconds();
-    var time = date + '/' + month + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
+    var time = addZero(date) + '/' + addZero(month) + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
     return time;
 }
 function addZero(i) {
@@ -50,7 +45,7 @@ function addZero(i) {
     }
     return i;
 }
-//check new update
+//check tin moi
 function needUpdate(url, timestamp) {
     const storedTimestamp = $prefs.valueForKey(hash(url));
     console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
@@ -58,7 +53,7 @@ function needUpdate(url, timestamp) {
         ? true
         : false;
 }
-// hash
+//hash
 function hash(str) {
     let h = 0,
         i,
