@@ -1,7 +1,7 @@
 //gioi han so luong tin
 var limit = 5;
 var wurl = {
-    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + limit + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
+    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit="+limit+"&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
 };
 $task.fetch(wurl).then(
     (response) => {
@@ -14,10 +14,9 @@ $task.fetch(wurl).then(
             const url_news = obj.data["1003834"][i].share_url;
             const notificationURL = {
                 "open-url": url_news,
-                "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"],
+                "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"]
             }
             if (needUpdate(url_news, updatetime)) {
-                console.log(updatetime + "\n" + url_news);
                 $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
                     "📌" + titled, data_lead, notificationURL);
                 $prefs.setValueForKey(updatetime, hash(url_news));
