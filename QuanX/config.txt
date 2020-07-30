@@ -60,7 +60,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/TikTok.lis
 
 [task_local]
 0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js, tag = Weather.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/vnexpress.js, tag = vnexpress.js
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/vnexpress.js, tag = vnexpress.js
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js, tag = Github.js
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js, tag = Appmonitor.js
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js, tag = Shopee.js
