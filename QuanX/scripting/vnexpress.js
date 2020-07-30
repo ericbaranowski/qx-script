@@ -46,7 +46,7 @@ function addZero(i) {
     }
     return i;
 }
-//luu timestamp
+//storedTimestamp
 function needUpdate(url, timestamp) {
     var storedTimestamp = $prefs.valueForKey(hash(url));
     console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
