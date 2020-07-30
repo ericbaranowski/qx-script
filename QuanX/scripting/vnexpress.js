@@ -1,7 +1,7 @@
 //so luong tin
-var amount = 5;
+var limit = 5;
 var wurl = {
-    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + amount + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
+    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + limit + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
 };
 $task.fetch(wurl).then(
     (response) => {
