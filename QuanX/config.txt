@@ -36,7 +36,7 @@ static = Proxy server, TẮT, Amazon Web Services, SSR, v2ray, img-url = https:/
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt, tag = Amazon Web Services
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = [1] V2Ray
-https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent, update-interval = 3600, opt-parser = true, tag = [1] ShadowsocksR
+https://raw.githubusercontent.com/voken100g/AutoSSR/master/online, update-interval = 3600, opt-parser = true, tag = [1] ShadowsocksR
 
 [rewrite_local]
 [rewrite_remote]
