@@ -31,13 +31,13 @@ $task.fetch(wurl).then(
 );
 //xu ly time
 function timeConverter(UNIX_timestamp) {
-    var a = new Date(UNIX_timestamp * 1000);
-    var year = a.getFullYear();
-    var month = a.getMonth();
-    var date = a.getDate();
-    var hour = a.getHours();
-    var min = a.getMinutes();
-    var time = addZero(date) + '/' + addZero(month) + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
+    let a = new Date(UNIX_timestamp * 1000);
+    let year = a.getFullYear();
+    let month = a.getMonth();
+    let date = a.getDate();
+    let hour = a.getHours();
+    let min = a.getMinutes();
+    let time = addZero(date) + '/' + addZero(month) + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
     return time;
 }
 function addZero(i) {
