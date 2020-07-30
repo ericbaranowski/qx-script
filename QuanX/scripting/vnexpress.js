@@ -17,8 +17,9 @@ $task.fetch(wurl).then(
                 "open-url": url_news,
                 "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"]
             }
-            //  console.log(updatetime, titlex, data_lead, url_news);
+            
             if (needUpdate(url_news, updatetime)) {
+                console.log(updatetime+"\n"+url_news);
                 $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
                     "📌" + titled, data_lead, notificationURL);
                 $prefs.setValueForKey(updatetime, hash(url_news));
