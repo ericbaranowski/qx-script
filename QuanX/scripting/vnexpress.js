@@ -19,7 +19,7 @@ $task.fetch(wurl).then(
                 "media-url": vdurl,
             }
             if (needUpdate(url_news, updatetime)) {
-                $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
+                $notify("VNEXPRESS.NET" + "📆" + updatetime,
                     "📌" + titled, data_lead, notificationURL);
                 $prefs.setValueForKey(updatetime, hash(url_news));
             }
