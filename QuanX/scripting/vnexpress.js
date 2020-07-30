@@ -1,6 +1,6 @@
 //so luong tin
 var limit = 5;
-var categoryid = 1003834;
+var categoryid = "1003834";
 var wurl = {
     url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=" + categoryid + "&limit=" + limit + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
 };
