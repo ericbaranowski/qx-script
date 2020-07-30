@@ -12,9 +12,10 @@ $task.fetch(wurl).then(
             const videoid = obj.data["1003834"][i].check_object.video;
             const data_lead = obj.data["1003834"][i].lead;
             const url_news = obj.data["1003834"][i].share_url;
+            const vdurl = obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"];
             const notificationURL = {
                 "open-url": url_news,
-                "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"]
+                "media-url": vdurl,
             }
             if (needUpdate(url_news, updatetime)) {
                 $notify("VN[E]XPRESS.NET" + "📆" + updatetime,
