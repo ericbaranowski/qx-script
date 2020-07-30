@@ -14,7 +14,7 @@ $task.fetch(wurl).then(
             const url_news = obj.data["1003834"][i].share_url;
             const notificationURL = {
                 "open-url": url_news,
-                "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"]
+                "media-url": obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"],
             }
             if (needUpdate(url_news, updatetime)) {
                 console.log(updatetime+"\n"+url_news);
@@ -47,7 +47,7 @@ function timeConverter(UNIX_timestamp) {
     var time = date + '/' + month + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
     return time;
 }
-//
+// hash
 function hash(str) {
     let h = 0,
         i,
