@@ -22,6 +22,9 @@ $task.fetch(wurl).then(
                     "📌" + titled, data_lead, notificationURL);
                 $prefs.setValueForKey(updatetime, hash(url_news));
             }
+            else{
+                $notify("🤷‍♂️ Không có tin mới !");
+            }
         }
     },
     (reason) => {
