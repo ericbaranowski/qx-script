@@ -1,19 +1,20 @@
 //so luong tin
 var limit = 5;
+var categoryid = 1003834;
 var wurl = {
-    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=1003834&limit=" + limit + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
+    url: "https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=" + categoryid + "&limit=" + limit + "&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d",
 };
 $task.fetch(wurl).then(
     (response) => {
         var obj = JSON.parse(response.body);
         for (i = 0; i < limit; i++) {
-            const updatetime = timeConverter(obj.data["1003834"][i].publish_time);
-            const titled = obj.data["1003834"][i].title;
-            const videoid = obj.data["1003834"][i].check_object.video;
-            const data_lead = obj.data["1003834"][i].lead;
-            const url_news = obj.data["1003834"][i].share_url;
-            const vdurl = obj.data["1003834"][i].check_object.video_autoplay[videoid].size_format["240"];
-            const notificationURL = {
+            var updatetime = timeConverter(obj.data[categoryid][i].publish_time);
+            var titled = obj.data[categoryid][i].title;
+            var videoid = obj.data[categoryid][i].check_object.video;
+            var data_lead = obj.data[categoryid][i].lead;
+            var url_news = obj.data[categoryid][i].share_url;
+            var vdurl = obj.data[categoryid][i].check_object.video_autoplay[videoid].size_format["240"];
+            var notificationURL = {
                 "open-url": url_news,
                 "media-url": vdurl,
             }
@@ -47,7 +48,7 @@ function addZero(i) {
 }
 //check tin moi
 function needUpdate(url, timestamp) {
-    const storedTimestamp = $prefs.valueForKey(hash(url));
+    var storedTimestamp = $prefs.valueForKey(hash(url));
     console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
     return storedTimestamp === undefined || storedTimestamp !== timestamp
         ? true
