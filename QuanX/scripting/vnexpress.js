@@ -7,12 +7,12 @@ $task.fetch(wurl).then(
     (response) => {
         var obj = JSON.parse(response.body);
         for (i = 0; i < limit; i++) {
-            var post_time = timeConverter(obj.data[categoryid][i].publish_time);
-            var title = obj.data[categoryid][i].title;
-            var data_lead = obj.data[categoryid][i].lead;
-            var news_url = obj.data[categoryid][i].share_url;
-            var video_id = obj.data[categoryid][i].check_object.video;
-            var video_link = obj.data[categoryid][i].check_object.video_autoplay[video_id].size_format["240"];
+            var post_time = timeConverter(obj.data["1003834"][i].publish_time);
+            var title = obj.data["1003834"][i].title;
+            var data_lead = obj.data["1003834"][i].lead;
+            var news_url = obj.data["1003834"][i].share_url;
+            var video_id = obj.data["1003834"][i].check_object.video;
+            var video_link = obj.data["1003834"][i].check_object.video_autoplay[video_id].size_format["240"];
             var notificationURL = {
                 "open-url": news_url,
                 "media-url": video_link,
