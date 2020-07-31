@@ -8,7 +8,7 @@ $task.fetch(wurl).then(
     (response) => {
         var obj = JSON.parse(response.body);
         for (i = 0; i < limit; i++) {
-            var updatetime = timeConverter(obj.data[categoryid][i].publish_time);
+            var posttime = timeConverter(obj.data[categoryid][i].publish_time);
             var titled = obj.data[categoryid][i].title;
             var videoid = obj.data[categoryid][i].check_object.video;
             var data_lead = obj.data[categoryid][i].lead;
@@ -18,10 +18,10 @@ $task.fetch(wurl).then(
                 "open-url": url_news,
                 "media-url": vdurl,
             }
-            if (needUpdate(url_news, updatetime)) {
-                $notify("VNEXPRESS.NET" + "📆" + updatetime,
-                    "📌" + titled, data_lead, notificationURL);
-                $prefs.setValueForKey(updatetime, hash(url_news));
+            if (needUpdate(url_news, posttime)) {
+                $notify("vnexpress.net",
+                    "📌" + titled, data_lead + "\n" + "⌚" + posttime, notificationURL);
+                $prefs.setValueForKey(posttime, hash(url_news));
             }
         }
     },
@@ -32,12 +32,12 @@ $task.fetch(wurl).then(
 //xu ly time
 function timeConverter(UNIX_timestamp) {
     let a = new Date(UNIX_timestamp * 1000);
-    let year = a.getFullYear();
+    //let year = a.getFullYear();
     let month = a.getMonth();
     let date = a.getDate();
     let hour = a.getHours();
     let min = a.getMinutes();
-    let time = addZero(date) + '/' + addZero(month) + '/' + year + ' ' + addZero(hour) + ':' + addZero(min);
+    let time = addZero(date) + '/' + addZero(month) + ' ' + addZero(hour) + ':' + addZero(min);
     return time;
 }
 function addZero(i) {
