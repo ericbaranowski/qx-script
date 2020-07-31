@@ -7,19 +7,19 @@ $task.fetch(wurl).then(
     (response) => {
         var obj = JSON.parse(response.body);
         for (i = 0; i < limit; i++) {
-            var posttime = timeConverter(obj.data[categoryid][i].publish_time);
-            var titled = obj.data[categoryid][i].title;
-            var videoid = obj.data[categoryid][i].check_object.video;
+            var post_time = timeConverter(obj.data[categoryid][i].publish_time);
+            var title = obj.data[categoryid][i].title;
             var data_lead = obj.data[categoryid][i].lead;
-            var url_news = obj.data[categoryid][i].share_url;
-            var vdurl = obj.data[categoryid][i].check_object.video_autoplay[videoid].size_format["240"];
+            var news_url = obj.data[categoryid][i].share_url;
+            var video_id = obj.data[categoryid][i].check_object.video;
+            var video_link = obj.data[categoryid][i].check_object.video_autoplay[video_id].size_format["240"];
             var notificationURL = {
-                "open-url": url_news,
-                "media-url": vdurl,
+                "open-url": news_url,
+                "media-url": video_link,
             }
-            if (needUpdate(url_news, posttime)) {
-                $notify("@vnexpress.net", titled, data_lead + "\n" + "⌚" + posttime, notificationURL);
-                $prefs.setValueForKey(posttime, hash(url_news));
+            if (needUpdate(news_url, post_time)) {
+                $notify("📰vnexpress.net", title, data_lead + "\n" + "⌚" + post_time, notificationURL);
+                $prefs.setValueForKey(post_time, hash(news_url));
             }
         }
     },
@@ -35,7 +35,8 @@ function timeConverter(UNIX_timestamp) {
     let date = a.getDate();
     let hour = a.getHours();
     let min = a.getMinutes();
-    let time = addZero(date) + '/' + addZero(month) + ' ' + addZero(hour) + ':' + addZero(min);
+    let sec = a.getSeconds();
+    let time = addZero(date) + '/' + addZero(month) + '/' + addZero(year) + ' ' + addZero(hour) + ':' + addZero(min) + ':' + addZero(sec);
     return time;
 }
 function addZero(i) {
