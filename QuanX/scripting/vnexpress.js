@@ -18,7 +18,7 @@ $task.fetch(wurl).then(
                 "media-url": video_link,
             }
             if (needUpdate(news_url, post_time)) {
-                $notify("📰vnexpress.net", title, data_lead + "\n" + "⌚" + post_time, notificationURL);
+                $notify("📰 VNEXPRESS.NET", title, data_lead + "\n" + "⌚" + post_time, notificationURL);
                 $prefs.setValueForKey(post_time, hash(news_url));
             }
         }
@@ -31,7 +31,7 @@ $task.fetch(wurl).then(
 function timeConverter(UNIX_timestamp) {
     let a = new Date(UNIX_timestamp * 1000);
     let year = a.getFullYear();
-    let month = a.getMonth();
+    let month = a.getMonth() + 1;
     let date = a.getDate();
     let hour = a.getHours();
     let min = a.getMinutes();
