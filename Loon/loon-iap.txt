@@ -13,14 +13,13 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 
 [Remote Filter]
 🇭🇰 = NameRegex, AutoSSR, VPN, FilterKey = "🇭🇰"
-🇨🇳 = NameRegex, AutoSSR, VPN, FilterKey = "🇨🇳"
 🇯🇵 = NameRegex, AutoSSR, VPN, FilterKey = "🇯🇵"
 🇰🇷 = NameRegex, AutoSSR, VPN, FilterKey = "🇰🇷"
 🇺🇸 = NameRegex, AutoSSR, VPN, FilterKey = "🇺🇸"
 🇸🇬 = NameRegex, AutoSSR, VPN, FilterKey = "🇸🇬"
 
 [Proxy Group]
-🖲️Proxy = select, 🔴, 🇭🇰HK, 🇨🇳TW, 🇯🇵JP, 🇰🇷KR, 🇺🇸US, 🇸🇬SG
+🖲️Proxy = select, 🔴, 🇭🇰HK, 🇯🇵JP, 🇰🇷KR, 🇺🇸US, 🇸🇬SG
 🔰Fake iAP Policy = select, ♻️Tự Động, 🌀Tuỳ Chọn
 💰PXX Policy = select, 🔴, 🔰Fake iAP Policy
 📦Cydia Tweak = select, 🔴, 🔰Fake iAP Policy
@@ -35,7 +34,6 @@ Amazon VPS = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/aws.
 🚀SpeedTest = select, 🔴, 🖲️Proxy
 
 🇭🇰HK = url-test, 🇭🇰, url = http://bing.com/,interval = 600
-🇨🇳TW = url-test, 🇨🇳, url = http://bing.com/,interval = 600
 🇸🇬SG = url-test, 🇸🇬, url = http://bing.com/,interval = 600
 🇰🇷KR = url-test, 🇰🇷, url = http://bing.com/,interval = 600
 🇯🇵JP = url-test, 🇯🇵, url = http://bing.com/,interval = 600
