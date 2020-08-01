@@ -14,7 +14,7 @@ function push_data() {
             var notificationURL = { "open-url": news_url, "media-url": video_link }
             if (needUpdate(news_url, post_time)) {
                 $notify("📰 VNEXPRESS.NET", title, `${data_lead}\n${post_time}`, notificationURL);
-                $prefs.setValueForKey(post_time, hash(news_url));
+                $prefs.setValueForKey(post_time, news_url);
             }
         }
     },
@@ -33,12 +33,4 @@ function needUpdate(url, timestamp) {
     return storedTimestamp === undefined || storedTimestamp !== timestamp
         ? true
         : false;
-}
-function hash(str) {
-    let h = 0, i, chr;
-    for (i = 0; i < str.length; i++) {
-        chr = str.charCodeAt(i);
-        h = (h << 5) - h + chr;
-        h |= 0;
-    } return String(h);
 }
