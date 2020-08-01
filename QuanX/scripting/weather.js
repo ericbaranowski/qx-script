@@ -108,7 +108,7 @@ function getw() {
                 tmp = reg_tmp.exec(body)[1]
                 rain_p = reg_rain_p.exec(body)[1] 
                 if (count == 1) {
-                    $.message += `🌈 Nhiệt độ hiện tại ${tmp}，Xác suất mưa là ${rain_p}\n⬇️Xác suất cao có mưa trong ${$.pre_hours} giờ tiếp theo: \n`
+                    $.message += `🌈 Nhiệt độ hiện tại ${tmp}，Xác suất mưa ${rain_p}\n⬇️Xác suất cao có mưa trong ${$.pre_hours} giờ tiếp theo: \n`
                 }
                 time_point = time_prefix + time_point
                 if (!is_tomorrow && parseInt(r[1].replace(/:\d+/, "")) == 23) {
