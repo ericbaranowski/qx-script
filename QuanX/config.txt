@@ -25,10 +25,10 @@ static = Pornhub, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure
 static = AppStore, TẮT, Proxy server, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/appstore.png
 static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 static = Speedtest, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
-static = Amazon Web Services, server-tag-regex = EC2, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
 static = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/V2ray.png
+static = Amazon Web Services, server-tag-regex = EC2, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AWS.png
 static = SSR, resource-tag-regex = ShadowsocksR, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ssrcloud.png
-ssid = SSID Setting, Proxy server, direct, HANH CHINH:Proxy server, Trung Thuan:Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+ssid = SSID Setting, Proxy server, direct, HANH CHINH:Amazon Web Services, Trung Thuan:Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static = Proxy server, TẮT, Amazon Web Services, SSR, v2ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 
 [server_local]
@@ -36,7 +36,7 @@ static = Proxy server, TẮT, Amazon Web Services, SSR, v2ray, img-url = https:/
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/aws.txt, tag = Amazon Web Services
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = [1] V2Ray
-https://raw.githubusercontent.com/voken100g/AutoSSR/master/online, update-interval = 3600, opt-parser = true, tag = [1] ShadowsocksR
+https://raw.githubusercontent.com/voken100g/AutoSSR/master/online, update-interval = 10800, opt-parser = true, tag = [1] ShadowsocksR
 
 [rewrite_local]
 [rewrite_remote]
