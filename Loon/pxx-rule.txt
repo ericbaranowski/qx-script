@@ -1,1 +1,1 @@
-DOMAIN-KEYWORD,-buy.itunes.apple.com
+DOMAIN-KEYWORD,p?-buy.itunes.apple.com
