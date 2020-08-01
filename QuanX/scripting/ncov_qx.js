@@ -1,4 +1,24 @@
 var $ = env();
+var ncovUrl = {
+    url: 'https://code.junookyo.xyz/api/ncov-moh/data.json',
+}
+$.get(ncovUrl, function (error, response, data) {
+    if (error) {
+        $.post("NCOV", "", "Bad connection")
+        $.done();
+    } else {
+        if (response.statusCode == 200) {
+            let obj = JSON.parse(data);
+            if (obj["success"]) {
+                obj = obj["data"];
+                $.notify("NCOV ", "", "🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] + ", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] + "\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] + ", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
+                $.done();
+            }
+        } else {
+            $.notify("NCOV", "", "API ERROR");
+        }
+    }
+});
 function env() {
     const isRequest = typeof $request != "undefined";
     const isSurge = typeof $httpClient != "undefined";
@@ -78,23 +98,3 @@ function env() {
         done,
     };
 }
-var ncovUrl = {
-    url: 'https://code.junookyo.xyz/api/ncov-moh/data.json',
-}
-$.get(ncovUrl, function (error, response, data) {
-    if (error) {
-        $.post("NCOV", "", "Bad connection")
-        $.done();
-    } else {
-        if (response.statusCode == 200) {
-            let obj = JSON.parse(data);
-            if (obj["success"]) {
-                obj = obj["data"];
-                $.notify("NCOV ", "", "🇻🇳 VN: Số người nhiễm: " + obj["vietnam"]["cases"] + ", Người chết: " + obj["vietnam"]["deaths"] + ", Hồi phục: " + obj["vietnam"]["recovered"] + "\n🌍 Global:  Số người nhiễm: " + obj["global"]["cases"] + ", Người chết: " + obj["global"]["deaths"] + ", Hồi phục: " + obj["global"]["recovered"]);
-                $.done();
-            }
-        } else {
-            $.notify("NCOV", "", "API ERROR");
-        }
-    }
-});
