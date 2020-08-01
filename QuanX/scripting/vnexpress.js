@@ -29,7 +29,7 @@ function timeConverter(UNIX_timestamp) {
 function addZero(i) { if (i < 10) { i = "0" + i } return i }
 function needUpdate(url, timestamp) {
     var storedTimestamp = $prefs.valueForKey(hash(url));
-    console.log(`Stored Timestamp for ${hash(url)}: ` + storedTimestamp);
+    console.log(`Stored Timestamp for ${url}: ` + storedTimestamp);
     return storedTimestamp === undefined || storedTimestamp !== timestamp
         ? true
         : false;
