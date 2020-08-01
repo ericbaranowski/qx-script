@@ -19,7 +19,7 @@ function push_data() {
                 notify_s++;
             }
         }
-        if (notify_s = 0) { console.log("Không có tin mới!") }
+        if (notify_s == 0) { console.log("Không có tin mới!") }
         else{console.log(`✨Có ${notify_s} tin mới!`)}
     },
         (reason) => { console.error(reason) }
