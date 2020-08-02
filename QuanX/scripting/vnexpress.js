@@ -19,8 +19,8 @@ function pushData() {
                 notify_s++;
             }
         }
-        if (notify_s == 0) { console.log(`🤷‍♂️Không có tin mới!`) }
-        else{console.log(`✨Có ${notify_s} tin mới!\n⏳Đang tải...`)}
+        if (notify_s == 0) { console.log(`🔴 Không có tin mới!`) }
+        else{console.log(`🟢 Có ${notify_s} tin mới!\n🟡 Đang tải...`)}
     },
         (reason) => { console.error(reason) }
     );
