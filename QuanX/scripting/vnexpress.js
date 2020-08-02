@@ -20,7 +20,7 @@ function pushData() {
             }
         }
         if (notify_s == 0) { console.log(`Không có tin mới!`) }
-        else{console.log(`✨Có ${notify_s} tin mới!\nĐang tải...`)}
+        else{console.log(`✨Có ${notify_s} tin mới!\n⏳Đang tải...`)}
     },
         (reason) => { console.error(reason) }
     );
