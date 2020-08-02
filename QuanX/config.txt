@@ -38,6 +38,7 @@ https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = tru
 [rewrite_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt, tag = Scripts
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt, tag = Rewrite
+https://raw.githubusercontent.com/langkhach270389/Scripting/master/QuantumultX/Fake_Vip.txt, tag=Fake_Remote_LangKhach, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/QuantumultX.box.remote.conf, update-interval = 3600, tag = BoxJS
 
 [filter_local]
