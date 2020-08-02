@@ -17,7 +17,7 @@ static = Tuỳ Chọn, resource-tag-regex = Fake iAP Server, img-url = https://r
 static = Chặn OTA, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
 static = Chặn Ads, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
 static = Fake iAP Policy, TẮT, Tự Động, Tuỳ Chọn, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
-static = Fake PXX Policy, TẮT, Fake iAP Policy, img-url = https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-samples/apple.PNG
+static = Fake PXX Policy, TẮT, Fake iAP Policy, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
 static = Facebook, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
 static = Fake Cydia Tweak, TẮT, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
 static = Youtube, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
@@ -25,7 +25,7 @@ static = Pornhub, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure
 static = AppStore, TẮT, Proxy server, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/appstore.png
 static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 static = Speedtest, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
-static = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/V2ray.png
+available = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/V2ray.png
 ssid = SSID Setting, Proxy server, direct, HANH CHINH: Proxy server, Trung Thuan: Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static = Proxy server, TẮT, v2ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 

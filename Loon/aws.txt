@@ -1,2 +1,0 @@
-Amazon EC2-1= Shadowsocks,13.212.11.5,10086,aes-256-gcm,"Tdpamm00"
-Amazon EC2-2= Shadowsocks,18.166.30.86,10086,aes-256-gcm,"Tdpamm00"
