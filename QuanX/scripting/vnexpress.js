@@ -4,8 +4,8 @@ var notify_s = 0;
 var wurl = {
     url: `https://api3.vnexpress.net/api/article?type=get_article_folder&cate_id=${cate_id}&limit=${limit}&offset=0&option=video_autoplay,object,get_zone&app_id=9e304d`,
 };
-push_data();
-function push_data() {
+pushData();
+function pushData() {
     $task.fetch(wurl).then((response) => {
         var obj = JSON.parse(response.body);
         for (const i in obj.data[cate_id]) {
