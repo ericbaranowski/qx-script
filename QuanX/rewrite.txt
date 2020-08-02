@@ -1,4 +1,4 @@
-hostname=duckduckgo.com,oa.zalo.me,graph.nhaccuatui.com,avatar-nct.nixcdn.com,spclient.wg.spotify.com,*.googlevideo.com,api*.tiktokv.com,*.musical.ly,
+hostname = duckduckgo.com, oa.zalo.me, graph.nhaccuatui.com, avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, api*.tiktokv.com, *.musical.ly, 
 
 # > Q-search
 ^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ url 302 https://github.com/search?q=$1
