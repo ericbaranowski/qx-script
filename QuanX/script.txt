@@ -1,4 +1,4 @@
-hostname = www.patreon.com, raw.githubusercontent.com, gist.githubusercontent.com, shopee.vn, www.google.*, encrypted.google.*, *-buy.itunes.apple.com, api.unlimapps.com, .*https, .*
+hostname = www.patreon.com, raw.githubusercontent.com, gist.githubusercontent.com, shopee.vn, www.google.*, encrypted.google.*, *-buy.itunes.apple.com, api.unlimapps.com,
 
 # > Script converter
 ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/js-converter.js
@@ -11,9 +11,6 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body htt
 
 # > Endless google
 (https:\/\/www\.google\..*)|(https:\/\/encrypted\.google\..*) url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js
-
-# > Just_redirect
-\/^https?:\/\/\..*https?:\/\/\..*\/ url script-response-body Just_redirect.min.user.js
 
 # > Old ipa
 (https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/old_ipa.js
