@@ -32,7 +32,7 @@ static = Proxy server, TẮT, v2ray, img-url = https://github.com/Koolson/Qure/r
 [server_local]
 [server_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server
-https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = iKuuu V2Ray
+https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = iKuuu.co V2Ray
 
 [rewrite_local]
 [rewrite_remote]
