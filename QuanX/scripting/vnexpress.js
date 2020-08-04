@@ -11,7 +11,7 @@ function pushData() {
         for (const i in obj.data[cate_id]) {
             var post_time = timeConverter(obj.data[cate_id][i].publish_time);
             var title = obj.data[cate_id][i].title, data_lead = obj.data[cate_id][i].lead, news_url = obj.data[cate_id][i].share_url,
-                video_id = obj.data[cate_id][i].check_object.video, video_link = obj.data[cate_id][i].check_object.video_autoplay[video_id].size_format["240"];
+                video_id = obj.data[cate_id][i].check_object.video, video_link = obj.data[cate_id][i].check_object.video_autoplay[video_id].size_format["480"];
             var notificationURL = { "open-url": news_url, "media-url": video_link }
             if (needUpdate(news_url, post_time)) {
                 $notify("📰 VNEXPRESS.NET", title, `${data_lead}\n${post_time}`, notificationURL);
