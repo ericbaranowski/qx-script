@@ -17,7 +17,7 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 🇸🇬 = NameRegex, VPN, FilterKey = "🇸🇬"
 
 [Proxy Group]
-🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🇭🇰HK, 🇯🇵JP, 🇰🇷KR, 🇺🇸US, 🇸🇬SG
+🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🇭🇰𝐇𝐊, 🇸🇬𝐒𝐆, 🇯🇵𝐉𝐏, 🇰🇷𝐊𝐑, 🇺🇸𝐔𝐒
 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, ♻️𝐀𝐮𝐭𝐨, 🌀𝐌𝐚𝐧𝐮𝐚𝐥
 💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, 🔰Fake iAP Policy
 📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤 = select, 🔴, 🔰Fake iAP Policy
@@ -31,11 +31,11 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
 🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
 
-🇭🇰HK = url-test, 🇭🇰, url = http://bing.com/,interval = 600
-🇸🇬SG = url-test, 🇸🇬, url = http://bing.com/,interval = 600
-🇰🇷KR = url-test, 🇰🇷, url = http://bing.com/,interval = 600
-🇯🇵JP = url-test, 🇯🇵, url = http://bing.com/,interval = 600
-🇺🇸US = url-test, 🇺🇸, url = http://bing.com/,interval = 600
+🇭🇰𝐇𝐊 = url-test, 🇭🇰, url = http://bing.com/,interval = 600
+🇸🇬𝐒𝐆 = url-test, 🇸🇬, url = http://bing.com/,interval = 600
+🇰🇷𝐊𝐑 = url-test, 🇰🇷, url = http://bing.com/,interval = 600
+🇯🇵𝐉𝐏 = url-test, 🇯🇵, url = http://bing.com/,interval = 600
+🇺🇸𝐔𝐒 = url-test, 🇺🇸, url = http://bing.com/,interval = 600
 
 🟢 = select, REJECT
 🔴 = select, DIRECT
