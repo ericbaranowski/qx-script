@@ -1,5 +1,4 @@
 ﻿[General]
-host = 127.0.0.1
 ipv6 = false
 allow-udp-proxy = true
 dns-server = system, 8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1
