@@ -19,9 +19,9 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 [Proxy Group]
 🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🇭🇰𝐇𝐊, 🇸🇬𝐒𝐆, 🇯🇵𝐉𝐏, 🇰🇷𝐊𝐑, 🇺🇸𝐔𝐒
 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, ♻️𝐀𝐮𝐭𝐨, 🌀𝐌𝐚𝐧𝐮𝐚𝐥
-💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, 🔰Fake iAP Policy
-📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤 = select, 🔴, 🔰Fake iAP Policy
-♻️𝐀𝐮𝐭𝐨 = fallback, Fake iAP Server, url = http://www.google.com/generate_204, interval = 600, max-timeout = 3000
+💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
+📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
+♻️𝐀𝐮𝐭𝐨 = fallback, Fake iAP Server, url = http://bing.com/, interval = 600
 🌀𝐌𝐚𝐧𝐮𝐚𝐥 = select, Fake iAP Server
 🍎𝐁𝐥𝐨𝐜𝐤 𝐎𝐓𝐀 = select, 🟢, 🔴
 🚫𝐁𝐥𝐨𝐜𝐤 𝐀𝐝𝐬 = select, 🟢, 🔴
