@@ -5,7 +5,7 @@ allow-udp-proxy = true
 dns-server = system, 8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1
 #host = 192.168.1.127
 
-[Remote 𝐏𝐫𝐨𝐱𝐲]
+[Remote Proxy]
 VPN = https://2ds5.cf/9blkaU
 Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/server.txt
 
