@@ -16,14 +16,14 @@ available = Tự Động, resource-tag-regex = Fake iAP Server, img-url = https:
 static = Tuỳ Chọn, resource-tag-regex = Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
 static = Chặn OTA, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
 static = Chặn Ads, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
-static = Fake iAP Policy, TẮT, Tự Động, Tuỳ Chọn, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
-static = Fake PXX Policy, TẮT, Fake iAP Policy, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+;static = Fake iAP Policy, TẮT, Tự Động, Tuỳ Chọn, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
+;static = Fake PXX Policy, TẮT, Fake iAP Policy, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
 static = Facebook, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
-static = Fake Cydia Tweak, TẮT, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
+;static = Fake Cydia Tweak, TẮT, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
 static = Youtube, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
 static = Pornhub, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Pornhub.png
 static = AppStore, TẮT, Proxy server, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/appstore.png
-static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
+;static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 static = Speedtest, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 available = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/V2ray.png
 ssid = SSID Setting, Proxy server, direct, HANHCHINH: Proxy server, Trung Thuan: Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
@@ -31,7 +31,7 @@ static = Proxy server, TẮT, v2ray, img-url = https://github.com/Koolson/Qure/r
 
 [server_local]
 [server_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server
+;https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = iKuuu.co V2Ray
 
 [rewrite_local]
@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/chavyleung/scripts/master/QuantumultX.box.remo
 [filter_local]
 final, direct
 [filter_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt, tag = Fake iAP Filter, force-policy = Fake iAP Policy, enabled = true
+;https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt, tag = Fake iAP Filter, force-policy = Fake iAP Policy, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf, tag = hostsVN, force-policy = direct, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag = hostsVN, force-policy = Chặn Ads, update-interval = 86400, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf, tag = hostsVN-OTA, force-policy = Chặn OTA, enabled = true
