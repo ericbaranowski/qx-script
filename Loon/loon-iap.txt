@@ -73,10 +73,9 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rewrite.txt, tag 
 enable = true
 [Remote Script]
 https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/script.txt, tag = scripts, enabled = true
-//https://raw.githubusercontent.com/chavyleung/scripts/master/loon.box.conf, tag = boxjs, enabled = true
 
 [Plugin]
-https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.tf.plugin, tag = boxjs.tf
+https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.tf.plugin, tag = boxjs.tf, enabled = true
 
 [Mitm]
 enable = true
