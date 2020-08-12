@@ -12,8 +12,8 @@ server = 1.0.0.1
 [policy]
 static = BẬT, reject, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Direct.png
 static = TẮT, direct, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Reject.png
-available = Tự Động, resource-tag-regex = Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
-static = Tuỳ Chọn, resource-tag-regex = Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
+;available = Tự Động, resource-tag-regex = Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+;static = Tuỳ Chọn, resource-tag-regex = Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
 static = Chặn OTA, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
 static = Chặn Ads, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
 ;static = Fake iAP Policy, TẮT, Tự Động, Tuỳ Chọn, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
