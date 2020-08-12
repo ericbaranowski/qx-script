@@ -53,7 +53,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.li
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/AppStore.list, tag = AppStore, force-policy = AppStore, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/TikTok.list, tag = TikTok, force-policy = TikTok, enabled = true
+;https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/TikTok.list, tag = TikTok, force-policy = TikTok, enabled = true
 
 [task_local]
 0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js, tag = Weather.js
