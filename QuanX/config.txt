@@ -1,5 +1,4 @@
-﻿[general]
-udp_whitelist = 53, 1024-65535
+[general]
 geo_location_checker = http://ip-api.com/json/?, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
 resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 
@@ -18,16 +17,16 @@ static = Chặn OTA, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw
 static = Chặn Ads, TẮT, BẬT, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
 ;static = Fake iAP Policy, TẮT, Tự Động, Tuỳ Chọn, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
 ;static = Fake PXX Policy, TẮT, Fake iAP Policy, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
-static = Facebook, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
+;static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 ;static = Fake Cydia Tweak, TẮT, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
+static = Facebook, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
 static = Youtube, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
 static = Pornhub, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Pornhub.png
 static = AppStore, TẮT, Proxy server, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/appstore.png
-;static = TikTok, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 static = Speedtest, TẮT, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 available = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/V2ray.png
-ssid = SSID Setting, Proxy server, direct, HANHCHINH: Proxy server, Trung Thuan: Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static = Proxy server, TẮT, v2ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
+ssid = SSID Setting, Proxy server, direct, HANHCHINH: Proxy server, Trung Thuan: Proxy server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 
 [server_local]
 [server_remote]
@@ -53,7 +52,6 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.li
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/AppStore.list, tag = AppStore, force-policy = AppStore, enabled = true
-;https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/TikTok.list, tag = TikTok, force-policy = TikTok, enabled = true
 
 [task_local]
 0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js, tag = Weather.js
