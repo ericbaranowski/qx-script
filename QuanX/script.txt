@@ -1,4 +1,4 @@
-hostname = www.patreon.com, raw.githubusercontent.com, gist.githubusercontent.com, shopee.vn, www.google.*, encrypted.google.*, *-buy.itunes.apple.com, api.unlimapps.com,
+hostname = www.patreon.com, raw.githubusercontent.com, gist.githubusercontent.com, shopee.vn, www.google.*, *-buy.itunes.apple.com, api.unlimapps.com,
 
 # > Script converter
 ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/js-converter.js
