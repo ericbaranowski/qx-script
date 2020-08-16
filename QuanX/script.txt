@@ -19,4 +19,4 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body htt
 http:\/\/outcut.szsszykj.com.+api.+OverseasPay.+GetVip url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/quicut.js
 
 #
-https:\/\/api4.bybutter.com.+v4.+users.+me url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/test.js
+https:\/\/api4.bybutter.com\/v4\/users\/me url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/test.js
