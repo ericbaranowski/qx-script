@@ -18,5 +18,5 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body htt
 # > QuiCut
 http:\/\/outcut.szsszykj.com.+api.+OverseasPay.+GetVip url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/quicut.js
 
-#
-https:\/\/api4.bybutter.com\/v4\/users\/me url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/test.js
+# > Voice Translator
+https:\/\/api.apphud.com\/v1\/customers url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/voicetranslator.js
