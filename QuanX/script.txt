@@ -1,4 +1,4 @@
-hostname = www.patreon.com, raw.githubusercontent.com, gist.githubusercontent.com, shopee.vn, www.google.*, *-buy.itunes.apple.com, api.unlimapps.com, outcut.szsszykj.com
+hostname = www.patreon.com, raw.githubusercontent.com, gist.githubusercontent.com, shopee.vn, www.google.*, *-buy.itunes.apple.com, api.unlimapps.com, outcut.szsszykj.com, api4.bybutter.com
 
 # > Script converter
 ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/js-converter.js
@@ -17,3 +17,6 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body htt
 
 # > QuiCut
 http:\/\/outcut.szsszykj.com.+api.+OverseasPay.+GetVip url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/quicut.js
+
+#
+https:\/\/api4.bybutter.com.+v4.+users.+me url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/test.js
