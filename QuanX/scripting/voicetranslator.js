@@ -10,7 +10,7 @@ obj.data["subscriptions"] =   {
           "started_at": "2020-08-16T13:17:12.000Z",
           "unit": "year",
           "units_count": 1,
-          "active_till": "2020-08-19T13:17:12.000Z",
+          "active_till": "2030-08-19T13:17:12.000Z",
           "product_id": "vt.free.sub.12m.3d.trial_2",
           "introductory_activated": true,
           "kind": "autorenewable"
