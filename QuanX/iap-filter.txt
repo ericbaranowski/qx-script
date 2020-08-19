@@ -108,7 +108,7 @@ HOST,pay.babybus.com,Fake iAP Policy
 HOST,app.autocad360.com,Fake iAP Policy
 #VMonkey
 HOST,www.api.monkeyuni.net,Fake iAP Policy
-#   TIKTOK
+#TIKTOK
 #HOST,api3-normal-c-lf.amemv.com,Fake iAP Policy
 #HOST-KEYWORD,h2.tiktokv.com,Fake iAP Policy
 #Spendee
@@ -116,7 +116,7 @@ HOST,api.spendee.com,Fake iAP Policy
 #Prequel
 HOST,cloudapp.aiarlabs.com,Fake iAP Policy
 #Working Copy
-;HOST,education.github.com,Fake iAP Policy
+#HOST,education.github.com,Fake iAP Policy
 #Camscanner
 HOST,api-cs.intsig.net,Fake iAP Policy
 #Planner 5D
@@ -130,7 +130,7 @@ HOST,chic.mtlab.meitu.com,Fake iAP Policy
 # Photoshop
 HOST,lcs-mobile-cops.adobe.io,Fake iAP Policy
 # Zing TV
-#HOST,api.tv.zing.vn,Fake iAP Policy
+HOST,api.tv.zing.vn,Fake iAP Policy
 # Lich Van Nien 2020 (Lich Viet)
 HOST,api.lichviet.org,Fake iAP Policy
 # QIYIVideo
@@ -226,4 +226,3 @@ HOST,app.algoriddim.com,Fake iAP Policy
 #HOST,viva-asia1.vvbrd.com,Fake iAP Policy
 # Mimo
 HOST,api.getmimo.com,Fake iAP Policy
-
