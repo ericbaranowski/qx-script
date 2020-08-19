@@ -33,7 +33,7 @@ ssid = SSID Setting, Proxy server, direct, HANHCHINH: Proxy server, Trung Thuan:
 [server_local]
 [server_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server
-https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = V2Ray Server
+https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = V2Ray Proxy
 
 [rewrite_local]
 [rewrite_remote]
