@@ -1,7 +1,7 @@
 var obj = JSON.parse($response.body);
 obj.data["subscriptions"] =   {
           "id": "d7207db0-6fb4-48e8-9dbd-56ea99dc1531",
-          "status": "trial",
+          "status": "active",
           "autorenew_enabled": true,
           "in_retry_billing": false,
           "expires_at": "2030-08-19T13:17:12.000Z",
