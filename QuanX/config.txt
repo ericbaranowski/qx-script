@@ -59,8 +59,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/AppStore.l
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js, tag = github.js
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js, tag = appmonitor.js
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js, tag = shopee.js
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js, tag = rain.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ProxyFlow.js, tag = proxyflow.js
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/rain.js, tag = rain.js
 0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js, tag = dataflow.js
 0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js, tag = nCov.js
 0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js, tag = giaxang.js
