@@ -12,7 +12,6 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 [Remote Filter]
 🇭🇰 = NameRegex, VPN, SPYS, FilterKey = "🇭🇰|HK"
 🇯🇵 = NameRegex, VPN, SPYS, FilterKey = "🇯🇵|JP"
-🇰🇷 = NameRegex, VPN, SPYS, FilterKey = "🇰🇷|KR"
 🇺🇸 = NameRegex, VPN, SPYS, FilterKey = "🇺🇸|US|CA|FR"
 🇸🇬 = NameRegex, VPN, SPYS, FilterKey = "🇸🇬|SG"
 
@@ -33,7 +32,6 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 
 🇭🇰𝐇𝐊 = url-test, 🇭🇰, url = http://bing.com/,interval = 600
 🇸🇬𝐒𝐆 = url-test, 🇸🇬, url = http://bing.com/,interval = 600
-🇰🇷𝐊𝐑 = url-test, 🇰🇷, url = http://bing.com/,interval = 600
 🇯🇵𝐉𝐏 = url-test, 🇯🇵, url = http://bing.com/,interval = 600
 🇺🇸𝐔𝐒 = url-test, 🇺🇸, url = http://bing.com/,interval = 600
 
