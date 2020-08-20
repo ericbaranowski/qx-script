@@ -14,4 +14,4 @@ for (var i = 0; i < obj.length; i++) {
 proxy[i]= obj[i].match(/[A-Z]{2}-[A-Z]{1}-S/) + "_" +i + " = http, " + obj[i];
 }
 console.log(proxy);
-$done({body: proxy.toString().replace(/[A-Z]{2},/g, "\n [A-Z]{2}").replace(/.[A-Z]{2}-[A-Z]{1}-S.+\+.+\n,/g, "\n").replace(/:/g, ", ")});
+$done({body: proxy.toString().replace(/[A-Z]{2},/g, "\n [A-Z]{2}").replace(/\n,/g, "\n").replace(/.[A-Z]{2}-[A-Z]{1}-S.+\+.+(\n|)/g, "\n").replace(/:/g, ", ")});
