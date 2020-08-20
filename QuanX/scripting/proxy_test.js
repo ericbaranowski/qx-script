@@ -9,7 +9,7 @@ FreeProxy = url-test, url=http://www.google.com/generate_204, policy-path=http:/
 */
 var obj= $response.body;
 var proxy= [];
-obj= obj.match(/((\d{1,3}\.){3}\d{1,3}):(\d+).+([A-Z]){2}.+(S\s\+).+\n/g);
+obj= obj.match(/((\d{1,3}\.){3}\d{1,3}):(\d+).+([A-Z]){2}.+(S\s\+).+(\n|)/g);
 for (var i = 0; i < obj.length; i++) {
 proxy[i]= obj[i].match(/[A-Z]{2}-[A-Z]{1}-S/) + "_" +i + " = http, " + obj[i];
 }
