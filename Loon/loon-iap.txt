@@ -1,19 +1,20 @@
-﻿[General]
+[General]
 ipv6 = false
 allow-udp-proxy = true
 dns-server = system, 8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1
 #host = 192.168.1.127
 
 [Remote Proxy]
+SPYS = http://spys.me/proxy.txt
 VPN = https://2ds5.cf/9blkaU
 Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/server.txt
 
 [Remote Filter]
-🇭🇰 = NameRegex, VPN, FilterKey = "🇭🇰"
-🇯🇵 = NameRegex, VPN, FilterKey = "🇯🇵"
-🇰🇷 = NameRegex, VPN, FilterKey = "🇰🇷"
-🇺🇸 = NameRegex, VPN, FilterKey = "🇺🇸"
-🇸🇬 = NameRegex, VPN, FilterKey = "🇸🇬"
+🇭🇰 = NameRegex, VPN, SPYS, FilterKey = "🇭🇰|HK"
+🇯🇵 = NameRegex, VPN, SPYS, FilterKey = "🇯🇵|JP"
+🇰🇷 = NameRegex, VPN, SPYS, FilterKey = "🇰🇷|KR"
+🇺🇸 = NameRegex, VPN, SPYS, FilterKey = "🇺🇸|US|CA|FR"
+🇸🇬 = NameRegex, VPN, SPYS, FilterKey = "🇸🇬|SG"
 
 [Proxy Group]
 🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🇭🇰𝐇𝐊, 🇸🇬𝐒𝐆, 🇯🇵𝐉𝐏, 🇰🇷𝐊𝐑, 🇺🇸𝐔𝐒
