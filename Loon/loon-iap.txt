@@ -14,13 +14,14 @@ VPN = https://2ds5.cf/9blkaU
 Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/server.txt
 
 [Remote Filter]
-🇭🇰 = NameRegex, VPN, SPYS, FilterKey = "🇭🇰|HK"
-🇯🇵 = NameRegex, VPN, SPYS, FilterKey = "🇯🇵|JP"
-🇺🇸 = NameRegex, VPN, SPYS, FilterKey = "🇺🇸|US|CA|FR"
-🇸🇬 = NameRegex, VPN, SPYS, FilterKey = "🇸🇬|SG"
+🇭🇰 = NameRegex, VPN, FilterKey = "🇭🇰|HK"
+🇯🇵 = NameRegex, VPN, FilterKey = "🇯🇵|JP"
+🇺🇸 = NameRegex, VPN, FilterKey = "🇺🇸|US|CA|FR"
+🇸🇬 = NameRegex, VPN, FilterKey = "🇸🇬|SG"
+🌍 = NameRegex, SPYS, FilterKey = "S_"
 
 [Proxy Group]
-🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🇭🇰𝐇𝐊, 🇸🇬𝐒𝐆, 🇯🇵𝐉𝐏, 🇺🇸𝐔𝐒
+🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🌍𝐆𝐋𝐎𝐁𝐀𝐋, 🇭🇰𝐇𝐊, 🇸🇬𝐒𝐆, 🇯🇵𝐉𝐏, 🇺🇸𝐔𝐒
 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, ♻️𝐀𝐮𝐭𝐨, 🌀𝐌𝐚𝐧𝐮𝐚𝐥
 💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
 📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
@@ -34,6 +35,7 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
 🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
 
+🌍𝐆𝐋𝐎𝐁𝐀𝐋 = select, 🌍, url = http://bing.com/,interval = 600
 🇭🇰𝐇𝐊 = url-test, 🇭🇰, url = http://bing.com/,interval = 600
 🇸🇬𝐒𝐆 = url-test, 🇸🇬, url = http://bing.com/,interval = 600
 🇯🇵𝐉𝐏 = url-test, 🇯🇵, url = http://bing.com/,interval = 600
