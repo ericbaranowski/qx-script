@@ -2,7 +2,11 @@
 ipv6 = false
 allow-udp-proxy = true
 dns-server = system, 8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1
-#host = 192.168.1.127
+allow-wifi-access = true
+wifi-access-http-port = 7222
+wifi-access-socket5-port = 7221
+proxy-test-url = http://www.qualcomm.cn/generate_204
+test-timeout = 3
 
 [Remote Proxy]
 SPYS = http://spys.me/proxy.txt
