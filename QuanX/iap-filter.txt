@@ -1,3 +1,7 @@
+#EWA
+HOST,api.appewa.com,Fake iAP Policy
+#Sleep Cycle
+HOST,s.sleepcycle.com,Fake iAP Policy
 #Giftr
 HOST,us-central1-giftr-83d83.cloudfunctions.net,Fake iAP Policy
 #edjing

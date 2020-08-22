@@ -1,3 +1,5 @@
+DOMAIN,api.appewa.com
+DOMAIN,s.sleepcycle.com
 DOMAIN,us-central1-giftr-83d83.cloudfunctions.net
 DOMAIN,api-dot-mwm-users.appspot.com
 DOMAIN,tezza-backend.herokuapp.com
