@@ -9,37 +9,37 @@ proxy-test-url = http://www.qualcomm.cn/generate_204
 test-timeout = 3
 
 [Remote Proxy]
-//SPYS = http://spys.me/proxy.txt
+#SPYS = http://spys.me/proxy.txt
 VPN = https://2ds5.cf/9blkaU
 Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/server.txt
 
 [Remote Filter]
 🇭🇰 = NameRegex, VPN, FilterKey = "🇭🇰"
 🇯🇵 = NameRegex, VPN, FilterKey = "🇯🇵"
-//🇺🇸 = NameRegex, VPN, FilterKey = "🇺🇸"
-//🇸🇬 = NameRegex, VPN, FilterKey = "🇸🇬"
-//🌍 = NameRegex, SPYS, FilterKey = "S_"
+#🇺🇸 = NameRegex, VPN, FilterKey = "🇺🇸"
+#🇸🇬 = NameRegex, VPN, FilterKey = "🇸🇬"
+#🌍 = NameRegex, SPYS, FilterKey = "S_"
 
 [Proxy Group]
 🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🇭🇰𝐇𝐊, 🇯🇵𝐉𝐏
-🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, ♻️𝐀𝐮𝐭𝐨, 🌀𝐌𝐚𝐧𝐮𝐚𝐥
+#🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, ♻️𝐀𝐮𝐭𝐨, 🌀𝐌𝐚𝐧𝐮𝐚𝐥
+🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, Fake iAP Server
 💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
 📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
-♻️𝐀𝐮𝐭𝐨 = fallback, Fake iAP Server, url = http://bing.com/, interval = 600
-🌀𝐌𝐚𝐧𝐮𝐚𝐥 = select, 🔴, Fake iAP Server
+#♻️𝐀𝐮𝐭𝐨 = fallback, Fake iAP Server, url = http://bing.com/, interval = 600
+#🌀𝐌𝐚𝐧𝐮𝐚𝐥 = select, 🔴, Fake iAP Server
 🍎𝐁𝐥𝐨𝐜𝐤 𝐎𝐓𝐀 = select, 🟢, 🔴
 🚫𝐁𝐥𝐨𝐜𝐤 𝐀𝐝𝐬 = select, 🟢, 🔴
-📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
+🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
+🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
 🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
 🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
-🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
-🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
 
-//🌍𝐆𝐋𝐎𝐁𝐀𝐋 = select, 🌍, url = http://bing.com/,interval = 600
+#🌍𝐆𝐋𝐎𝐁𝐀𝐋 = select, 🌍, url = http://bing.com/,interval = 600
 🇭🇰𝐇𝐊 = url-test, 🇭🇰, url = http://bing.com/,interval = 600
 🇯🇵𝐉𝐏 = url-test, 🇯🇵, url = http://bing.com/,interval = 600
-//🇸🇬𝐒𝐆 = url-test, 🇸🇬, url = http://bing.com/,interval = 600
-//🇺🇸𝐔𝐒 = url-test, 🇺🇸, url = http://bing.com/,interval = 600
+#🇸🇬𝐒𝐆 = url-test, 🇸🇬, url = http://bing.com/,interval = 600
+#🇺🇸𝐔𝐒 = url-test, 🇺🇸, url = http://bing.com/,interval = 600
 
 🟢 = select, REJECT
 🔴 = select, DIRECT
@@ -64,8 +64,6 @@ https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.list, policy = 🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱, tag = Netflix, enabled = true
 # > PornHub
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list, policy = 🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛, tag = PornHub, enabled = true
-# > Telegram
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Telegram.list, policy = 📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦, tag = Telegram, enabled = true
 # > Speedtest
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list, policy = 🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭, tag = SpeedTest, enabled = true
 
