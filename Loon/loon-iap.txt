@@ -1,7 +1,7 @@
 [General]
 ipv6 = false
 allow-udp-proxy = true
-dns-server = system, 8.8.8.8, 8.8.4.4, 1.1.1.1, 1.0.0.1
+dns-server = system,8.8.8.8,8.8.4.4,1.1.1.1,1.0.0.1
 allow-wifi-access = true
 wifi-access-http-port = 7222
 wifi-access-socket5-port = 7221
@@ -14,38 +14,38 @@ VPN = https://2ds5.cf/9blkaU
 Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/server.txt
 
 [Remote Filter]
-🇭🇰 = NameRegex, VPN, FilterKey = "🇭🇰"
-🇯🇵 = NameRegex, VPN, FilterKey = "🇯🇵"
-#🇺🇸 = NameRegex, VPN, FilterKey = "🇺🇸"
-#🇸🇬 = NameRegex, VPN, FilterKey = "🇸🇬"
-#🌍 = NameRegex, SPYS, FilterKey = "S_"
+🇭🇰 = NameRegex,VPN,FilterKey = "🇭🇰"
+🇯🇵 = NameRegex,VPN,FilterKey = "🇯🇵"
+#🇺🇸 = NameRegex,VPN,FilterKey = "🇺🇸"
+#🇸🇬 = NameRegex,VPN,FilterKey = "🇸🇬"
+#🌍 = NameRegex,SPYS,FilterKey = "S_"
 
 [Proxy Group]
-🖲️𝐏𝐫𝐨𝐱𝐲 = select, 🔴, 🇭🇰𝐇𝐊, 🇯🇵𝐉𝐏
+🖲️𝐏𝐫𝐨𝐱𝐲 = select,🔴,🇭🇰𝐇𝐊,🇯🇵𝐉𝐏
 #🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, ♻️𝐀𝐮𝐭𝐨, 🌀𝐌𝐚𝐧𝐮𝐚𝐥
-🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, Fake iAP Server
-💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
-📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤 = select, 🔴, 🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
+🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲 = select,🔴,Fake iAP Server
+💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲 = select,🔴,🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
+📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤 = select,🔴,🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲
 #♻️𝐀𝐮𝐭𝐨 = fallback, Fake iAP Server, url = http://bing.com/, interval = 600
-#🌀𝐌𝐚𝐧𝐮𝐚𝐥 = select, 🔴, Fake iAP Server
-🍎𝐁𝐥𝐨𝐜𝐤 𝐎𝐓𝐀 = select, 🟢, 🔴
-🚫𝐁𝐥𝐨𝐜𝐤 𝐀𝐝𝐬 = select, 🟢, 🔴
-🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
-🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
-🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
-🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = select, 🔴, 🖲️𝐏𝐫𝐨𝐱𝐲
+#🌀𝐌𝐚𝐧𝐮𝐚𝐥 = select,🔴,Fake iAP Server
+🍎𝐁𝐥𝐨𝐜𝐤 𝐎𝐓𝐀 = select,🟢,🔴
+🚫𝐁𝐥𝐨𝐜𝐤 𝐀𝐝𝐬 = select,🟢,🔴
+🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
+🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
+🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
+🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
 
 #🌍𝐆𝐋𝐎𝐁𝐀𝐋 = select, 🌍, url = http://bing.com/,interval = 600
-🇭🇰𝐇𝐊 = url-test, 🇭🇰, url = http://bing.com/,interval = 600
-🇯🇵𝐉𝐏 = url-test, 🇯🇵, url = http://bing.com/,interval = 600
-#🇸🇬𝐒𝐆 = url-test, 🇸🇬, url = http://bing.com/,interval = 600
-#🇺🇸𝐔𝐒 = url-test, 🇺🇸, url = http://bing.com/,interval = 600
+🇭🇰𝐇𝐊 = url-test,🇭🇰,url = http://bing.com/,interval = 600
+🇯🇵𝐉𝐏 = url-test,🇯🇵,url = http://bing.com/,interval = 600
+#🇸🇬𝐒𝐆 = url-test,🇸🇬,url = http://bing.com/,interval = 600
+#🇺🇸𝐔𝐒 = url-test,🇺🇸,url = http://bing.com/,interval = 600
 
-🟢 = select, REJECT
-🔴 = select, DIRECT
+🟢 = select,REJECT
+🔴 = select,DIRECT
 
 [Rule]
-FINAL,🔴
+FINAL,DIRECT
 
 [Remote Rule]
 # > Fake iap
