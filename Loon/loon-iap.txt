@@ -45,7 +45,7 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 🔴 = select, DIRECT
 
 [Rule]
-FINAL, 🔴
+FINAL,🔴
 
 [Remote Rule]
 # > Fake iap
