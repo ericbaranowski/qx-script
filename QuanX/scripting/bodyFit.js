@@ -1,5 +1,5 @@
 /*
-  https:\/\/subscription-api\.bodybuilding\.com\/entitlements\/check 
+  https:\/\/subscription-api\.bodybuilding\.com\/entitlements\/check url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/bodyFit.js
   hostname = subscription-api.bodybuilding.com
 */
 
