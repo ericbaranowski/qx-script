@@ -61,7 +61,7 @@ HOST,app-api.pixiv.net,Fake iAP Policy
 HOST,oauth.secure.pixiv.net,Fake iAP Policy
 #Sanford Guide
 HOST,naga.sanfordguide.com,Fake iAP Policy
-#VideoStart
+#VideoStar
 #HOST,testapps.videostarapp.com,Fake iAP Policy
 #Presco
 HOST,presco-api.gotbatu.com,Fake iAP Policy
