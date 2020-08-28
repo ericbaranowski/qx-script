@@ -1,7 +1,7 @@
 [General]
 ipv6 = false
 allow-udp-proxy = true
-dns-server = system,8.8.8.8,8.8.4.4,1.1.1.1,1.0.0.1
+dns-server = system,8.8.8.8,8.8.4.4,1.1.1.1,1.0.0.1,176.103.130.130,176.103.130.131
 allow-wifi-access = false
 wifi-access-http-port = 7222
 wifi-access-socket5-port = 7221
