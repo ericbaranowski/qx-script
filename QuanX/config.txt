@@ -9,9 +9,6 @@ server = 1.1.1.1
 server = 1.0.0.1
 
 [policy]
-;static = Apple Update, direct, reject, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple_Update.png
-;static = TikTok, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
-
 static = Facebook, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
 static = Youtube, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/YouTube.png
 
@@ -45,7 +42,6 @@ final, direct
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-filter.txt, tag = Fake iAP Filter, force-policy = Fake iAP Policy, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf, tag = hostsVN, force-policy = direct, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag = hostsVN, force-policy = Advertising, enabled = true
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf, tag = hostsVN-OTA, force-policy = Apple Update, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list, tag = Facebook, force-policy = Facebook, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.list, tag = Pornhub, force-policy = Pornhub, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
