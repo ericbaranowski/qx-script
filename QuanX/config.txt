@@ -3,12 +3,9 @@ geo_location_checker = http://ip-api.com/json/?, https://raw.githubusercontent.c
 resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 
 [dns]
+no-system
 server = 176.103.130.130
 server = 176.103.130.131
-server = 8.8.8.8
-server = 8.8.4.4
-server = 1.1.1.1
-server = 1.0.0.1
 
 [policy]
 static = Facebook, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
