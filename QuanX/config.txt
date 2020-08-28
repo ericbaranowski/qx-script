@@ -21,7 +21,7 @@ static = AppStore, direct, Proxy server, img-url = https://raw.githubusercontent
 static = Speedtest, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 static = TikTok, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/TikTok.png
 
-available = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/V2ray.png
+static = v2ray, resource-tag-regex = V2Ray, img-url = https://raw.githubusercontent.com/Orz-3/mini/master/V2ray.png
 static = Fake Cydia Tweak, direct, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Cydia.png
 
 static = Fake iAP Policy, direct, Fake iAP Server, img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png
