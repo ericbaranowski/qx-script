@@ -69,16 +69,18 @@ https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtes
 
 [URL Rewrite]
 enable = true
-[Remote Rewrite]
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rewrite.txt, tag=rewrite, enabled=true
+#[Remote Rewrite]
+#https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rewrite.txt, tag=rewrite, enabled=true
 
 [Script]
 enable = true
-[Remote Script]
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/script.txt, tag=scripts, enabled=true
+#[Remote Script]
+#https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/script.txt, tag=scripts, enabled=true
 
 [Plugin]
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.tf.plugin, tag=boxjs.tf, enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/script.plugin, tag=script, enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rewrite.plugin, tag=rewrite, enabled=true
 
 [Mitm]
 enable = true
