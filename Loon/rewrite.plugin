@@ -2,7 +2,6 @@
 hostname = avatar-nct.nixcdn.com, spclient.wg.spotify.com, *.googlevideo.com, api*.tiktokv.com, *.musical.ly, oa.zalo.me, graph.nhaccuatui.com
 
 [URL Rewrite]
-enable = true
 # > [Tiktok remove watermark]
 (.*video_id=\w{32})(.*watermark=)(.*) $1 302
 (?<=version_code=)\d{1,}.\d{1}\.\d{1} 16.0.0 307
