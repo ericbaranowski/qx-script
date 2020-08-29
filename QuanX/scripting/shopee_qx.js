@@ -8,7 +8,6 @@ https://shopee.vn
 MITM = shopee.vn
 */
 const $ = env();
-
 if ($.isRequest) {
     GetCookie();
     $.done();
