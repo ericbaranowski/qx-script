@@ -16,9 +16,6 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 [Remote Filter]
 🇭🇰 = NameRegex,VPN, FilterKey = "🇭🇰"
 🇯🇵 = NameRegex,VPN, FilterKey = "🇯🇵"
-#🇺🇸 = NameRegex,VPN,FilterKey = "🇺🇸"
-#🇸🇬 = NameRegex,VPN,FilterKey = "🇸🇬"
-#🌍 = NameRegex,SPYS,FilterKey = "S_"
 
 [Proxy Group]
 🖲️𝐏𝐫𝐨𝐱𝐲 = select,🔴,🇭🇰𝐇𝐊,🇯🇵𝐉𝐏
@@ -35,52 +32,20 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
 🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = select,🔴,🖲️𝐏𝐫𝐨𝐱𝐲
 
-#🌍𝐆𝐋𝐎𝐁𝐀𝐋 = select, 🌍, url = http://bing.com/,interval = 600
 🇭🇰𝐇𝐊 = url-test,🇭🇰,url = http://bing.com/,interval = 600
 🇯🇵𝐉𝐏 = url-test,🇯🇵,url = http://bing.com/,interval = 600
+#🌍𝐆𝐋𝐎𝐁𝐀𝐋 = select, 🌍, url = http://bing.com/,interval = 600
 #🇸🇬𝐒𝐆 = url-test,🇸🇬,url = http://bing.com/,interval = 600
 #🇺🇸𝐔𝐒 = url-test,🇺🇸,url = http://bing.com/,interval = 600
 
 🟢 = select,REJECT
 🔴 = select,DIRECT
 
-[Rule]
-FINAL,DIRECT
-
-[Remote Rule]
-# > Fake iap
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/iap-rule.txt, policy=🔰𝐅𝐚𝐤𝐞 𝐢𝐀𝐏 𝐏𝐨𝐥𝐢𝐜𝐲, tag=Fake iAP Policy, enabled=true
-# > Fake Pxx
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/pxx-rule.txt, policy=💰𝐏𝐗𝐗 𝐏𝐨𝐥𝐢𝐜𝐲, tag=PXX Policy, enabled=true
-# > Fake Cydia tweak
-https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/cydia-tweak.txt, policy=📦𝐂𝐲𝐝𝐢𝐚 𝐓𝐰𝐞𝐚𝐤, tag=Fake Cydia Tweak, enabled=true
-# > Block Ads
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf, policy=🚫𝐁𝐥𝐨𝐜𝐤 𝐀𝐝𝐬, tag=Block Ads, enabled=true
-# > Block OTA
-https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-OTA.conf, policy=🍎𝐁𝐥𝐨𝐜𝐤 𝐎𝐓𝐀, tag=Block OTA, enabled=true
-# > Youtube
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.list, policy=🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞, tag=YouTube, enabled=true
-# > Netflix
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.list, policy=🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱, tag=Netflix, enabled=true
-# > PornHub
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list, policy=🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛, tag=PornHub, enabled=true
-# > Speedtest
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list, policy=🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭, tag=SpeedTest, enabled=true
-
-[URL Rewrite]
-enable = true
-#[Remote Rewrite]
-#https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rewrite.txt, tag=rewrite, enabled=true
-
-[Script]
-enable = true
-#[Remote Script]
-#https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/script.txt, tag=scripts, enabled=true
-
 [Plugin]
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.tf.plugin, tag=boxjs.tf, enabled=true
 https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/script.plugin, tag=script, enabled=true
 https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rewrite.plugin, tag=rewrite, enabled=true
+https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rule.plugin, tag=rule, enabled=true
 
 [Mitm]
 enable = true
