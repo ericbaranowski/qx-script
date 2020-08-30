@@ -70,6 +70,7 @@ enable = true
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.loon.tf.plugin, tag=boxjs.tf, enabled=true
 https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/script.plugin, tag=script, enabled=true
 https://raw.githubusercontent.com/phd91105/Scripts/master/Loon/rewrite.plugin, tag=rewrite, enabled=true
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, tag=substore, enabled=true
 
 [Mitm]
 enable = true
