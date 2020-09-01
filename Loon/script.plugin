@@ -18,3 +18,4 @@ http-response ^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ script-path 
 http-response https:\/\/www\.patreon\.com\/api\/oauth2\/v2\/identity? script-path = https://raw.githubusercontent.com/langkhach270389/Scripting/master/altstore.js, requires-body = true
 #http-response ^http:\/\/spys\.me\/proxy\.txt$ script-path=https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/proxy_test.js, requires-body=true
 network-changed script-path=https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js,tag=DataFlow
+network-changed script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/nextdns_linkedip.js,tag=nextdns_linkedip
