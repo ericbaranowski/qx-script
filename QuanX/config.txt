@@ -4,7 +4,6 @@ resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/mas
 
 [dns]
 no-system
-no-ipv6
 server = 176.103.130.130
 server = 176.103.130.131
 
