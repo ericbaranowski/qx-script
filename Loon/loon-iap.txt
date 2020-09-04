@@ -18,7 +18,7 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 🇯🇵 = NameRegex,VPN, FilterKey = "🇯🇵"
 
 [Proxy Group]
-🖲️Proxy = select,🔴,🇭🇰HK,🇯🇵JP
+🖲️Proxy Server = select,🔴,🇭🇰HK,🇯🇵JP
 #🔰Fake iAP Policy = select,♻️Auto,🌀Manual
 🔰Fake iAP Policy = select,🔴,Fake iAP Server
 💰PXX Policy = select,🔴,🔰Fake iAP Policy
@@ -27,10 +27,10 @@ Fake iAP Server = https://raw.githubusercontent.com/phd91105/Scripts/master/Loon
 #🌀Manual = select,🔴,Fake iAP Server
 🍎Block OTA = select,🟢,🔴
 🚫Block Ads = select,🟢,🔴
-🚀SpeedTest = select,🔴,🖲️Proxy
-🔞PornHub = select,🔴,🖲️Proxy
-🎬YouTube = select,🔴,🖲️Proxy
-🖥Netflix = select,🔴,🖲️Proxy
+🚀SpeedTest = select,🔴,🖲️Proxy Server
+🔞PornHub = select,🔴,🖲️Proxy Server
+🎬YouTube = select,🔴,🖲️Proxy Server
+🖥Netflix = select,🔴,🖲️Proxy Server
 
 🇭🇰HK = url-test,🇭🇰,url = http://bing.com/,interval = 600
 🇯🇵JP = url-test,🇯🇵,url = http://bing.com/,interval = 600
