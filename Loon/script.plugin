@@ -2,7 +2,7 @@
 hostname =  www.patreon.com, shopee.vn, *-buy.itunes.apple.com, api.unlimapps.com, www.google.*, encrypted.google.*,raw.githubusercontent.com, gist.githubusercontent.com
 
 [Script]
-# > [Cron task]
+# > Cron task
 #cron "0 0 6-23/1 * * *" script-path = https://raw.githubusercontent.com/langkhach270389/Scripting/master/Appmonitor.js
 #cron "0 5 * * *" script-path = https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_checkin.js
 #cron "0 6,12,17 * * *" script-path = https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/rain.js
@@ -10,7 +10,7 @@ hostname =  www.patreon.com, shopee.vn, *-buy.itunes.apple.com, api.unlimapps.co
 #cron "0 12 * * *" script-path = https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/DataFlow.js
 #cron "0 0 6-23/1 * * *" script-path = https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js
 
-# > [Scripting]
+# > Scripting
 http-request (https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) script-path = https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/old_ipa.js, requires-body = true
 #http-request https://shopee.vn.+me.+setting.+classic script-path = https://raw.githubusercontent.com/langkhach270389/Scripting/master/shopee_cookie.js, script-update-interval = 0
 http-response (https:\/\/www\.google\..*)|(https:\/\/encrypted\.google\..*) script-path = https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js, requires-body = true
