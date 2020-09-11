@@ -1,5 +1,5 @@
-
-var obj= {  
+var obj = JSON.parse($response.body);
+obj= {  
   "receiptStatus": "ok",
   "isEligibleForIntroPeriod": false,
   "productId": "com.readdle.ReaddleDocsIPad.subscription.year90_nus",
