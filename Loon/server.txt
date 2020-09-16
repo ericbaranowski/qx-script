@@ -1,1 +1,0 @@
-Fake iAP server = Shadowsocks,103.130.218.51,10086,aes-256-gcm,".Xhdqqy2ruAzJK6EAy(A"
