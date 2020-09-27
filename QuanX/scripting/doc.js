@@ -12,7 +12,7 @@ obj= {
     "com.readdle.ReaddleDocsIPad.subscription.year90_nus"
   ],
   "receiptId": 1588809109000,
-  "isDocuments6User": true,
+  "isDocuments6User": false,
   "inAppStates": [
     {
       "receiptStatus": "ok",
