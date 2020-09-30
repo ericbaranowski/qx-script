@@ -13,7 +13,9 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body htt
 ;^https?:\/\/www\.google\..*\/search url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js
 
 # > Old ipa
-(https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/old_ipa.js
+(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/old_ipa.js
+
+(https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct) url script-request-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/old_ipa.js
 
 # > Documents
 ^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/doc.js
