@@ -1,3 +1,16 @@
+#REFACE
+HOST,api.lifesum.com,Fake iAP Policy
+#REFACE
+HOST,api.reface.video,Fake iAP Policy
+#Lingo Play
+HOST,api.lingovocabulary.com,Fake iAP Policy
+#MERGE Explorer
+HOST,dashboard.mergeedu.com,Fake iAP Policy
+#Seven
+HOST,api.sevenworkouts.com,Fake iAP Policy
+#BodyFit
+HOST,api.bodybuilding.com,Fake iAP Policy
+HOST,subscription-api.bodybuilding.com,Fake iAP Policy
 #EWA
 HOST,api.appewa.com,Fake iAP Policy
 #Sleep Cycle
