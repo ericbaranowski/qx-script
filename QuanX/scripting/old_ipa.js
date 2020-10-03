@@ -16,7 +16,7 @@ if (url.indexOf(api) != -1) {
     $.done({ body });
 }
 if (url.indexOf(buy) != -1) {
-    var appid = $persistentStore.read("appid");
+    var appid = $.read("appid");
     var body = obj.replace(/\d{6,}/, appid);
     console.log('🟢 Old_iPA_Downloader \nappid: ' + appid);
     $.notify("Old_iPA_Downloader rewrite status: OK", "", "");
