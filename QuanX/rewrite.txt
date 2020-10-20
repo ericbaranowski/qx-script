@@ -63,3 +63,5 @@ hostname = duckduckgo.com, oa.zalo.me, graph.nhaccuatui.com, avatar-nct.nixcdn.c
 ^https?://qos-zdn.zaloapp.com/.+trackqos url reject-img
 ^https?://centralized.zaloapp.com/.+tracking url reject-img
 ^https?://oa.zalo.me/.+campaign=zalo url reject-img
+(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) url 302 $1
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject-img
