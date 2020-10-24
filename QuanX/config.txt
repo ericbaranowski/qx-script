@@ -5,8 +5,10 @@ resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/mas
 [dns]
 no-system
 no-ipv6
-server = 176.103.130.130
-server = 176.103.130.131
+server = 1.1.1.1
+server = 1.0.0.1
+server = 8.8.8.8
+server = 8.8.4.4
 
 [policy]
 static = Facebook, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
@@ -18,7 +20,7 @@ static = Speedtest, direct, Proxy server, img-url = https://github.com/Koolson/Q
 static = AppStore, direct, Proxy server, img-url = https://github.com/Orz-3/mini/raw/master/appstore.png
 static = Advertising , direct, reject, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Advertising.png
 
-static = Fake iAP Policy, direct, Fake iAP Server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Quantumult_X.png
+static = Fake iAP Policy, Fake iAP Server, direct, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Quantumult_X.png
 static = Fake PXX Policy, direct, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple.png
 
 static = v2ray, resource-tag-regex = V2Ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Azure.png
@@ -46,7 +48,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.l
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.list, tag = Pornhub, force-policy = Pornhub, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/AppStore.list, tag = AppStore, force-policy = AppStore, enabled = true
+https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/AppStore.list, tag = AppStore, force-policy = AppStore, enabled = false
 
 [task_local]
 0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js, tag = weather.js
