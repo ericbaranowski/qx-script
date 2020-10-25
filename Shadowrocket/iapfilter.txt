@@ -1,0 +1,246 @@
+#REFACE
+DOMAIN,api.lifesum.com,PROXY
+#REFACE
+DOMAIN,api.reface.video,PROXY
+#Lingo Play
+DOMAIN,api.lingovocabulary.com,PROXY
+#MERGE Explorer
+DOMAIN,dashboard.mergeedu.com,PROXY
+#Seven
+DOMAIN,api.sevenworkouts.com,PROXY
+#BodyFit
+DOMAIN,api.bodybuilding.com,PROXY
+DOMAIN,subscription-api.bodybuilding.com,PROXY
+#EWA
+DOMAIN,api.appewa.com,PROXY
+#Sleep Cycle
+DOMAIN,s.sleepcycle.com,PROXY
+#Giftr
+DOMAIN,us-central1-giftr-83d83.cloudfunctions.net,PROXY
+#edjing
+DOMAIN,api-dot-mwm-users.appspot.com,PROXY
+#Tezza
+DOMAIN,tezza-backend.herokuapp.com,PROXY
+#polarisoffice
+DOMAIN,api.polarisoffice.com,PROXY
+#Alight Motion
+DOMAIN,us-central1-alight-creative.cloudfunctions.net,PROXY
+#Pixomatic
+DOMAIN,api.pixomatic.us,PROXY
+#iTranslate
+DOMAIN,ssl-api.itranslateapp.com,PROXY
+#Du recorder
+DOMAIN,bbdd2101-default-recorders-4916-415735771.us-west-2.elb.amazonaws.com,PROXY
+DOMAIN,donate-api.recorder.duapps.com,PROXY
+#PocketWorld3D
+DOMAIN,gdcasapi.searona.com,PROXY
+#AmpMe
+DOMAIN,subscription.ampme.com,PROXY
+#Restaurant
+DOMAIN,ios-global-restaurant.twomiles.cn,PROXY
+#Speak&Translate
+DOMAIN,api.speak-translate.com,PROXY
+#MuscleBooster
+DOMAIN,menscoach-api.asqq.io,PROXY
+#Eggzy
+DOMAIN,subs.platforms.team,PROXY
+######################################
+#PXX itunes
+DOMAIN-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
+######################################
+#Cercube
+DOMAIN,api.cercube.com,Fake Cydia Tweak
+######################################
+#Codecademy
+DOMAIN,www.codecademy.com,PROXY
+#Shapr3D
+DOMAIN,prod.api.shapr3d.com,PROXY
+#IELTS
+DOMAIN,dbvirtualeducation.com,PROXY
+#ToeicEZ
+DOMAIN,toeicez.com,PROXY
+#Followly
+DOMAIN,followly.m-mobileapps.com,PROXY
+#Aivartar
+DOMAIN,aivatar-subscription.sticker.place,PROXY
+#Romote+
+DOMAIN,nodejs.cherpake.com,PROXY
+#Falou
+DOMAIN,sub.falou.app,PROXY
+#STORIO
+DOMAIN,api.apphud.com,PROXY
+#pixiv
+DOMAIN,app-api.pixiv.net,PROXY
+DOMAIN,oauth.secure.pixiv.net,PROXY
+#Sanford Guide
+DOMAIN,naga.sanfordguide.com,PROXY
+#VideoStart
+DOMAIN,testapps.videostarapp.com,PROXY
+#Presco
+DOMAIN,presco-api.gotbatu.com,PROXY
+#Followers
+DOMAIN,api.socialguide.co,PROXY
+#RETO3D
+DOMAIN,weewungwung.com,PROXY
+#Simpler
+DOMAIN,simpler.via-mobi.com,PROXY
+#passwordmanager
+DOMAIN,djit-end.appspot.com,PROXY
+#chordify
+DOMAIN,chordify.net,PROXY
+#Rocka
+DOMAIN,api.rockalearning.com,PROXY
+#Lensa
+DOMAIN,appapi.neuralprisma.com,PROXY
+#Wattpad
+DOMAIN,api.wattpad.com,PROXY
+#Funimate
+DOMAIN,api.funimate.com,PROXY
+#Polarr
+DOMAIN,api.polarr.co,PROXY
+#   Zing Mp3
+DOMAIN,api.global.mp3.zing.vn,PROXY
+DOMAIN,api.zingmp3.vn,PROXY
+#Snap&Trans
+DOMAIN,receipt-validator.herewetest.com,PROXY
+#Presco Overlay
+DOMAIN,overlay-api.gotbatu.com,PROXY
+#MoneyLover
+DOMAIN,revoapi.moneylover.me,PROXY
+DOMAIN,static.moneylover.me,PROXY
+#Daggerhood
+DOMAIN,api.playond.com,PROXY
+#Vinkle
+DOMAIN,dupa-api.doupaiapp.com,PROXY
+#Faded
+DOMAIN,api.madewithfaded.com,PROXY
+#PlayerXtreme
+DOMAIN,secure.istreamer.com,PROXY
+#farfaria
+DOMAIN, api.farfaria.com, PROXY
+#Quantumult X bypass
+DOMAIN, activation.crossutility.com, reject
+#BabyBus
+DOMAIN,pay.babybus.com,PROXY
+#AutoCAD
+DOMAIN,app.autocad360.com,PROXY
+#VMonkey
+DOMAIN,www.api.monkeyuni.net,PROXY
+#   TIKTOK
+DOMAIN,api3-normal-c-lf.amemv.com,PROXY
+DOMAIN-KEYWORD,h2.tiktokv.com,PROXY
+#Spendee
+DOMAIN,api.spendee.com,PROXY
+#Prequel
+DOMAIN,cloudapp.aiarlabs.com,PROXY
+#Working Copy
+DOMAIN,education.github.com,PROXY
+#Camscanner
+DOMAIN,api-cs.intsig.net,PROXY
+#Planner 5D
+DOMAIN,planner5d.com,PROXY
+#Day One
+DOMAIN,dayone.me,PROXY
+#Endel
+DOMAIN,api-production.endel.io,PROXY
+# Chic Cam
+DOMAIN,chic.mtlab.meitu.com,PROXY
+# Photoshop
+DOMAIN,lcs-mobile-cops.adobe.io,PROXY
+# Zing TV
+DOMAIN,api.tv.zing.vn,PROXY
+# Lich Van Nien 2020 (Lich Viet)
+DOMAIN,api.lichviet.org,PROXY
+# QIYIVideo
+DOMAIN,intl-i.vip.iqiyi.com,PROXY
+DOMAIN,intl-passport.iqiyi.com,PROXY
+# Fing
+DOMAIN,cdn.fing.io,PROXY
+# vizmato
+DOMAIN,web.vizmato.com,PROXY
+# SoloLearn
+DOMAIN,api.sololearn.com,PROXY
+# Vizzywig2020
+DOMAIN,ec2-52-34-190-224.us-west-2.compute.amazonaws.com,PROXY
+# MusiXmatch
+DOMAIN,apic.musixmatch.com,PROXY
+#JibJab
+DOMAIN,origin-prod-phoenix.jibjab.com,PROXY
+# Termius
+DOMAIN,api.termius.com,PROXY
+# PDF Expert | Documents
+DOMAIN,license.pdfexpert.com,PROXY
+# Gyroscope
+DOMAIN,api.gyrosco.pe,PROXY
+# Kine Master
+DOMAIN,api-kinemaster-assetstore.kinemasters.com,PROXY
+DOMAIN,api-kinemaster-assetstore.nexstreaming.com,PROXY
+# YouTube Music
+#DOMAIN,youtubei.googleapis.com,PROXY
+# Over
+DOMAIN,api.overhq.com,PROXY
+# Bright
+DOMAIN,engbright.com,PROXY
+# Ulike
+DOMAIN,commerce-i18n-api.faceu.mobi,PROXY
+# Blinkist
+DOMAIN,api.blinkist.com,PROXY
+# lingokids
+DOMAIN,api.lingokids.com,PROXY
+# adGuard
+DOMAIN,mobile-api.adguard.com,PROXY
+# Boom Music
+DOMAIN,apimboom2.globaldelight.net,PROXY
+# Musicalm
+DOMAIN,www.peacefulsoundsapp.com,PROXY
+DOMAIN,subscription.aresframework.com,PROXY
+# Update Nichi
+DOMAIN,mini-hk.bybutter.com,PROXY
+# VaporCam
+DOMAIN,pay.wecut.com,PROXY
+# 1Blocker, Loopsie, Yoga Studio, Tacter
+DOMAIN,api.revenuecat.com,PROXY
+DOMAIN,api.faceapp.io,PROXY
+# Unfold
+DOMAIN,api.unfold.app,PROXY
+# Simply Piano
+DOMAIN,asla.joytunes.com,PROXY
+#NhacCuaTui
+DOMAIN,graph.nhaccuatui.com,PROXY
+# Elevate
+DOMAIN,accounts.elevateapp.net,PROXY
+#Photolift
+DOMAIN,pixmagicapp.com,PROXY
+DOMAIN,api.busuu.com,PROXY
+# Camera360 | MIX
+DOMAIN,bmall.camera360.com,PROXY
+DOMAIN,entitlements.adobe.io,PROXY
+DOMAIN,photos.adobe.io,PROXY
+# Beauty Plus | AirVid
+DOMAIN,api-intl.mr.meitu.com,PROXY
+# Memrise
+DOMAIN-SUFFIX,api.memrise.com,PROXY
+# Picsart
+DOMAIN-SUFFIX,api.picsart.com,PROXY
+DOMAIN-SUFFIX,api.mondlylanguages.com,PROXY
+# VSCO
+DOMAIN,vsco.co,PROXY
+DOMAIN-SUFFIX,pool.elsanow.io,PROXY
+# Calm
+DOMAIN-SUFFIX,api.calm.com,PROXY
+DOMAIN-SUFFIX,api.indicative.com,PROXY
+DOMAIN-SUFFIX,lambda.us-east-1.amazonaws.com,PROXY
+#Instasize
+DOMAIN,api.instasize.com,PROXY
+DOMAIN,purchases.ws.pho.to,PROXY
+DOMAIN,nomo.dafork.com,PROXY
+DOMAIN,cloudapp.aiarlabs.com,PROXY
+DOMAIN,buy.itunes.apple.com,PROXY
+#Infltr
+DOMAIN,us-central1-infltr.cloudfunctions.net,PROXY
+DOMAIN,owa.videoshowiosglobalserver.com,PROXY
+DOMAIN,app.algoriddim.com,PROXY
+#DOMAIN,viva.v21xy.com,PROXY
+#DOMAIN,viva-asia1.vvbrd.com,PROXY
+# Mimo
+DOMAIN,api.getmimo.com,PROXY
