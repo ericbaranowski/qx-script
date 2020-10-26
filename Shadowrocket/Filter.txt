@@ -1,129 +1,129 @@
-DOMAIN,api.lifesum.com,FAKE IAP SERVER
-DOMAIN,api.reface.video,FAKE IAP SERVER
-DOMAIN,api.lingovocabulary.com,FAKE IAP SERVER
-DOMAIN,dashboard.mergeedu.com,FAKE IAP SERVER
-DOMAIN,api.sevenworkouts.com,FAKE IAP SERVER
-DOMAIN,api.bodybuilding.com,FAKE IAP SERVER
-DOMAIN,subscription-api.bodybuilding.com,FAKE IAP SERVER
-DOMAIN,api.appewa.com,FAKE IAP SERVER
-DOMAIN,s.sleepcycle.com,FAKE IAP SERVER
-DOMAIN,us-central1-giftr-83d83.cloudfunctions.net,FAKE IAP SERVER
-DOMAIN,api-dot-mwm-users.appspot.com,FAKE IAP SERVER
-DOMAIN,tezza-backend.herokuapp.com,FAKE IAP SERVER
-DOMAIN,api.polarisoffice.com,FAKE IAP SERVER
-DOMAIN,us-central1-alight-creative.cloudfunctions.net,FAKE IAP SERVER
-DOMAIN,api.pixomatic.us,FAKE IAP SERVER
-DOMAIN,ssl-api.itranslateapp.com,FAKE IAP SERVER
-DOMAIN,bbdd2101-default-recorders-4916-415735771.us-west-2.elb.amazonaws.com,FAKE IAP SERVER
-DOMAIN,donate-api.recorder.duapps.com,FAKE IAP SERVER
-DOMAIN,gdcasapi.searona.com,FAKE IAP SERVER
-DOMAIN,subscription.ampme.com,FAKE IAP SERVER
-DOMAIN,ios-global-restaurant.twomiles.cn,FAKE IAP SERVER
-DOMAIN,api.speak-translate.com,FAKE IAP SERVER
-DOMAIN,menscoach-api.asqq.io,FAKE IAP SERVER
-DOMAIN,subs.platforms.team,FAKE IAP SERVER
-DOMAIN,www.codecademy.com,FAKE IAP SERVER
-DOMAIN,prod.api.shapr3d.com,FAKE IAP SERVER
-DOMAIN,dbvirtualeducation.com,FAKE IAP SERVER
-DOMAIN,toeicez.com,FAKE IAP SERVER
-DOMAIN,followly.m-mobileapps.com,FAKE IAP SERVER
-DOMAIN,aivatar-subscription.sticker.place,FAKE IAP SERVER
-DOMAIN,nodejs.cherpake.com,FAKE IAP SERVER
-DOMAIN,sub.falou.app,FAKE IAP SERVER
-DOMAIN,api.apphud.com,FAKE IAP SERVER
-DOMAIN,app-api.pixiv.net,FAKE IAP SERVER
-DOMAIN,oauth.secure.pixiv.net,FAKE IAP SERVER
-DOMAIN,naga.sanfordguide.com,FAKE IAP SERVER
-DOMAIN,testapps.videostarapp.com,FAKE IAP SERVER
-DOMAIN,presco-api.gotbatu.com,FAKE IAP SERVER
-DOMAIN,api.socialguide.co,FAKE IAP SERVER
-DOMAIN,weewungwung.com,FAKE IAP SERVER
-DOMAIN,simpler.via-mobi.com,FAKE IAP SERVER
-DOMAIN,djit-end.appspot.com,FAKE IAP SERVER
-DOMAIN,chordify.net,FAKE IAP SERVER
-DOMAIN,api.rockalearning.com,FAKE IAP SERVER
-DOMAIN,appapi.neuralprisma.com,FAKE IAP SERVER
-DOMAIN,api.wattpad.com,FAKE IAP SERVER
-DOMAIN,api.funimate.com,FAKE IAP SERVER
-DOMAIN,api.polarr.co,FAKE IAP SERVER
-DOMAIN,api.global.mp3.zing.vn,FAKE IAP SERVER
-DOMAIN,api.zingmp3.vn,FAKE IAP SERVER
-DOMAIN,receipt-validator.herewetest.com,FAKE IAP SERVER
-DOMAIN,overlay-api.gotbatu.com,FAKE IAP SERVER
-DOMAIN,revoapi.moneylover.me,FAKE IAP SERVER
-DOMAIN,static.moneylover.me,FAKE IAP SERVER
-DOMAIN,api.playond.com,FAKE IAP SERVER
-DOMAIN,dupa-api.doupaiapp.com,FAKE IAP SERVER
-DOMAIN,api.madewithfaded.com,FAKE IAP SERVER
-DOMAIN,secure.istreamer.com,FAKE IAP SERVER
-DOMAIN,api.farfaria.com,FAKE IAP SERVER
+DOMAIN,api.lifesum.com,IAP-PREMIUM
+DOMAIN,api.reface.video,IAP-PREMIUM
+DOMAIN,api.lingovocabulary.com,IAP-PREMIUM
+DOMAIN,dashboard.mergeedu.com,IAP-PREMIUM
+DOMAIN,api.sevenworkouts.com,IAP-PREMIUM
+DOMAIN,api.bodybuilding.com,IAP-PREMIUM
+DOMAIN,subscription-api.bodybuilding.com,IAP-PREMIUM
+DOMAIN,api.appewa.com,IAP-PREMIUM
+DOMAIN,s.sleepcycle.com,IAP-PREMIUM
+DOMAIN,us-central1-giftr-83d83.cloudfunctions.net,IAP-PREMIUM
+DOMAIN,api-dot-mwm-users.appspot.com,IAP-PREMIUM
+DOMAIN,tezza-backend.herokuapp.com,IAP-PREMIUM
+DOMAIN,api.polarisoffice.com,IAP-PREMIUM
+DOMAIN,us-central1-alight-creative.cloudfunctions.net,IAP-PREMIUM
+DOMAIN,api.pixomatic.us,IAP-PREMIUM
+DOMAIN,ssl-api.itranslateapp.com,IAP-PREMIUM
+DOMAIN,bbdd2101-default-recorders-4916-415735771.us-west-2.elb.amazonaws.com,IAP-PREMIUM
+DOMAIN,donate-api.recorder.duapps.com,IAP-PREMIUM
+DOMAIN,gdcasapi.searona.com,IAP-PREMIUM
+DOMAIN,subscription.ampme.com,IAP-PREMIUM
+DOMAIN,ios-global-restaurant.twomiles.cn,IAP-PREMIUM
+DOMAIN,api.speak-translate.com,IAP-PREMIUM
+DOMAIN,menscoach-api.asqq.io,IAP-PREMIUM
+DOMAIN,subs.platforms.team,IAP-PREMIUM
+DOMAIN,www.codecademy.com,IAP-PREMIUM
+DOMAIN,prod.api.shapr3d.com,IAP-PREMIUM
+DOMAIN,dbvirtualeducation.com,IAP-PREMIUM
+DOMAIN,toeicez.com,IAP-PREMIUM
+DOMAIN,followly.m-mobileapps.com,IAP-PREMIUM
+DOMAIN,aivatar-subscription.sticker.place,IAP-PREMIUM
+DOMAIN,nodejs.cherpake.com,IAP-PREMIUM
+DOMAIN,sub.falou.app,IAP-PREMIUM
+DOMAIN,api.apphud.com,IAP-PREMIUM
+DOMAIN,app-api.pixiv.net,IAP-PREMIUM
+DOMAIN,oauth.secure.pixiv.net,IAP-PREMIUM
+DOMAIN,naga.sanfordguide.com,IAP-PREMIUM
+DOMAIN,testapps.videostarapp.com,IAP-PREMIUM
+DOMAIN,presco-api.gotbatu.com,IAP-PREMIUM
+DOMAIN,api.socialguide.co,IAP-PREMIUM
+DOMAIN,weewungwung.com,IAP-PREMIUM
+DOMAIN,simpler.via-mobi.com,IAP-PREMIUM
+DOMAIN,djit-end.appspot.com,IAP-PREMIUM
+DOMAIN,chordify.net,IAP-PREMIUM
+DOMAIN,api.rockalearning.com,IAP-PREMIUM
+DOMAIN,appapi.neuralprisma.com,IAP-PREMIUM
+DOMAIN,api.wattpad.com,IAP-PREMIUM
+DOMAIN,api.funimate.com,IAP-PREMIUM
+DOMAIN,api.polarr.co,IAP-PREMIUM
+DOMAIN,api.global.mp3.zing.vn,IAP-PREMIUM
+DOMAIN,api.zingmp3.vn,IAP-PREMIUM
+DOMAIN,receipt-validator.herewetest.com,IAP-PREMIUM
+DOMAIN,overlay-api.gotbatu.com,IAP-PREMIUM
+DOMAIN,revoapi.moneylover.me,IAP-PREMIUM
+DOMAIN,static.moneylover.me,IAP-PREMIUM
+DOMAIN,api.playond.com,IAP-PREMIUM
+DOMAIN,dupa-api.doupaiapp.com,IAP-PREMIUM
+DOMAIN,api.madewithfaded.com,IAP-PREMIUM
+DOMAIN,secure.istreamer.com,IAP-PREMIUM
+DOMAIN,api.farfaria.com,IAP-PREMIUM
 DOMAIN,activation.crossutility.com,REJECT
-DOMAIN,pay.babybus.com,FAKE IAP SERVER
-DOMAIN,app.autocad360.com,FAKE IAP SERVER
-DOMAIN,www.api.monkeyuni.net,FAKE IAP SERVER
-DOMAIN,api3-normal-c-lf.amemv.com,FAKE IAP SERVER
-DOMAIN-KEYWORD,h2.tiktokv.com,FAKE IAP SERVER
-DOMAIN,api.spendee.com,FAKE IAP SERVER
-DOMAIN,cloudapp.aiarlabs.com,FAKE IAP SERVER
-DOMAIN,education.github.com,FAKE IAP SERVER
-DOMAIN,api-cs.intsig.net,FAKE IAP SERVER
-DOMAIN,planner5d.com,FAKE IAP SERVER
-DOMAIN,dayone.me,FAKE IAP SERVER
-DOMAIN,api-production.endel.io,FAKE IAP SERVER
-DOMAIN,chic.mtlab.meitu.com,FAKE IAP SERVER
-DOMAIN,lcs-mobile-cops.adobe.io,FAKE IAP SERVER
-DOMAIN,api.tv.zing.vn,FAKE IAP SERVER
-DOMAIN,api.lichviet.org,FAKE IAP SERVER
-DOMAIN,intl-i.vip.iqiyi.com,FAKE IAP SERVER
-DOMAIN,intl-passport.iqiyi.com,FAKE IAP SERVER
-DOMAIN,cdn.fing.io,FAKE IAP SERVER
-DOMAIN,web.vizmato.com,FAKE IAP SERVER
-DOMAIN,api.sololearn.com,FAKE IAP SERVER
-DOMAIN,ec2-52-34-190-224.us-west-2.compute.amazonaws.com,FAKE IAP SERVER
-DOMAIN,apic.musixmatch.com,FAKE IAP SERVER
-DOMAIN,origin-prod-phoenix.jibjab.com,FAKE IAP SERVER
-DOMAIN,api.termius.com,FAKE IAP SERVER
-DOMAIN,license.pdfexpert.com,FAKE IAP SERVER
-DOMAIN,api.gyrosco.pe,FAKE IAP SERVER
-DOMAIN,api-kinemaster-assetstore.kinemasters.com,FAKE IAP SERVER
-DOMAIN,api-kinemaster-assetstore.nexstreaming.com,FAKE IAP SERVER
-DOMAIN,api.overhq.com,FAKE IAP SERVER
-DOMAIN,engbright.com,FAKE IAP SERVER
-DOMAIN,commerce-i18n-api.faceu.mobi,FAKE IAP SERVER
-DOMAIN,api.blinkist.com,FAKE IAP SERVER
-DOMAIN,api.lingokids.com,FAKE IAP SERVER
-DOMAIN,mobile-api.adguard.com,FAKE IAP SERVER
-DOMAIN,apimboom2.globaldelight.net,FAKE IAP SERVER
-DOMAIN,www.peacefulsoundsapp.com,FAKE IAP SERVER
-DOMAIN,subscription.aresframework.com,FAKE IAP SERVER
-DOMAIN,mini-hk.bybutter.com,FAKE IAP SERVER
-DOMAIN,pay.wecut.com,FAKE IAP SERVER
-DOMAIN,api.revenuecat.com,FAKE IAP SERVER
-DOMAIN,api.faceapp.io,FAKE IAP SERVER
-DOMAIN,api.unfold.app,FAKE IAP SERVER
-DOMAIN,asla.joytunes.com,FAKE IAP SERVER
-DOMAIN,graph.nhaccuatui.com,FAKE IAP SERVER
-DOMAIN,accounts.elevateapp.net,FAKE IAP SERVER
-DOMAIN,pixmagicapp.com,FAKE IAP SERVER
-DOMAIN,api.busuu.com,FAKE IAP SERVER
-DOMAIN,bmall.camera360.com,FAKE IAP SERVER
-DOMAIN,entitlements.adobe.io,FAKE IAP SERVER
-DOMAIN,photos.adobe.io,FAKE IAP SERVER
-DOMAIN,api-intl.mr.meitu.com,FAKE IAP SERVER
-DOMAIN-SUFFIX,api.memrise.com,FAKE IAP SERVER
-DOMAIN-SUFFIX,api.picsart.com,FAKE IAP SERVER
-DOMAIN-SUFFIX,api.mondlylanguages.com,FAKE IAP SERVER
-DOMAIN,vsco.co,FAKE IAP SERVER
-DOMAIN-SUFFIX,pool.elsanow.io,FAKE IAP SERVER
-DOMAIN-SUFFIX,api.calm.com,FAKE IAP SERVER
-DOMAIN-SUFFIX,api.indicative.com,FAKE IAP SERVER
-DOMAIN-SUFFIX,lambda.us-east-1.amazonaws.com,FAKE IAP SERVER
-DOMAIN,api.instasize.com,FAKE IAP SERVER
-DOMAIN,purchases.ws.pho.to,FAKE IAP SERVER
-DOMAIN,nomo.dafork.com,FAKE IAP SERVER
-DOMAIN,cloudapp.aiarlabs.com,FAKE IAP SERVER
-DOMAIN,buy.itunes.apple.com,FAKE IAP SERVER
-DOMAIN,us-central1-infltr.cloudfunctions.net,FAKE IAP SERVER
-DOMAIN,owa.videoshowiosglobalserver.com,FAKE IAP SERVER
-DOMAIN,app.algoriddim.com,FAKE IAP SERVER
-DOMAIN,api.getmimo.com,FAKE IAP SERVER
+DOMAIN,pay.babybus.com,IAP-PREMIUM
+DOMAIN,app.autocad360.com,IAP-PREMIUM
+DOMAIN,www.api.monkeyuni.net,IAP-PREMIUM
+DOMAIN,api3-normal-c-lf.amemv.com,IAP-PREMIUM
+DOMAIN-KEYWORD,h2.tiktokv.com,IAP-PREMIUM
+DOMAIN,api.spendee.com,IAP-PREMIUM
+DOMAIN,cloudapp.aiarlabs.com,IAP-PREMIUM
+DOMAIN,education.github.com,IAP-PREMIUM
+DOMAIN,api-cs.intsig.net,IAP-PREMIUM
+DOMAIN,planner5d.com,IAP-PREMIUM
+DOMAIN,dayone.me,IAP-PREMIUM
+DOMAIN,api-production.endel.io,IAP-PREMIUM
+DOMAIN,chic.mtlab.meitu.com,IAP-PREMIUM
+DOMAIN,lcs-mobile-cops.adobe.io,IAP-PREMIUM
+DOMAIN,api.tv.zing.vn,IAP-PREMIUM
+DOMAIN,api.lichviet.org,IAP-PREMIUM
+DOMAIN,intl-i.vip.iqiyi.com,IAP-PREMIUM
+DOMAIN,intl-passport.iqiyi.com,IAP-PREMIUM
+DOMAIN,cdn.fing.io,IAP-PREMIUM
+DOMAIN,web.vizmato.com,IAP-PREMIUM
+DOMAIN,api.sololearn.com,IAP-PREMIUM
+DOMAIN,ec2-52-34-190-224.us-west-2.compute.amazonaws.com,IAP-PREMIUM
+DOMAIN,apic.musixmatch.com,IAP-PREMIUM
+DOMAIN,origin-prod-phoenix.jibjab.com,IAP-PREMIUM
+DOMAIN,api.termius.com,IAP-PREMIUM
+DOMAIN,license.pdfexpert.com,IAP-PREMIUM
+DOMAIN,api.gyrosco.pe,IAP-PREMIUM
+DOMAIN,api-kinemaster-assetstore.kinemasters.com,IAP-PREMIUM
+DOMAIN,api-kinemaster-assetstore.nexstreaming.com,IAP-PREMIUM
+DOMAIN,api.overhq.com,IAP-PREMIUM
+DOMAIN,engbright.com,IAP-PREMIUM
+DOMAIN,commerce-i18n-api.faceu.mobi,IAP-PREMIUM
+DOMAIN,api.blinkist.com,IAP-PREMIUM
+DOMAIN,api.lingokids.com,IAP-PREMIUM
+DOMAIN,mobile-api.adguard.com,IAP-PREMIUM
+DOMAIN,apimboom2.globaldelight.net,IAP-PREMIUM
+DOMAIN,www.peacefulsoundsapp.com,IAP-PREMIUM
+DOMAIN,subscription.aresframework.com,IAP-PREMIUM
+DOMAIN,mini-hk.bybutter.com,IAP-PREMIUM
+DOMAIN,pay.wecut.com,IAP-PREMIUM
+DOMAIN,api.revenuecat.com,IAP-PREMIUM
+DOMAIN,api.faceapp.io,IAP-PREMIUM
+DOMAIN,api.unfold.app,IAP-PREMIUM
+DOMAIN,asla.joytunes.com,IAP-PREMIUM
+DOMAIN,graph.nhaccuatui.com,IAP-PREMIUM
+DOMAIN,accounts.elevateapp.net,IAP-PREMIUM
+DOMAIN,pixmagicapp.com,IAP-PREMIUM
+DOMAIN,api.busuu.com,IAP-PREMIUM
+DOMAIN,bmall.camera360.com,IAP-PREMIUM
+DOMAIN,entitlements.adobe.io,IAP-PREMIUM
+DOMAIN,photos.adobe.io,IAP-PREMIUM
+DOMAIN,api-intl.mr.meitu.com,IAP-PREMIUM
+DOMAIN-SUFFIX,api.memrise.com,IAP-PREMIUM
+DOMAIN-SUFFIX,api.picsart.com,IAP-PREMIUM
+DOMAIN-SUFFIX,api.mondlylanguages.com,IAP-PREMIUM
+DOMAIN,vsco.co,IAP-PREMIUM
+DOMAIN-SUFFIX,pool.elsanow.io,IAP-PREMIUM
+DOMAIN-SUFFIX,api.calm.com,IAP-PREMIUM
+DOMAIN-SUFFIX,api.indicative.com,IAP-PREMIUM
+DOMAIN-SUFFIX,lambda.us-east-1.amazonaws.com,IAP-PREMIUM
+DOMAIN,api.instasize.com,IAP-PREMIUM
+DOMAIN,purchases.ws.pho.to,IAP-PREMIUM
+DOMAIN,nomo.dafork.com,IAP-PREMIUM
+DOMAIN,cloudapp.aiarlabs.com,IAP-PREMIUM
+DOMAIN,buy.itunes.apple.com,IAP-PREMIUM
+DOMAIN,us-central1-infltr.cloudfunctions.net,IAP-PREMIUM
+DOMAIN,owa.videoshowiosglobalserver.com,IAP-PREMIUM
+DOMAIN,app.algoriddim.com,IAP-PREMIUM
+DOMAIN,api.getmimo.com,IAP-PREMIUM
