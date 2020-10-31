@@ -2,7 +2,7 @@
 * @fileoverview Example to deploy a HTTP backend.
 *
 * [http_backend]
-* https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-backend.js, tag=Backend Example, path=^/example/v1/
+* https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/sample-backend.js, tag=Backend Example, path=^/example/v1/
 *
 * You can visit through http://quantumult-x:9999/example/v1/ or http://127.0.0.1:9999/example/v1/ or http://localhost:9999/example/v1/
 * You can also deploy a lot of different backends for your own usage, such as remote resource combination backend, task perferences manager backend, file converting backend ...
