@@ -24,17 +24,7 @@ const myData = "We got you.\n\n";
 const myResponse = {
     status: myStatus,
     headers: myHeaders,
-    body: {<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-  </head>
-  <body>
-    ccccccccccccccc
-  </body>
-</html>}
+    body: console.log(myData)
 };
 
 $done(myResponse);
