@@ -24,7 +24,7 @@ const myData = "We got you.\n\n";
 const myResponse = {
     status: myStatus,
     headers: myHeaders,
-    body: console.log(myData)
+    body: myData
 };
 
 $done(myResponse);
