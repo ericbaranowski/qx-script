@@ -1,3 +1,7 @@
+#Fonos
+HOST,production.fonos.dev,Fake iAP Policy
+#FitPlan
+HOST,api2.fitplanapp.com,Fake iAP Policy
 #REFACE
 HOST,api.lifesum.com,Fake iAP Policy
 #REFACE
