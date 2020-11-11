@@ -1,4 +1,4 @@
-hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, license.pdfexpert.com, api.global.mp3.zing.vn, www.calm.com,
+hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, license.pdfexpert.com, api.global.mp3.zing.vn, www.calm.com, api.calm.com,
 
 # > Script converter
 ;^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/js-converter.js
