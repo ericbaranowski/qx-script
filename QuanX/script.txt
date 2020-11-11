@@ -1,7 +1,4 @@
-hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, license.pdfexpert.com, api.global.mp3.zing.vn, www.calm.com, api.calm.com,
-
-# > Script converter
-;^https?:\/\/(raw|gist)\.githubusercontent.com/.*\.js$ url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/js-converter.js
+hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, www.calm.com, api.calm.com, www.google.*,
 
 # > Shopee cookies
 https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js
@@ -10,18 +7,13 @@ https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.gi
 https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/altstore.js
 
 # > Endless google
-;^https?:\/\/www\.google\..*\/search url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js
+^https?:\/\/www\.google\..*\/search url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/Endless_Google.user.js
 
 # > Old ipa
 (https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/old_ipa.js
 
-# > Documents
-;^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/doc.js
-
-# > ZingMp3
-^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getUserInfo\?data=* url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/zingmp3.js
-
-# > calm
+# > Calm
 ^https:\/\/api\.calm\.com\/me$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/calm.js
-# > remove_manage
+
+# > Remove_manage
 ^https:\/\/www\.calm\.com\/mobile\/manage-subscription\?token=*  url reject-img
