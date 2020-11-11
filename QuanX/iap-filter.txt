@@ -48,13 +48,7 @@ HOST,api.speak-translate.com,Fake iAP Policy
 HOST,menscoach-api.asqq.io,Fake iAP Policy
 #Eggzy
 HOST,subs.platforms.team,Fake iAP Policy
-######################################
-#PXX itunes
-HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
-######################################
-#Cercube
-HOST,api.cercube.com,Fake Cydia Tweak
-######################################
+
 #Codecademy
 HOST,www.codecademy.com,Fake iAP Policy
 #Shapr3D
@@ -231,9 +225,9 @@ HOST-SUFFIX,api.mondlylanguages.com,Fake iAP Policy
 HOST,vsco.co,Fake iAP Policy
 HOST-SUFFIX,pool.elsanow.io,Fake iAP Policy
 # Calm
-HOST-SUFFIX,api.calm.com,Fake iAP Policy
-HOST-SUFFIX,api.indicative.com,Fake iAP Policy
-HOST-SUFFIX,lambda.us-east-1.amazonaws.com,Fake iAP Policy
+#HOST-SUFFIX,api.calm.com,Fake iAP Policy
+#HOST-SUFFIX,api.indicative.com,Fake iAP Policy
+#HOST-SUFFIX,lambda.us-east-1.amazonaws.com,Fake iAP Policy
 #Instasize
 HOST,api.instasize.com,Fake iAP Policy
 HOST,purchases.ws.pho.to,Fake iAP Policy
@@ -248,3 +242,7 @@ HOST,app.algoriddim.com,Fake iAP Policy
 #HOST,viva-asia1.vvbrd.com,Fake iAP Policy
 # Mimo
 HOST,api.getmimo.com,Fake iAP Policy
+######################################
+#PXX itunes
+HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
+######################################
