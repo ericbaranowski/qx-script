@@ -102,9 +102,9 @@ HOST,api.wattpad.com,Fake iAP Policy
 HOST,api.funimate.com,Fake iAP Policy
 #Polarr
 HOST,api.polarr.co,Fake iAP Policy
-#   Zing Mp3
-HOST,api.global.mp3.zing.vn,Fake iAP Policy
-HOST,api.zingmp3.vn,Fake iAP Policy
+#Zing Mp3
+#HOST,api.global.mp3.zing.vn,Fake iAP Policy
+#HOST,api.zingmp3.vn,Fake iAP Policy
 #Snap&Trans
 HOST,receipt-validator.herewetest.com,Fake iAP Policy
 #Presco Overlay
