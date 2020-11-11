@@ -1,4 +1,4 @@
-hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, www.calm.com, api.calm.com, www.google.*,
+hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, www.calm.com, api.calm.com, www.google.*, license.pdfexpert.com,
 
 # > Shopee cookies
 https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js
@@ -17,3 +17,6 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body htt
 
 # > Remove_manage
 ^https:\/\/www\.calm\.com\/mobile\/manage-subscription\?token=*  url reject-img
+
+# > Documents
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/documents.js
