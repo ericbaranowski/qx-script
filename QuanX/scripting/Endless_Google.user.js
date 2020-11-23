@@ -1,14 +1,38 @@
+/*
+[rewrite]
+http:\/\/www\.google\..* url script-response-body Endless_Google.user.js
+
+[mitm]
+www.google.*
+ 
+*/
+
 let body = $response.body
 
 if (/<\/html>|<\/body>/.test(body)) {
   body = body.replace('</body>', `
 
 <script>
-const elecJSPack = function(){
+const elecJSPack = function(){// ==UserScript==
+// @name            Endless Google
+// @description     Load more results automatically and endlessly.
+// @author          tumpio
+// @namespace       tumpio@sci.fi
+// @homepageURL     https://openuserjs.org/scripts/tumpio/Endless_Google
+// @supportURL      https://github.com/tumpio/gmscripts/issues
+// @icon            https://github.com/tumpio/gmscripts/raw/master/Endless_Google/large.png
+// @include         http://www.google.*
+// @include         https://www.google.*
+// @include         https://encrypted.google.*
+// @run-at          document-start
+// @version         0.0.6
+// @license         MIT
+// @noframes
+// ==/UserScript==
 
-if (location.href.indexOf("tbm=isch") !== -1)
+if (location.href.indexOf("tbm=isch") !== -1) // NOTE: Don't run on image search
     return;
-if (window.top !== window.self)
+if (window.top !== window.self) // NOTE: Do not run on iframes
     return;
 
 const centerElement = "#center_col";
@@ -17,7 +41,7 @@ const filtersAll = ["#foot", "#bottomads"];
 const filtersCol = filtersAll.concat(["#extrares", "#imagebox_bigimages"]);
 let   msg = "";
 
-const css = `
+const css = \`
 .page-number {
   position: relative;
   display: flex;
@@ -46,7 +70,7 @@ const css = `
 .endless-msg.shown {
   display:block;
 }
-`;
+\`;
 
 let pageNumber = 1;
 let prevScrollY = 0;
@@ -80,7 +104,7 @@ function requestNextPage() {
             document.querySelector(centerElement).appendChild(col);
 
             if (!content.querySelector("#rso")) {
-               
+                // end of results
                 window.removeEventListener("scroll", onScrollDocumentEnd);
                 nextPageLoading = false;
                 msg.classList.contains("shown") && msg.classList.remove("shown");
@@ -125,12 +149,13 @@ function init() {
     document.head.appendChild(style);
     msg = document.createElement("div");
     msg.setAttribute("class", "endless-msg");
-    msg.innerText = "Loading next page...";
+    msg.innerText = "       Loading next page...";
     document.body.appendChild(msg);
 }
 
 document.addEventListener("DOMContentLoaded", init);
 }()</script></body>`)
+
 }
 
 $done({ body })
