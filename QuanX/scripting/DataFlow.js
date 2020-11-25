@@ -1,7 +1,7 @@
 const $ = env();
 const account = {
-  user: "0354353735",
-  pass: "1234qwer",
+  user: "",
+  pass: "",
 };
 
 var body = "account=" + account.user + "&build_code=2020.4.15.2&cmnd=&device_id=00000000-0000-0000-0000-000000000000&device_name=duy&keyDeviceAcc=xxx&os_type=ios&os_version=13.600000&password=" + account.pass + "&version_app=4.3.4";
