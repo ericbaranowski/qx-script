@@ -223,7 +223,7 @@ HOST,api.instasize.com,Fake iAP Policy
 HOST,purchases.ws.pho.to,Fake iAP Policy
 HOST,nomo.dafork.com,Fake iAP Policy
 HOST,cloudapp.aiarlabs.com,Fake iAP Policy
-HOST,buy.itunes.apple.com,Fake iAP Policy
+#HOST,buy.itunes.apple.com,Fake iAP Policy
 # Infltr
 HOST,us-central1-infltr.cloudfunctions.net,Fake iAP Policy
 HOST,owa.videoshowiosglobalserver.com,Fake iAP Policy
