@@ -17,6 +17,10 @@ HOST,api.bodybuilding.com,Fake iAP Policy
 HOST,subscription-api.bodybuilding.com,Fake iAP Policy
 # EWA
 HOST,api.appewa.com,Fake iAP Policy
+##################################################
+# PXX itunes
+HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
+##################################################
 # Sleep Cycle
 HOST,s.sleepcycle.com,Fake iAP Policy
 # Giftr
@@ -230,6 +234,3 @@ HOST,owa.videoshowiosglobalserver.com,Fake iAP Policy
 HOST,app.algoriddim.com,Fake iAP Policy
 # Mimo
 HOST,api.getmimo.com,Fake iAP Policy
-##################################################
-# PXX itunes
-HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
