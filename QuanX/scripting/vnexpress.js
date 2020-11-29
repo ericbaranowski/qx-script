@@ -1,4 +1,4 @@
-let limit = 10;
+let limit = 5;
 var cate_id = "1003834";
 var notify_s = 0;
 var wurl = {
@@ -37,7 +37,7 @@ function pushData() {
     (reason) => {
       console.error(reason);
     }
-  );
+  ); $done();
 }
 function timeConverter(UNIX_timestamp) {
   let a = new Date(UNIX_timestamp * 1000);
