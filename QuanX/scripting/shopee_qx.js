@@ -45,7 +45,7 @@ function checkin() {
                 );
             }
         }
-    });
+    }); $.done();
 }
 
 function GetCookie() {
