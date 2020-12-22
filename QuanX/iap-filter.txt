@@ -157,7 +157,7 @@ HOST,cdn.fing.io,Fake iAP Policy
 # vizmato
 HOST,web.vizmato.com,Fake iAP Policy
 # SoloLearn
-HOST,api.sololearn.com,Fake iAP Policy
+#HOST,api.sololearn.com,Fake iAP Policy
 # Vizzywig2020
 HOST,ec2-52-34-190-224.us-west-2.compute.amazonaws.com,Fake iAP Policy
 # MusiXmatch
