@@ -1,5 +1,5 @@
 ﻿var wurl = {
-  url: "https://phd051199.000webhostapp.com/giaxang.php",
+  url: "http://phamduy.tk/giaxang.php",
 };
 var today = new Date();
 $task.fetch(wurl).then(
