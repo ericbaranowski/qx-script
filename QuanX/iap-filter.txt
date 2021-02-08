@@ -130,7 +130,7 @@ HOST,secure.istreamer.com,Fake iAP Policy
 # farfaria
 HOST, api.farfaria.com, Fake iAP Policy
 # Quantumult X bypass
-HOST, activation.crossutility.com, reject
+#HOST, activation.crossutility.com, reject
 # BabyBus
 HOST,pay.babybus.com,Fake iAP Policy
 # AutoCAD
