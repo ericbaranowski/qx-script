@@ -142,7 +142,7 @@ HOST,api.spendee.com,Fake iAP Policy
 # Prequel
 HOST,cloudapp.aiarlabs.com,Fake iAP Policy
 # Working Copy
-HOST,education.github.com,Fake iAP Policy
+#HOST,education.github.com,Fake iAP Policy
 # Camscanner
 HOST,api-cs.intsig.net,Fake iAP Policy
 # Planner 5D
