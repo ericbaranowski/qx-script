@@ -1,4 +1,4 @@
-hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, www.calm.com, api.calm.com, www.google.*, license.pdfexpert.com,
+hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, www.google.*,
 
 # > Shopee cookies
 https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js
