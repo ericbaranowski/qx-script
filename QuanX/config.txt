@@ -12,7 +12,7 @@ server = 8.8.4.4
 [policy]
 static = Proxy server, direct, v2ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
 static = Fake iAP Policy, Fake iAP Server, direct, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Quantumult_X.png
-static = Fake PXX Policy, direct, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple.png
+;static = Fake PXX Policy, direct, Fake iAP Policy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Apple.png
 static = Pornhub, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Pornhub.png
 static = Speedtest, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Speedtest.png
 static = Facebook, direct, Proxy server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Facebook.png
