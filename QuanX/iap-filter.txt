@@ -1,3 +1,13 @@
+#Alarmy
+HOST,ars.alar.my,Fake iAP Policy
+#Voiz FM
+HOST,app.voiz.vn,Fake iAP Policy
+#Zaim
+HOST,api.zaim.net,Fake iAP Policy
+#SKETCH AR
+HOST,api.sketchar.tech,Fake iAP Policy
+#Lang Kingdom
+HOST,api.langkingdom.com,Fake iAP Policy
 # Fonos
 HOST,production.fonos.dev,Fake iAP Policy
 # FitPlan
