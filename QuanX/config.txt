@@ -42,15 +42,15 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
 
 [task_local]
-0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js, tag = weather.js
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/vnexpress.js, tag = vnexpress.js
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js, tag = github.js
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js, tag = appmonitor.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js, tag = shopee.js
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/rain.js, tag = rain.js
-0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js, tag = dataflow.js
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js, tag = nCov.js
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js, tag = giaxang.js
+0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather_qx.js, tag=weather.js, img-url=sun.max.fill.system, enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/vnexpress.js, tag=vnexpress.js, img-url=doc.richtext.fill.system, enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/github.js, tag=github.js, img-url=megaphone.fill.system, enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor_qx.js, tag=appmonitor.js, img-url=a.book.closed.fill.system, enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js, tag=shopee.js, img-url=cart.fill.system, enabled=true
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/rain.js, tag=rain.js, img-url=cloud.heavyrain.fill.system, enabled=true
+0 6,12,17 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/DataFlow.js, tag=dataflow.js, img-url=waveform.path.ecg.rectangle.fill.system, enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/ncov_qx.js, tag=nCov.js, img-url=burst.fill.system, enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js, tag=giaxang.js, img-url=p.square.fill.system, enabled=true
 
 [mitm]
 hostname = oauthaccountmanager.googleapis.com
