@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, 
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = V2Ray Proxy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/VMess.png
 
 [rewrite_local]
-https://oauthaccountmanager.googleapis.com/v1/issuetoken url script-request-body https://raw.githubusercontent.com/phd91105/Scripts/master/YTappid.js
+https://oauthaccountmanager.googleapis.com/v1/issuetoken url script-request-body https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/YTappid.js
 [rewrite_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt, tag = Scripts
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rewrite.txt, tag = Rewrite
