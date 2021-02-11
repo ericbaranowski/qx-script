@@ -29,7 +29,9 @@ HOST,subscription-api.bodybuilding.com,Fake iAP Policy
 HOST,api.appewa.com,Fake iAP Policy
 ########################################
 # PXX itunes
-#HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
+HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
+########################################
+HOST-SUFFIX,api.cercube.com,Fake Cydia Tweak
 ########################################
 # Sleep Cycle
 HOST,s.sleepcycle.com,Fake iAP Policy
