@@ -3,11 +3,8 @@ resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/mas
 
 [dns]
 no-system
-no-ipv6
-server = 1.1.1.1
-server = 1.0.0.1
-server = 8.8.8.8
-server = 8.8.4.4
+server = 45.90.28.130
+server = 45.90.30.130
 
 [policy]
 static = Proxy server, direct, v2ray, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Bypass.png
