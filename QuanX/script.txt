@@ -1,4 +1,4 @@
-hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, www.google.*
+hostname = www.patreon.com, shopee.vn, api.unlimapps.com, *-buy.itunes.apple.com, www.google.*, ppq.apple.com
 
 # > Shopee cookies
 https://shopee.vn.+me.+setting.+classic url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee_qx.js
@@ -12,5 +12,5 @@ https://www.patreon.com.+api.+oauth2.+v2.+identity? url script-response-body htt
 # > Old ipa
 (https:\/\/(.+\-|)buy\.itunes\.apple\.com\/WebObjects\/MZBuy.woa\/wa\/buyProduct)|(https:\/\/api\.unlimapps\.com\/.+\/apple_apps\/.+\/versions\?=) url script-request-header https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/old_ipa.js
 
-# revoke
-# https://ppq.apple.com/v1/authorization url 302 https://dl.dropboxusercontent.com/s/wugukmpaar5de32/anti-revoke
+# > Verify ppq apple
+https://ppq.apple.com/v1/authorization url 302 https://dl.dropboxusercontent.com/s/wugukmpaar5de32/anti-revoke
