@@ -11,3 +11,6 @@ HOST-SUFFIX,gdmf.apple.com.akadns.net,REJECT
 HOST-SUFFIX,ocsp.apple.com,REJECT
 HOST-SUFFIX,ocsp-lb.apple.com.akadns.net,REJECT
 HOST-SUFFIX,ocsp.g.aaplimg.com,REJECT
+HOST-SUFFIX,ocsp.int-x3.letsencrypt.org,REJECT
+HOST-SUFFIX,world-gen.g.aaplimg.com,REJECT
+HOST-SUFFIX,swscan.apple.com,REJECT
