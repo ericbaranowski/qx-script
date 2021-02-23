@@ -246,3 +246,5 @@ HOST,owa.videoshowiosglobalserver.com,Fake iAP Policy
 HOST,app.algoriddim.com,Fake iAP Policy
 # Mimo
 HOST,api.getmimo.com,Fake iAP Policy
+####################################
+user-agent, com.apple.trustd/*, reject
