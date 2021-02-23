@@ -1,3 +1,17 @@
+#Focos Blacklist
+HOST,focosapp.s3-ap-southeast-1.amazonaws.com,Fake iAP Policy
+#Ads Reject
+HOST-SUFFIX,mopub.com, reject
+#Apple Revoke
+#HOST,ppq.apple.com,Fake iAP Policy
+#Chess.com
+HOST,api.chess.com,Fake iAP Policy
+#IMAIOS e-Anatom‪y‬
+HOST,www.imaios.com,Fake iAP Policy
+#Remini
+HOST,global.bigwinepot.com,Fake iAP Policy
+#Cinemagraph Pro
+HOST,api.flixel.com,Fake iAP Policy
 #Alarmy
 HOST,ars.alar.my,Fake iAP Policy
 #Voiz FM
@@ -8,150 +22,157 @@ HOST,api.zaim.net,Fake iAP Policy
 HOST,api.sketchar.tech,Fake iAP Policy
 #Lang Kingdom
 HOST,api.langkingdom.com,Fake iAP Policy
-# Fonos
+#Fonos
 HOST,production.fonos.dev,Fake iAP Policy
-# FitPlan
+#FitPlan
 HOST,api2.fitplanapp.com,Fake iAP Policy
-# REFACE
+#Fonts
+HOST,us-central1-fonts-2b1a7.cloudfunctions.net,Fake iAP Policy
+#REFACE
 HOST,api.lifesum.com,Fake iAP Policy
-# REFACE
+#REFACE
 HOST,api.reface.video,Fake iAP Policy
-# Lingo Play
+#Lingo Play
 HOST,api.lingovocabulary.com,Fake iAP Policy
-# MERGE Explorer
+#MERGE Explorer
 HOST,dashboard.mergeedu.com,Fake iAP Policy
-# Seven
+#Seven
 HOST,api.sevenworkouts.com,Fake iAP Policy
-# BodyFit
+#BodyFit
 HOST,api.bodybuilding.com,Fake iAP Policy
 HOST,subscription-api.bodybuilding.com,Fake iAP Policy
-# EWA
+#EWA
 HOST,api.appewa.com,Fake iAP Policy
-########################################
-# PXX itunes
-HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
-########################################
-HOST-SUFFIX,api.cercube.com,Fake Cydia Tweak
-########################################
-# Sleep Cycle
+#Sleep Cycle
 HOST,s.sleepcycle.com,Fake iAP Policy
-# Giftr
+#Giftr
 HOST,us-central1-giftr-83d83.cloudfunctions.net,Fake iAP Policy
-# edjing
+#edjing
 HOST,api-dot-mwm-users.appspot.com,Fake iAP Policy
-# Tezza
+#Tezza
 HOST,tezza-backend.herokuapp.com,Fake iAP Policy
-# polarisoffice
+#polarisoffice
 HOST,api.polarisoffice.com,Fake iAP Policy
-# Alight Motion
+#Alight Motion
 HOST,us-central1-alight-creative.cloudfunctions.net,Fake iAP Policy
-# Pixomatic
+#Pixomatic
 HOST,api.pixomatic.us,Fake iAP Policy
-# iTranslate
+HOST,pixomatic.herewetest.com,Fake iAP Policy
+#iTranslate
 HOST,ssl-api.itranslateapp.com,Fake iAP Policy
-# Du recorder
+#Du recorder
 HOST,bbdd2101-default-recorders-4916-415735771.us-west-2.elb.amazonaws.com,Fake iAP Policy
 HOST,donate-api.recorder.duapps.com,Fake iAP Policy
-# PocketWorld3D
+#PocketWorld3D
 HOST,gdcasapi.searona.com,Fake iAP Policy
-# AmpMe
+#AmpMe
 HOST,subscription.ampme.com,Fake iAP Policy
-# Restaurant
+#Restaurant
 HOST,ios-global-restaurant.twomiles.cn,Fake iAP Policy
-# Speak&Translate
+#Speak&Translate
 HOST,api.speak-translate.com,Fake iAP Policy
-# MuscleBooster
+#MuscleBooster
 HOST,menscoach-api.asqq.io,Fake iAP Policy
-# Eggzy
+#Eggzy
 HOST,subs.platforms.team,Fake iAP Policy
-# Codecademy
+######################################
+#PXX itunes
+HOST-KEYWORD,-buy.itunes.apple.com,Fake PXX Policy
+######################################
+#Cercube
+HOST,api.cercube.com,Fake Cydia Tweak
+######################################
+#Codecademy
 HOST,www.codecademy.com,Fake iAP Policy
-# Shapr3D
+#Shapr3D
 HOST,prod.api.shapr3d.com,Fake iAP Policy
-# IELTS
+#IELTS
 HOST,dbvirtualeducation.com,Fake iAP Policy
-# ToeicEZ
+#ToeicEZ
 HOST,toeicez.com,Fake iAP Policy
-# Followly
+#Followly
 HOST,followly.m-mobileapps.com,Fake iAP Policy
-# Aivartar
+#Aivartar
 HOST,aivatar-subscription.sticker.place,Fake iAP Policy
-# Romote+
+#Romote+
 HOST,nodejs.cherpake.com,Fake iAP Policy
-# Falou
+#Falou
 HOST,sub.falou.app,Fake iAP Policy
-# STORIO
+#STORIO
 HOST,api.apphud.com,Fake iAP Policy
-# pixiv
+#pixiv
 HOST,app-api.pixiv.net,Fake iAP Policy
 HOST,oauth.secure.pixiv.net,Fake iAP Policy
-# Sanford Guide
+#Sanford Guide
 HOST,naga.sanfordguide.com,Fake iAP Policy
-# VideoStart
+#VideoStart
 HOST,testapps.videostarapp.com,Fake iAP Policy
-# Presco
+#Presco
 HOST,presco-api.gotbatu.com,Fake iAP Policy
-# Followers
+#Followers
 HOST,api.socialguide.co,Fake iAP Policy
-# RETO3D
+#RETO3D
 HOST,weewungwung.com,Fake iAP Policy
-# Simpler
+#Simpler
 HOST,simpler.via-mobi.com,Fake iAP Policy
-# passwordmanager
+#passwordmanager
 HOST,djit-end.appspot.com,Fake iAP Policy
-# chordify
+#chordify
 HOST,chordify.net,Fake iAP Policy
-# Rocka
+#Rocka
 HOST,api.rockalearning.com,Fake iAP Policy
-# Lensa
+#Lensa
 HOST,appapi.neuralprisma.com,Fake iAP Policy
-# Wattpad
+#Wattpad
 HOST,api.wattpad.com,Fake iAP Policy
-# Funimate
+#Funimate
 HOST,api.funimate.com,Fake iAP Policy
-# Polarr
+#Polarr
 HOST,api.polarr.co,Fake iAP Policy
-# Zing Mp3
-#HOST,api.global.mp3.zing.vn,Fake iAP Policy
-#HOST,api.zingmp3.vn,Fake iAP Policy
-# Snap&Trans
+#   Zing Mp3
+HOST,api.global.mp3.zing.vn,Fake iAP Policy
+HOST,api.zingmp3.vn,Fake iAP Policy
+#Snap&Trans
 HOST,receipt-validator.herewetest.com,Fake iAP Policy
-# Presco Overlay
+#Presco Overlay
 HOST,overlay-api.gotbatu.com,Fake iAP Policy
-# MoneyLover
+#MoneyLover
 HOST,revoapi.moneylover.me,Fake iAP Policy
 HOST,static.moneylover.me,Fake iAP Policy
-# Daggerhood
+#Daggerhood
 HOST,api.playond.com,Fake iAP Policy
-# Vinkle
+#Vinkle
 HOST,dupa-api.doupaiapp.com,Fake iAP Policy
-# Faded
+#Faded
 HOST,api.madewithfaded.com,Fake iAP Policy
-# PlayerXtreme
+#PlayerXtreme
 HOST,secure.istreamer.com,Fake iAP Policy
-# farfaria
+#farfaria
 HOST, api.farfaria.com, Fake iAP Policy
-# Quantumult X bypass
-#HOST, activation.crossutility.com, reject
-# BabyBus
+#Quantumult X bypass
+HOST, activation.crossutility.com, reject
+#BabyBus
 HOST,pay.babybus.com,Fake iAP Policy
-# AutoCAD
+#AutoCAD
 HOST,app.autocad360.com,Fake iAP Policy
-# VMonkey
+#VMonkey
 HOST,www.api.monkeyuni.net,Fake iAP Policy
-# Spendee
+#   TIKTOK
+HOST,api3-normal-c-lf.amemv.com,Fake iAP Policy
+HOST-KEYWORD,h2.tiktokv.com,Fake iAP Policy
+#Spendee
 HOST,api.spendee.com,Fake iAP Policy
-# Prequel
+#Prequel
 HOST,cloudapp.aiarlabs.com,Fake iAP Policy
-# Working Copy
+#Working Copy
 #HOST,education.github.com,Fake iAP Policy
-# Camscanner
+#Camscanner
 HOST,api-cs.intsig.net,Fake iAP Policy
-# Planner 5D
+#Planner 5D
 HOST,planner5d.com,Fake iAP Policy
-# Day One
+#Day One
 HOST,dayone.me,Fake iAP Policy
-# Endel
+#Endel
 HOST,api-production.endel.io,Fake iAP Policy
 # Chic Cam
 HOST,chic.mtlab.meitu.com,Fake iAP Policy
@@ -165,26 +186,28 @@ HOST,api.lichviet.org,Fake iAP Policy
 HOST,intl-i.vip.iqiyi.com,Fake iAP Policy
 HOST,intl-passport.iqiyi.com,Fake iAP Policy
 # Fing
-HOST,cdn.fing.io,Fake iAP Policy
+HOST,app.fing.com,Fake iAP Policy
 # vizmato
 HOST,web.vizmato.com,Fake iAP Policy
 # SoloLearn
-#HOST,api.sololearn.com,Fake iAP Policy
+HOST,api.sololearn.com,Fake iAP Policy
 # Vizzywig2020
 HOST,ec2-52-34-190-224.us-west-2.compute.amazonaws.com,Fake iAP Policy
 # MusiXmatch
 HOST,apic.musixmatch.com,Fake iAP Policy
-# JibJab
+#JibJab
 HOST,origin-prod-phoenix.jibjab.com,Fake iAP Policy
 # Termius
 HOST,api.termius.com,Fake iAP Policy
 # PDF Expert | Documents
-#HOST,license.pdfexpert.com,Fake iAP Policy
+HOST,license.pdfexpert.com,Fake iAP Policy
 # Gyroscope
 HOST,api.gyrosco.pe,Fake iAP Policy
 # Kine Master
 HOST,api-kinemaster-assetstore.kinemasters.com,Fake iAP Policy
 HOST,api-kinemaster-assetstore.nexstreaming.com,Fake iAP Policy
+# YouTube Music
+#HOST,youtubei.googleapis.com,Fake iAP Policy
 # Over
 HOST,api.overhq.com,Fake iAP Policy
 # Bright
@@ -213,12 +236,13 @@ HOST,api.faceapp.io,Fake iAP Policy
 HOST,api.unfold.app,Fake iAP Policy
 # Simply Piano
 HOST,asla.joytunes.com,Fake iAP Policy
-# NhacCuaTui
+#NhacCuaTui
 HOST,graph.nhaccuatui.com,Fake iAP Policy
 # Elevate
 HOST,accounts.elevateapp.net,Fake iAP Policy
 # Photolift
 HOST,pixmagicapp.com,Fake iAP Policy
+# BUSUU
 HOST,api.busuu.com,Fake iAP Policy
 # Camera360 | MIX
 HOST,bmall.camera360.com,Fake iAP Policy
@@ -233,18 +257,23 @@ HOST-SUFFIX,api.picsart.com,Fake iAP Policy
 HOST-SUFFIX,api.mondlylanguages.com,Fake iAP Policy
 # VSCO
 HOST,vsco.co,Fake iAP Policy
+# ELSA
 HOST-SUFFIX,pool.elsanow.io,Fake iAP Policy
-# Instasize
+# Calm
+HOST-SUFFIX,api.calm.com,Fake iAP Policy
+HOST-SUFFIX,api.indicative.com,Fake iAP Policy
+HOST-SUFFIX,lambda.us-east-1.amazonaws.com,Fake iAP Policy
+#Instasize
 HOST,api.instasize.com,Fake iAP Policy
 HOST,purchases.ws.pho.to,Fake iAP Policy
 HOST,nomo.dafork.com,Fake iAP Policy
 HOST,cloudapp.aiarlabs.com,Fake iAP Policy
-#HOST,buy.itunes.apple.com,Fake iAP Policy
-# Infltr
+HOST,buy.itunes.apple.com,Fake iAP Policy
+#Infltr
 HOST,us-central1-infltr.cloudfunctions.net,Fake iAP Policy
 HOST,owa.videoshowiosglobalserver.com,Fake iAP Policy
 HOST,app.algoriddim.com,Fake iAP Policy
+#HOST,viva.v21xy.com,Fake iAP Policy
+#HOST,viva-asia1.vvbrd.com,Fake iAP Policy
 # Mimo
 HOST,api.getmimo.com,Fake iAP Policy
-####################################
-user-agent, com.apple.trustd/*, reject
