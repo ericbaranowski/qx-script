@@ -19,7 +19,7 @@ function pushData() {
         var notificationURL = { "open-url": news_url, "media-url": video_link };
         if (needUpdate(news_url, post_time)) {
           $notify(
-            "📰 VNEXPRESS.NET",
+            "🗞VNEXPRESS.NET",
             title,
             `${data_lead}\n${post_time}`,
             notificationURL
