@@ -37,7 +37,7 @@ function pushData() {
     (reason) => {
       console.error(reason);
     }
-  ); $done();
+  );
 }
 function timeConverter(UNIX_timestamp) {
   let a = new Date(UNIX_timestamp * 1000);
