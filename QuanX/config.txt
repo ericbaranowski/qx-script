@@ -1,7 +1,6 @@
 [general]
 resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 [dns]
-;no-system
 no-ipv6
 server = 8.8.8.8
 server = 8.8.4.4
@@ -20,7 +19,7 @@ static = v2ray, resource-tag-regex = V2Ray, img-url = https://github.com/Koolson
 [server_local]
 [server_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap-server.txt, tag = Fake iAP Server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Quantumult_X.png
-https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = V2Ray Proxy, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Color/Available_Alt.png
+https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = V2Ray Proxy
 [rewrite_local]
 [rewrite_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.txt, tag = Scripts
