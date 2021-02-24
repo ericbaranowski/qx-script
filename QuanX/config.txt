@@ -1,4 +1,5 @@
 [general]
+resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 [dns]
 ;no-system
 no-ipv6
