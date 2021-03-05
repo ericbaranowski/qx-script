@@ -1,3 +1,7 @@
+HOST-SUFFIX,ocsp2.apple.com,REJECT
+HOST-SUFFIX,ocsp2.digicert.com,REJECT
+HOST-SUFFIX,ocsp.digicert.com,REJECT
+HOST-SUFFIX,ocsp.usertrust.com,REJECT
 HOST-SUFFIX,appldnld.apple.com,REJECT
 HOST-SUFFIX,appldnld.apple.com.akadns.net,REJECT
 HOST-SUFFIX,appldnld-lb.apple.com.akadns.net,REJECT
