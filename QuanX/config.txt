@@ -21,7 +21,7 @@ https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = tru
 [rewrite_local]
 [rewrite_remote]
 https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.conf, tag = script.conf
-http://bit.ly/scriptqx, tag = script-lk.conf
+http://bit.ly/scriptqx, tag = script-lk.conf, enabled = false
 [filter_local]
 final, direct
 [filter_remote]
