@@ -1,5 +1,5 @@
 ﻿var wurl = {
-  url: "http://192.168.1.188/giaxang.php",
+  url: "http://13.212.21.94/giaxang.php",
 };
 var today = new Date();
 $task.fetch(wurl).then(
