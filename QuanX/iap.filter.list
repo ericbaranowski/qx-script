@@ -1,3 +1,24 @@
+#Supper Chinese
+HOST,api.superchinese.com,Fake iAP Policy
+#Hello Chinese
+HOST,api3.hellochinese.cc,Fake iAP Policy
+#Headspace
+HOST,api.prod.headspace.com,Fake iAP Policy
+#LyricsTraining
+HOST,beta.lyricstraining.com,Fake iAP Policy
+#‎Quizlet
+HOST,api.quizlet.com,Fake iAP Policy
+#‎Morpholio Trace - Sketch CAD
+HOST,www.mymorpholio.com,Fake iAP Policy
+#U-Dictionar‪y
+HOST,intervip.youdao.com,Fake iAP Policy
+#Babilala
+HOST,api.babilala.vn,Fake iAP Policy
+#CARROT Weather
+HOST,blooming-forest-98906.herokuapp.com,Fake iAP Policy
+HOST,carrotweather.herokuapp.com,Fake iAP Policy
+#VCUS
+HOST,api.finance.hw.meitu.com,Fake iAP Policy
 #Focos Blacklist
 HOST,focosapp.s3-ap-southeast-1.amazonaws.com,Fake iAP Policy
 #Ads Reject
