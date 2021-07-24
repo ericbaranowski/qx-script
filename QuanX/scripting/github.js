@@ -1,6 +1,6 @@
 let config = {
   username: "phd91105", 
-  token: "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", 
+  token: "AHFYIEVAHWN5ITNVWMEKES3A7OTAG", 
 };
 
 // load user prefs from box
