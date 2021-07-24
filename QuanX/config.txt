@@ -16,28 +16,28 @@ static = Youtube, direct, Proxy server, img-url = https://github.com/Koolson/Qur
 static = Azure Cloud Services, resource-tag-regex = Azure Cloud Services, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Azure.png
 [server_local]
 [server_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap.server.list, tag = Fake iAP Server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Quantumult_X.png
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/iap.server.list, tag = Fake iAP Server, img-url = https://github.com/Koolson/Qure/raw/master/IconSet/Quantumult_X.png
 https://api.ikuuu.science/link/N59y7O4ipFg2l26N?sub=3&extend=1, opt-parser = true, tag = Azure Cloud Services
 [rewrite_local]
 [rewrite_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/script.conf, tag = script.conf
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/script.conf, tag = script.conf
 https://bit.ly/scriptqx, tag = script-lk.conf, enabled = false
 [filter_local]
 final, direct
 [filter_remote]
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/iap.filter.list, tag = Fake iAP Filter, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/reject.list, force-policy = reject, tag = reject, enabled = true
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/iap.filter.list, tag = Fake iAP Filter, enabled = true
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/reject.list, force-policy = reject, tag = reject, enabled = true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf, tag = hostsVN, force-policy = direct, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Facebook.list, tag = Facebook, force-policy = Facebook, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Pornhub.list, tag = Pornhub, force-policy = Pornhub, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
-https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/rules/Facebook.list, tag = Facebook, force-policy = Facebook, enabled = true
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/rules/Pornhub.list, tag = Pornhub, force-policy = Pornhub, enabled = true
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/rules/Speedtest.list, tag = Speedtest, force-policy =  Speedtest, enabled = true
+https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/rules/YouTube.list, tag = Youtube, force-policy = Youtube, enabled = true
 [task_local]
-0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/weather.js, tag=weather.js, img-url=sun.max.fill.system, enabled=true
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/vnexpress.js, tag=vnexpress.js, img-url=doc.richtext.fill.system, enabled=true
-0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/appmonitor.js, tag=appmonitor.js, img-url=a.book.closed.fill.system, enabled=true
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/shopee.js, tag=shopee.js, img-url=cart.fill.system, enabled=true
-0 6 * * * https://raw.githubusercontent.com/phd91105/Scripts/master/QuanX/scripting/giaxang.js, tag=giaxang.js, img-url=p.square.fill.system, enabled=true
+0 6-12/6 * * * https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/scripting/weather.js, tag=weather.js, img-url=sun.max.fill.system, enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/scripting/vnexpress.js, tag=vnexpress.js, img-url=doc.richtext.fill.system, enabled=true
+0 6-23/1 * * * https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/scripting/appmonitor.js, tag=appmonitor.js, img-url=a.book.closed.fill.system, enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/scripting/shopee.js, tag=shopee.js, img-url=cart.fill.system, enabled=true
+0 6 * * * https://raw.githubusercontent.com/phd91105/qx-script/master/QuanX/scripting/giaxang.js, tag=giaxang.js, img-url=p.square.fill.system, enabled=true
 [mitm]
 skip_validating_cert = true
 passphrase = IAPSERVER2021
